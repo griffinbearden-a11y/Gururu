@@ -1,0 +1,8 @@
+{
+  "paused": true,
+  "paused_reason": "3 consecutive pitch-step failures",
+  "paused_at": "2026-08-07T23:32:24.379Z",
+  "daily_publish_counts": {},
+  "consecutive_pitch_failures": 3,
+  "reacted_transaction_ids": []
+}
