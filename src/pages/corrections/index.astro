@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+
+const corrections = (await getCollection('articles'))
+  .filter((a) => a.data.published && a.data.format === 'corrections')
+  .sort((a, b) => b.data.created_at.getTime() - a.data.created_at.getTime());
+
+const byWriter = corrections.reduce<Record<string, number>>((acc, a) => {
+  acc[a.data.writer] = (acc[a.data.writer] ?? 0) + 1;
+  return acc;
+}, {});
+---
+<BaseLayout title="Corrections" description="The corrections policy, and every correction filed.">
+  <div class="container corrections-page">
+    <h1>Corrections</h1>
+    <div class="policy">
+      <p>
+        Any writer on staff can file a correction when a prior claim — a stat, a roster fact, a thesis built
+        on bad data — turns out to be wrong. A correction publishes like any other article, under the writer
+        who filed it, and stays in the record rather than silently editing the original piece.
+      </p>
+      <p>
+        The critic pass that reviews every draft checks factual claims against provided league data and
+        Sleeper's own numbers; a correction is what happens when something gets through anyway, or when new
+        information changes the picture after publication.
+      </p>
+      {Object.keys(byWriter).length > 0 && (
+        <p class="tally">
+          Filed so far: {Object.entries(byWriter).map(([w, n]) => `${w} (${n})`).join(', ')}
+        </p>
+      )}
+    </div>
+
+    {corrections.length === 0 && <p class="empty">No corrections filed yet.</p>}
+    {corrections.map((a) => (
+      <ArticleCard
+        slug={a.id}
+        title={a.data.title}
+        thesis={a.data.thesis}
+        format={a.data.format}
+        writerId={a.data.writer}
+        date={a.data.created_at}
+        variant="secondary"
+      />
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .corrections-page { max-width: 720px; padding: var(--space-4) var(--space-3) var(--space-5); }
+  .policy {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: var(--space-4);
+    margin-bottom: var(--space-4);
+  }
+  .policy p { line-height: 1.7; }
+  .tally { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-dim); margin: 0; }
+  .empty { color: var(--text-dim); }
+</style>

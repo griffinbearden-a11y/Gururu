@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WriterAvatar from '../components/WriterAvatar.astro';
+import { getWriterMeta, WRITER_IDS } from '../lib/data';
+import { BIOS, MASTHEAD_NOTE } from '../lib/bios';
+
+const writers = WRITER_IDS.map((id) => ({ id, meta: getWriterMeta(id), bio: BIOS[id] }));
+---
+<BaseLayout title="About">
+  <div class="container about-page">
+    <h1>About The Daily Guru</h1>
+
+    {writers.map(({ id, meta, bio }) => (
+      <section class="writer-block" style={`--writer-color:${meta.color}`}>
+        <div class="writer-block-header">
+          <WriterAvatar name={meta.name} color={meta.color} size={56} />
+          <div>
+            <h2><a href={`/writers/${id}/`}>{meta.byline}</a></h2>
+            <p class="eyebrow">{meta.beat.replace(/_/g, ' ')}</p>
+          </div>
+        </div>
+        {bio.map((p) => <p>{p}</p>)}
+      </section>
+    ))}
+
+    <section id="masthead" class="masthead-note">
+      <h2>Masthead note</h2>
+      <p>{MASTHEAD_NOTE}</p>
+      <p><a href="/corrections/">Read the corrections policy →</a></p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-page { max-width: 720px; padding: var(--space-4) var(--space-3) var(--space-5); }
+  .writer-block { margin-bottom: var(--space-5); padding-bottom: var(--space-4); border-bottom: 1px solid var(--border); }
+  .writer-block-header { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); }
+  .writer-block h2 { margin-bottom: var(--space-1); }
+  .writer-block h2 a { color: var(--writer-color); text-decoration: none; }
+  .writer-block h2 a:hover { text-decoration: underline; }
+  .writer-block p { line-height: 1.7; }
+  .masthead-note { background: var(--surface); border: 1px solid var(--border); padding: var(--space-4); }
+  .masthead-note p { line-height: 1.7; }
+</style>

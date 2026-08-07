@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import RailStandings from '../components/RailStandings.astro';
+import RailWolfTracker from '../components/RailWolfTracker.astro';
+import RailWire from '../components/RailWire.astro';
+import RailPowerRankings from '../components/RailPowerRankings.astro';
+import RailCommissionerLink from '../components/RailCommissionerLink.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = (await getCollection('articles'))
+  .filter((a) => a.data.published)
+  .sort((a, b) => b.data.created_at.getTime() - a.data.created_at.getTime());
+
+const [lead, ...rest] = allArticles;
+const secondaries = rest.slice(0, 3);
+const river = rest.slice(3, 15);
+---
+<BaseLayout title="Home">
+  <div class="container front-page">
+    <div class="main-column">
+      {lead && (
+        <ArticleCard
+          slug={lead.id}
+          title={lead.data.title}
+          thesis={lead.data.thesis}
+          format={lead.data.format}
+          writerId={lead.data.writer}
+          date={lead.data.created_at}
+          variant="lead"
+        />
+      )}
+      {secondaries.length > 0 && (
+        <div class="secondaries">
+          {secondaries.map((a) => (
+            <ArticleCard
+              slug={a.id}
+              title={a.data.title}
+              thesis={a.data.thesis}
+              format={a.data.format}
+              writerId={a.data.writer}
+              date={a.data.created_at}
+              variant="secondary"
+            />
+          ))}
+        </div>
+      )}
+      {river.length > 0 && (
+        <div class="river">
+          <p class="eyebrow river-label">More from the desk</p>
+          {river.map((a) => (
+            <ArticleCard
+              slug={a.id}
+              title={a.data.title}
+              thesis={a.data.thesis}
+              format={a.data.format}
+              writerId={a.data.writer}
+              date={a.data.created_at}
+              variant="river"
+            />
+          ))}
+        </div>
+      )}
+      {allArticles.length === 0 && (
+        <p class="empty-state">Nobody's filed anything yet. Check back once the desk gets moving.</p>
+      )}
+    </div>
+    <aside class="rail" aria-label="League information">
+      <RailWolfTracker />
+      <RailStandings />
+      <RailWire />
+      <RailPowerRankings />
+      <RailCommissionerLink />
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .front-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-5);
+  }
+  .secondaries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+  }
+  .river { margin-top: var(--space-4); }
+  .river-label { margin-bottom: var(--space-3); }
+  .empty-state { color: var(--text-dim); font-size: 1.1rem; }
+
+  @media (min-width: 900px) {
+    .front-page {
+      grid-template-columns: minmax(0, 1fr) 320px;
+      align-items: start;
+    }
+  }
+</style>

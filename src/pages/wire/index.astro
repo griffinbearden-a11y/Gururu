@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getRecentTransactions, getTeamDirectory, getPlayerMap, describeTransaction } from '../../lib/data';
+import { relativeTime } from '../../lib/time';
+
+const transactions = getRecentTransactions(75);
+const teams = getTeamDirectory();
+const teamByRosterId = new Map(teams.map((t) => [t.roster_id, t.team_name]));
+const players = getPlayerMap();
+---
+<BaseLayout title="The Wire" description="Every transaction across the league, most recent first.">
+  <div class="container wire-page">
+    <h1>The Wire</h1>
+    <p class="dek">Every trade, waiver claim, and free-agent pickup across the league, most recent first.</p>
+    {transactions.length === 0 && <p class="empty">Quiet on the wire.</p>}
+    <ul class="wire-full-list">
+      {transactions.map((tx) => (
+        <li>
+          <p class="wire-desc">{describeTransaction(tx, teamByRosterId, players)}</p>
+          <time datetime={new Date(tx.status_updated).toISOString()}>{relativeTime(new Date(tx.status_updated))}</time>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .wire-page { max-width: 760px; padding: var(--space-4) var(--space-3) var(--space-5); }
+  .dek { color: var(--text-dim); margin-bottom: var(--space-4); }
+  .wire-full-list { list-style: none; margin: 0; padding: 0; }
+  .wire-full-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-2) 0;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .wire-full-list li:first-child { border-top: none; }
+  .wire-desc { margin: 0; }
+  time { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-dim); white-space: nowrap; }
+  .empty { color: var(--text-dim); }
+</style>

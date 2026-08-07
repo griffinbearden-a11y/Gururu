@@ -1,0 +1,20 @@
+---
+import RailModule from './RailModule.astro';
+import { getCommissionerLedger } from '../lib/data';
+
+const entries = getCommissionerLedger();
+---
+<RailModule title="Commissioner Ledger" href="/ledger/">
+  <p class="ledger-summary">
+    {entries.length === 0
+      ? 'No overrides logged. Clean so far.'
+      : `${entries.length} commissioner action${entries.length === 1 ? '' : 's'} logged this season.`}
+  </p>
+  <a href="/ledger/" class="ledger-link">View the full ledger →</a>
+</RailModule>
+
+<style>
+  .ledger-summary { margin: 0 0 var(--space-2); font-size: 0.9rem; color: var(--text-dim); }
+  .ledger-link { font-family: var(--font-ui-wide); font-weight: 700; font-size: 0.85rem; text-decoration: none; }
+  .ledger-link:hover { text-decoration: underline; }
+</style>

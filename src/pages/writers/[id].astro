@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WriterAvatar from '../../components/WriterAvatar.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getWriterMeta, getWriterState, WRITER_IDS } from '../../lib/data';
+import { BIOS } from '../../lib/bios';
+
+export function getStaticPaths() {
+  return WRITER_IDS.map((id) => ({ params: { id } }));
+}
+
+const { id } = Astro.params as { id: 'wolf' | 'vail' | 'doyle' };
+const writer = getWriterMeta(id);
+const state = getWriterState()[id];
+const bio = BIOS[id];
+
+const articles = (await getCollection('articles'))
+  .filter((a) => a.data.published && a.data.writer === id)
+  .sort((a, b) => b.data.created_at.getTime() - a.data.created_at.getTime());
+
+const tr = state?.track_record;
+const verifiedPct = tr && tr.verified_total > 0 ? Math.round((tr.verified_hits / tr.verified_total) * 100) : null;
+const claimedPct = tr && tr.claimed_total > 0 ? Math.round((tr.claimed_hits / tr.claimed_total) * 100) : null;
+---
+<BaseLayout title={writer.byline}>
+  <div class="container writer-page" style={`--writer-color:${writer.color}`}>
+    <header class="writer-header">
+      <WriterAvatar name={writer.name} color={writer.color} size={72} />
+      <div>
+        <h1>{writer.byline}</h1>
+        <p class="eyebrow">{writer.beat.replace(/_/g, ' ')} · on staff since {writer.hired}</p>
+      </div>
+    </header>
+
+    <div class="bio">
+      {bio.map((p) => <p>{p}</p>)}
+    </div>
+
+    {tr && (tr.verified_total > 0 || tr.claimed_total > 0) && (
+      <div class="track-record">
+        <p class="eyebrow">Track record</p>
+        <div class="tr-columns">
+          <div>
+            <p class="tr-label">Verified</p>
+            <p class="tr-value">{tr.verified_hits}-{tr.verified_total - tr.verified_hits}{verifiedPct !== null ? ` (${verifiedPct}%)` : ''}</p>
+          </div>
+          <div>
+            <p class="tr-label">Claimed</p>
+            <p class="tr-value">{tr.claimed_hits}-{tr.claimed_total - tr.claimed_hits}{claimedPct !== null ? ` (${claimedPct}%)` : ''}</p>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <section class="writer-articles">
+      <h2>Bylines</h2>
+      {articles.length === 0 && <p class="empty">Nothing filed yet.</p>}
+      {articles.map((a) => (
+        <ArticleCard
+          slug={a.id}
+          title={a.data.title}
+          thesis={a.data.thesis}
+          format={a.data.format}
+          writerId={a.data.writer}
+          date={a.data.created_at}
+          variant="secondary"
+        />
+      ))}
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .writer-page { max-width: 760px; padding: var(--space-4) var(--space-3) var(--space-5); }
+  .writer-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .writer-header h1 { color: var(--writer-color); margin-bottom: var(--space-1); }
+  .bio { font-size: 1.05rem; line-height: 1.7; margin-bottom: var(--space-4); }
+  .track-record {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: var(--space-3);
+    margin-bottom: var(--space-5);
+  }
+  .tr-columns { display: flex; gap: var(--space-5); margin-top: var(--space-2); }
+  .tr-label { font-family: var(--font-ui); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin: 0; }
+  .tr-value { font-family: var(--font-display); font-size: 1.5rem; color: var(--red); margin: 0; }
+  .writer-articles h2 { border-bottom: 1px solid var(--border); padding-bottom: var(--space-2); }
+  .empty { color: var(--text-dim); }
+</style>

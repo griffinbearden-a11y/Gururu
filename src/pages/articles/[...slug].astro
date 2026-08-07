@@ -1,0 +1,79 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Byline from '../../components/Byline.astro';
+import { getTeamDirectory } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const articles = (await getCollection('articles')).filter((a) => a.data.published);
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+const teams = getTeamDirectory();
+const subjectTeamNames = article.data.subject_teams
+  .map((rid) => teams.find((t) => t.roster_id === rid)?.team_name)
+  .filter(Boolean);
+---
+<BaseLayout title={article.data.title} description={article.data.thesis}>
+  <article class="container article-page">
+    {article.data.is_backfill && <p class="backfill-flag">Archive piece — reconstructed from league lore, not live Sleeper data.</p>}
+    <p class="eyebrow">{article.data.format.replace(/_/g, ' ')}</p>
+    <h1 class="article-title">{article.data.title}</h1>
+    <p class="article-thesis">{article.data.thesis}</p>
+    <div class="article-meta">
+      <Byline writerId={article.data.writer} date={article.data.created_at} />
+      {subjectTeamNames.length > 0 && (
+        <p class="subject-teams">Subjects: {subjectTeamNames.join(', ')}</p>
+      )}
+    </div>
+    <div class="article-body">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .article-page {
+    max-width: 700px;
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-5);
+  }
+  .backfill-flag {
+    font-family: var(--font-ui);
+    color: var(--red);
+    border: 1px solid var(--border);
+    padding: var(--space-2) var(--space-3);
+    margin-bottom: var(--space-3);
+    font-size: 0.85rem;
+  }
+  .article-title { font-size: 2.2rem; margin-bottom: var(--space-2); }
+  .article-thesis { font-size: 1.15rem; color: var(--text-dim); margin: 0 0 var(--space-3); }
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border);
+  }
+  .subject-teams { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-dim); margin: 0; }
+  .article-body {
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+  .article-body :global(p) { margin: 0 0 1.2em; }
+  .article-body :global(h2) { margin-top: 1.6em; font-size: 1.5rem; }
+  .article-body :global(blockquote) {
+    border-left: 3px solid var(--red);
+    margin: 1.4em 0;
+    padding-left: var(--space-3);
+    color: var(--text-dim);
+    font-style: italic;
+  }
+</style>

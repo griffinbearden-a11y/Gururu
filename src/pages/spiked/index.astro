@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getSpiked, getWriterMeta } from '../../lib/data';
+
+const spiked = getSpiked().sort((a, b) => b.spiked_at.localeCompare(a.spiked_at));
+const REASON_LABELS: Record<string, string> = {
+  filter: 'Killed before drafting',
+  critic: 'Killed after drafting',
+};
+---
+<BaseLayout title="Spiked" description="Every pitch that never made it to publication, and why.">
+  <div class="container spiked-page">
+    <h1>Spiked</h1>
+    <p class="dek">
+      Every pitch a writer floated that never ran — rejected by the assignment filter before a word was
+      drafted, or killed by the editorial pass after. A missed article is always better than a bad one.
+    </p>
+    {spiked.length === 0 && <p class="empty">Nothing's been spiked yet.</p>}
+    <ul class="spiked-list">
+      {spiked.map((s) => {
+        const writer = getWriterMeta(s.writer as 'wolf' | 'vail' | 'doyle');
+        return (
+          <li style={`--writer-color:${writer.color}`}>
+            <p class="eyebrow">{s.format.replace(/_/g, ' ')} · {REASON_LABELS[s.reason_stage] ?? s.reason_stage}</p>
+            <h2>{s.headline}</h2>
+            <p class="thesis">{s.thesis}</p>
+            <p class="reason"><strong>Why it died:</strong> {s.reason_detail}</p>
+            <p class="byline-line">— <span style="color:var(--writer-color)">{writer.byline}</span></p>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .spiked-page { max-width: 760px; padding: var(--space-4) var(--space-3) var(--space-5); }
+  .dek { color: var(--text-dim); max-width: 65ch; margin-bottom: var(--space-4); }
+  .spiked-list { list-style: none; margin: 0; padding: 0; }
+  .spiked-list li {
+    border-left: 3px solid var(--writer-color);
+    padding-left: var(--space-3);
+    margin-bottom: var(--space-4);
+    opacity: 0.9;
+  }
+  .spiked-list h2 { font-size: 1.3rem; text-decoration: line-through; text-decoration-color: var(--text-dim); }
+  .thesis { color: var(--text-dim); margin: 0 0 var(--space-2); }
+  .reason { font-size: 0.95rem; margin: 0 0 var(--space-1); }
+  .byline-line { font-family: var(--font-ui); font-size: 0.85rem; margin: 0; }
+  .empty { color: var(--text-dim); }
+</style>

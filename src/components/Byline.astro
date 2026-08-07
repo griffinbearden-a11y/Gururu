@@ -1,0 +1,48 @@
+---
+import WriterAvatar from './WriterAvatar.astro';
+import { relativeTime } from '../lib/time';
+import { getWriterMeta } from '../lib/data';
+
+interface Props {
+  writerId: 'wolf' | 'vail' | 'doyle';
+  date: Date;
+  size?: 'sm' | 'md';
+}
+const { writerId, date, size = 'md' } = Astro.props;
+const writer = getWriterMeta(writerId);
+---
+<div class={`byline byline--${size}`}>
+  <WriterAvatar name={writer.name} color={writer.color} size={size === 'sm' ? 28 : 40} />
+  <div class="byline-text">
+    <a href={`/writers/${writerId}/`} class="byline-name" style={`--writer-color:${writer.color}`}>{writer.byline}</a>
+    <time datetime={date.toISOString()} class="byline-time">{relativeTime(date)}</time>
+  </div>
+</div>
+
+<style>
+  .byline {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .byline-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+  .byline-name {
+    font-family: var(--font-ui-wide);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    color: var(--writer-color);
+    text-decoration: none;
+  }
+  .byline-name:hover { text-decoration: underline; }
+  .byline-time {
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    color: var(--text-dim);
+  }
+  .byline--sm .byline-name { font-size: 0.75rem; }
+</style>

@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import RailStandings from '../../components/RailStandings.astro';
+
+const rankingsArticles = (await getCollection('articles'))
+  .filter((a) => a.data.published && ['power_rankings', 'tiers', 'playoff_odds'].includes(a.data.format))
+  .sort((a, b) => b.data.created_at.getTime() - a.data.created_at.getTime());
+---
+<BaseLayout title="Rankings" description="Standings and every power rankings column, most recent first.">
+  <div class="container rankings-page">
+    <div class="main-column">
+      <h1>Rankings</h1>
+      {rankingsArticles.length === 0 && <p class="empty">No rankings columns published yet.</p>}
+      {rankingsArticles.map((a) => (
+        <ArticleCard
+          slug={a.id}
+          title={a.data.title}
+          thesis={a.data.thesis}
+          format={a.data.format}
+          writerId={a.data.writer}
+          date={a.data.created_at}
+          variant="secondary"
+        />
+      ))}
+    </div>
+    <aside class="rail">
+      <RailStandings />
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .rankings-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    padding: var(--space-4) var(--space-3) var(--space-5);
+  }
+  .empty { color: var(--text-dim); }
+  @media (min-width: 900px) {
+    .rankings-page { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; }
+  }
+</style>

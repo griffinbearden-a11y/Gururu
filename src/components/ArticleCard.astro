@@ -1,0 +1,92 @@
+---
+import Byline from './Byline.astro';
+import { getWriterMeta } from '../lib/data';
+import { relativeTime } from '../lib/time';
+
+interface Props {
+  slug: string;
+  title: string;
+  thesis: string;
+  format: string;
+  writerId: 'wolf' | 'vail' | 'doyle';
+  date: Date;
+  variant?: 'lead' | 'secondary' | 'river';
+}
+const { slug, title, thesis, format, writerId, date, variant = 'secondary' } = Astro.props;
+const writer = getWriterMeta(writerId);
+const formatLabel = format.replace(/_/g, ' ');
+---
+<article class={`card card--${variant}`} style={`--writer-color:${writer.color}`}>
+  <p class="red-tag card-format"><span>{formatLabel}</span></p>
+  <h2 class="card-title">
+    <a href={`/articles/${slug}/`}>{title}</a>
+  </h2>
+  {variant !== 'river' && <p class="card-thesis">{thesis}</p>}
+  {variant === 'river' ? (
+    <p class="card-river-byline">
+      <a href={`/writers/${writerId}/`} style={`color:var(--writer-color)`}>{writer.byline}</a>
+      <span aria-hidden="true"> · </span>
+      <time datetime={date.toISOString()}>{relativeTime(date)}</time>
+    </p>
+  ) : (
+    <Byline writerId={writerId} date={date} />
+  )}
+</article>
+
+<style>
+  .card {
+    border-left: 5px solid var(--writer-color);
+    padding-left: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .card-format { margin-bottom: var(--space-2); }
+  .card-title {
+    margin-bottom: var(--space-2);
+    text-transform: uppercase;
+    line-height: 1.05;
+  }
+  .card-title a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .card-title a:hover { color: var(--red); }
+  .card-thesis {
+    color: var(--text-dim);
+    margin: 0 0 var(--space-2);
+    font-size: 0.95rem;
+  }
+
+  .card--lead .card-title { font-size: 2.75rem; }
+  .card--lead .card-thesis { font-size: 1.1rem; max-width: 60ch; }
+
+  .card--secondary .card-title { font-size: 1.6rem; }
+
+  .card--river {
+    border-left: none;
+    padding-left: 0;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--border);
+    margin-bottom: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+  .card--river .card-title { font-size: 1.05rem; margin: 0; order: 1; flex: 1 1 auto; }
+  .card--river .card-format { display: none; }
+  .card--river .card-river-byline {
+    order: 2;
+    margin: 0;
+    white-space: nowrap;
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+  .card--river .card-river-byline a { text-decoration: none; }
+  .card--river .card-river-byline a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .card--lead .card-title { font-size: 2rem; }
+  }
+</style>

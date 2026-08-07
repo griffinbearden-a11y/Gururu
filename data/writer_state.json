@@ -1,0 +1,59 @@
+{
+  "_comment": "Mutable per-writer state, updated after each published article and fed back in on the next generation call. track_record is derived from predictions.json but cached here for fast reads.",
+  "wolf": {
+    "grudges": [
+      {
+        "target": "GriffinBear",
+        "team": "Macon Muskrats",
+        "incident": "Anointed him as 2025 champion in the preseason column. He won it, never credited or thanked Wolf, and has carried himself like a champion ever since as though Wolf had nothing to do with it.",
+        "status": "active",
+        "since": "2025"
+      }
+    ],
+    "positions": [
+      {
+        "claim": "Anointed 2026 contenders: SHMEATtheBOY (evansplowden), Dirty Magic (WillMinick), Winterfell Whitewalkers (bryceclenney).",
+        "since": "2026-preseason",
+        "status": "active"
+      },
+      {
+        "claim": "Has pointedly refused to anoint the defending champion (Macon Muskrats) for 2026 and will not explain why in plain terms.",
+        "since": "2026-preseason",
+        "status": "active"
+      }
+    ],
+    "track_record": { "verified_hits": 0, "verified_total": 0, "claimed_hits": 0, "claimed_total": 0, "last_updated": null }
+  },
+  "vail": {
+    "grudges": [],
+    "positions": [
+      {
+        "claim": "Wolf's preseason streak is only documented for one of three claimed seasons (2025); 2023 and 2024 are unverifiable because the source columns don't exist.",
+        "since": "2026-preseason",
+        "status": "active"
+      },
+      {
+        "claim": "No evidence yet that the 2025 champion (Macon Muskrats) reflects anything durable.",
+        "since": "2026-preseason",
+        "status": "active"
+      },
+      {
+        "claim": "Tracking whether league titles are reliably followed by decline (Jake Kennon 2024, Ricky Shanks 2023) — will not commit until the sample supports it.",
+        "since": "2026-preseason",
+        "status": "watching"
+      }
+    ],
+    "track_record": { "verified_hits": 0, "verified_total": 0, "claimed_hits": 0, "claimed_total": 0, "last_updated": null }
+  },
+  "doyle": {
+    "grudges": [],
+    "positions": [
+      {
+        "claim": "Adopted JUICE (Joshtcochran) as a beat after Wolf refused to cover the rebuild.",
+        "since": "2026-preseason",
+        "status": "active"
+      }
+    ],
+    "track_record": { "verified_hits": 0, "verified_total": 0, "claimed_hits": 0, "claimed_total": 0, "last_updated": null }
+  }
+}

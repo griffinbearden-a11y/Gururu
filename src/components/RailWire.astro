@@ -1,0 +1,33 @@
+---
+import RailModule from './RailModule.astro';
+import { getRecentTransactions, getTeamDirectory, getPlayerMap, describeTransaction } from '../lib/data';
+import { relativeTime } from '../lib/time';
+
+const transactions = getRecentTransactions(5);
+const teams = getTeamDirectory();
+const teamByRosterId = new Map(teams.map((t) => [t.roster_id, t.team_name]));
+const players = getPlayerMap();
+const describe = (tx: (typeof transactions)[number]) => describeTransaction(tx, teamByRosterId, players);
+---
+<RailModule title="The Wire" href="/wire/">
+  {transactions.length === 0 && <p class="empty">Quiet on the wire.</p>}
+  <ul class="wire-list">
+    {transactions.map((tx) => (
+      <li>
+        <p class="wire-desc">{describe(tx)}</p>
+        <time datetime={new Date(tx.status_updated).toISOString()} class="wire-time">
+          {relativeTime(new Date(tx.status_updated))}
+        </time>
+      </li>
+    ))}
+  </ul>
+</RailModule>
+
+<style>
+  .wire-list { list-style: none; margin: 0; padding: 0; }
+  .wire-list li { padding: var(--space-2) 0; border-top: 1px solid var(--border); }
+  .wire-list li:first-child { border-top: none; padding-top: 0; }
+  .wire-desc { margin: 0; font-size: 0.9rem; }
+  .wire-time { font-family: var(--font-ui); font-size: 0.75rem; color: var(--text-dim); }
+  .empty { color: var(--text-dim); font-size: 0.9rem; margin: 0; }
+</style>

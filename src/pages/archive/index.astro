@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+
+const all = (await getCollection('articles'))
+  .filter((a) => a.data.published)
+  .sort((a, b) => b.data.created_at.getTime() - a.data.created_at.getTime());
+
+const backfill = all.filter((a) => a.data.is_backfill);
+const regular = all.filter((a) => !a.data.is_backfill);
+
+const byYear = new Map<number, typeof regular>();
+for (const a of regular) {
+  const year = a.data.created_at.getFullYear();
+  if (!byYear.has(year)) byYear.set(year, []);
+  byYear.get(year)!.push(a);
+}
+const years = Array.from(byYear.keys()).sort((a, b) => b - a);
+---
+<BaseLayout title="Archive" description="Back issues, including Wolf's preseason columns from 2023-2025.">
+  <div class="container archive-page">
+    <h1>Archive</h1>
+
+    {backfill.length > 0 && (
+      <section class="backfill-section">
+        <p class="eyebrow">Back issues</p>
+        <p class="dek">Reconstructed from league lore rather than live Sleeper data — Sleeper only has one prior season on record.</p>
+        {backfill.map((a) => (
+          <ArticleCard
+            slug={a.id}
+            title={a.data.title}
+            thesis={a.data.thesis}
+            format={a.data.format}
+            writerId={a.data.writer}
+            date={a.data.created_at}
+            variant="secondary"
+          />
+        ))}
+      </section>
+    )}
+
+    {years.map((year) => (
+      <section class="year-section">
+        <p class="eyebrow">{year}</p>
+        {byYear.get(year)!.map((a) => (
+          <ArticleCard
+            slug={a.id}
+            title={a.data.title}
+            thesis={a.data.thesis}
+            format={a.data.format}
+            writerId={a.data.writer}
+            date={a.data.created_at}
+            variant="river"
+          />
+        ))}
+      </section>
+    ))}
+
+    {all.length === 0 && <p class="empty">Nothing in the archive yet.</p>}
+  </div>
+</BaseLayout>
+
+<style>
+  .archive-page { max-width: 760px; padding: var(--space-4) var(--space-3) var(--space-5); }
+  .backfill-section, .year-section { margin-bottom: var(--space-5); }
+  .dek { color: var(--text-dim); margin-bottom: var(--space-3); }
+  .empty { color: var(--text-dim); }
+</style>

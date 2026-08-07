@@ -1,0 +1,6 @@
+{
+  "_comment": "Fallback only — used when a manager hasn't set metadata.team_name in Sleeper yet. Live Sleeper data always wins once they do. Keyed by Sleeper username.",
+  "overrides": {
+    "evansplowden": "SHMEATtheBOY"
+  }
+}

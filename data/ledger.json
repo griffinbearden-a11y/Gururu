@@ -1,0 +1,4 @@
+{
+  "_comment": "One entry per published article. Read by the pitch filter (cooldowns, dup-thesis check) and fed to writers as recent-context. Newest last.",
+  "entries": []
+}

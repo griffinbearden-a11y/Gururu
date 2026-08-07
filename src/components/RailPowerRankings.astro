@@ -1,0 +1,29 @@
+---
+import RailModule from './RailModule.astro';
+import { getCollection } from 'astro:content';
+import { getWriterMeta } from '../lib/data';
+
+const articles = await getCollection('articles');
+const rankingsArticle = articles
+  .filter((a) => a.data.published && ['power_rankings', 'tiers'].includes(a.data.format))
+  .sort((a, b) => b.data.created_at.getTime() - a.data.created_at.getTime())[0];
+const writer = rankingsArticle ? getWriterMeta(rankingsArticle.data.writer) : null;
+---
+<RailModule title="Power Rankings" href="/rankings/">
+  {!rankingsArticle && <p class="empty">No rankings published yet.</p>}
+  {rankingsArticle && writer && (
+    <>
+      <p class="rankings-thesis">{rankingsArticle.data.thesis}</p>
+      <a href={`/articles/${rankingsArticle.id}/`} class="rankings-link" style={`color:${writer.color}`}>
+        Read {writer.byline}'s take →
+      </a>
+    </>
+  )}
+</RailModule>
+
+<style>
+  .rankings-thesis { margin: 0 0 var(--space-2); font-size: 0.9rem; }
+  .rankings-link { font-family: var(--font-ui-wide); font-weight: 700; font-size: 0.85rem; text-decoration: none; }
+  .rankings-link:hover { text-decoration: underline; }
+  .empty { color: var(--text-dim); font-size: 0.9rem; margin: 0; }
+</style>

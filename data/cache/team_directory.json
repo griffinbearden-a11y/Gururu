@@ -1,0 +1,148 @@
+{
+  "teams": [
+    {
+      "roster_id": 1,
+      "owner_id": "1276237496287498240",
+      "owner_username": "Rickyshanks229",
+      "team_name": "Topeka Cosbies",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 2
+    },
+    {
+      "roster_id": 2,
+      "owner_id": "1264636925298360320",
+      "owner_username": "WillMinick",
+      "team_name": "Dirty Magic",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 1
+    },
+    {
+      "roster_id": 3,
+      "owner_id": "1276242317644161026",
+      "owner_username": "bryceclenney",
+      "team_name": "Winterfell Whitewalkers",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 1
+    },
+    {
+      "roster_id": 4,
+      "owner_id": "1260721394304425984",
+      "owner_username": "GriffinBear",
+      "team_name": "Macon Muskrats",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 1
+    },
+    {
+      "roster_id": 5,
+      "owner_id": "1276266474679336960",
+      "owner_username": "RileyParker",
+      "team_name": "Vic Blends",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 1
+    },
+    {
+      "roster_id": 6,
+      "owner_id": "1058143369743925248",
+      "owner_username": "RossMinick1",
+      "team_name": "African Anteaters",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 2
+    },
+    {
+      "roster_id": 7,
+      "owner_id": "1264393176790085632",
+      "owner_username": "banks2002",
+      "team_name": "Buckhead Beavers",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 2
+    },
+    {
+      "roster_id": 8,
+      "owner_id": "1276276639809949696",
+      "owner_username": "beau1shirah",
+      "team_name": "The Herbert Effect",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 1
+    },
+    {
+      "roster_id": 9,
+      "owner_id": "1004975760962097152",
+      "owner_username": "Joshtcochran",
+      "team_name": "JUICE 🧃",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 2
+    },
+    {
+      "roster_id": 10,
+      "owner_id": "1265430655982907392",
+      "owner_username": "evansplowden",
+      "team_name": "SHMEATtheBOY",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 2
+    },
+    {
+      "roster_id": 11,
+      "owner_id": "1276322679443439616",
+      "owner_username": "loganmorris28",
+      "team_name": "loganmorris28",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 2
+    },
+    {
+      "roster_id": 12,
+      "owner_id": "1276600626364571648",
+      "owner_username": "AthensAssholes",
+      "team_name": "AthensAssholes",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "division": 1
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+---
+// Persistent header/rail module. Verified vs. Claimed split is computed
+// straight from predictions.json — never hand-asserted. "Verified" means
+// the outcome is confirmed against real Sleeper data; "Claimed" means it's
+// Wolf's own account of a season the API can't see (2023/2024), taken on
+// his word alone per the lore file.
+import RailModule from './RailModule.astro';
+import { getPredictions, getTeamDirectory, getWriterState } from '../lib/data';
+
+const predictions = getPredictions().filter((p) => p.writer === 'wolf');
+const verified = predictions.filter((p) => p.verified);
+const claimed = predictions.filter((p) => !p.verified);
+
+const record = (list: typeof predictions) => {
+  const hits = list.filter((p) => p.outcome === 'hit').length;
+  const total = list.filter((p) => p.outcome !== 'pending').length;
+  return { hits, total };
+};
+const verifiedRecord = record(verified);
+const claimedRecord = record(claimed);
+
+const teams = getTeamDirectory();
+const state = getWriterState();
+const anointedNames = (state.wolf?.positions ?? [])
+  .filter((p) => p.status === 'active' && p.claim.toLowerCase().includes('anointed'))
+  .map((p) => p.claim);
+
+// Anointed teams for this season, matched by roster owner username mentioned
+// in writer_state.json positions text.
+const ANOINTED_USERNAMES = ['evansplowden', 'WillMinick', 'bryceclenney'];
+const anointedTeams = teams.filter((t) => ANOINTED_USERNAMES.includes(t.owner_username));
+const combined = anointedTeams.reduce(
+  (acc, t) => ({ w: acc.w + t.wins, l: acc.l + t.losses, t: acc.t + t.ties }),
+  { w: 0, l: 0, t: 0 }
+);
+---
+<RailModule title="The Wolf Pick Tracker">
+  <p class="anointed-label">2026 Anointed</p>
+  <ul class="anointed-list">
+    {anointedTeams.length === 0 && <li class="empty">Named in the preseason column, once it publishes.</li>}
+    {anointedTeams.map((t) => <li>{t.team_name}</li>)}
+  </ul>
+  <p class="combined-record">
+    Combined: <strong>{combined.w}-{combined.l}{combined.t ? `-${combined.t}` : ''}</strong>
+  </p>
+  <div class="streak-columns">
+    <div class="streak-col">
+      <p class="eyebrow">Verified</p>
+      <p class="streak-record">{verifiedRecord.hits}-{verifiedRecord.total - verifiedRecord.hits}</p>
+    </div>
+    <div class="streak-col">
+      <p class="eyebrow">Claimed</p>
+      <p class="streak-record">{claimedRecord.hits}-{claimedRecord.total - claimedRecord.hits}</p>
+    </div>
+  </div>
+  <p class="tracker-note">Verified against Sleeper data. Claimed rests on Wolf's word for seasons the API can't see.</p>
+</RailModule>
+
+<style>
+  .anointed-label { font-family: var(--font-ui); font-size: 0.75rem; color: var(--text-dim); margin: 0 0 var(--space-1); text-transform: uppercase; letter-spacing: 0.05em; }
+  .anointed-list { list-style: none; margin: 0 0 var(--space-2); padding: 0; font-family: var(--font-ui-wide); font-weight: 600; }
+  .anointed-list li { padding: 2px 0; }
+  .empty { color: var(--text-dim); font-weight: 400; font-family: var(--font-body); }
+  .combined-record { margin: 0 0 var(--space-3); font-family: var(--font-ui); }
+  .streak-columns {
+    display: flex;
+    gap: var(--space-3);
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-2);
+  }
+  .streak-col { flex: 1; }
+  .streak-record { font-family: var(--font-display); font-size: 1.6rem; color: var(--red); margin: 0; }
+  .tracker-note { font-size: 0.75rem; color: var(--text-dim); margin: var(--space-2) 0 0; }
+</style>

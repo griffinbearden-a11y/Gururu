@@ -1,0 +1,59 @@
+---
+import RailModule from './RailModule.astro';
+import { getTeamDirectory } from '../lib/data';
+import { readFileSync, existsSync } from 'node:fs';
+
+const leaguePath = `${process.cwd()}/data/cache/league.json`;
+const league = existsSync(leaguePath) ? JSON.parse(readFileSync(leaguePath, 'utf-8')) : null;
+const divisionNames: Record<string, string> = {
+  '1': league?.metadata?.division_1 ?? 'Division 1',
+  '2': league?.metadata?.division_2 ?? 'Division 2',
+};
+
+const teams = getTeamDirectory();
+const byDivision = new Map<string, typeof teams>();
+for (const team of teams) {
+  const key = String(team.division ?? '1');
+  if (!byDivision.has(key)) byDivision.set(key, []);
+  byDivision.get(key)!.push(team);
+}
+for (const list of byDivision.values()) {
+  list.sort((a, b) => b.wins - a.wins || b.points_for - a.points_for);
+}
+---
+<RailModule title="Standings" href="/rankings/">
+  {teams.length === 0 && <p class="empty">Standings load once the season kicks off.</p>}
+  {Array.from(byDivision.entries()).map(([div, list]) => (
+    <div class="division">
+      <p class="division-name">{divisionNames[div]}</p>
+      <table>
+        <thead>
+          <tr><th>Team</th><th>W-L</th><th>PF</th></tr>
+        </thead>
+        <tbody>
+          {list.map((t) => (
+            <tr>
+              <td>{t.team_name}</td>
+              <td>{t.wins}-{t.losses}{t.ties ? `-${t.ties}` : ''}</td>
+              <td>{t.points_for.toFixed(1)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  ))}
+</RailModule>
+
+<style>
+  .division { margin-bottom: var(--space-3); }
+  .division:last-child { margin-bottom: 0; }
+  .division-name {
+    font-family: var(--font-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin: 0 0 var(--space-1);
+  }
+  .empty { color: var(--text-dim); font-size: 0.9rem; margin: 0; }
+</style>

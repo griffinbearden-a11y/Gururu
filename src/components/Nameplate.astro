@@ -1,0 +1,52 @@
+---
+import Nav from './Nav.astro';
+---
+<header class="masthead">
+  <div class="container masthead-inner">
+    <a href="/" class="nameplate">
+      <span class="nameplate-text">THE DAILY GURU</span>
+      <span class="nameplate-sub">Macon's Only Dynasty Press Corps</span>
+    </a>
+    <Nav />
+  </div>
+</header>
+
+<style>
+  .masthead {
+    background: var(--bg);
+    border-bottom: 4px solid var(--red);
+  }
+  .masthead-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    padding: var(--space-3) var(--space-3);
+  }
+  .nameplate {
+    text-decoration: none;
+    color: var(--text);
+    line-height: 1;
+  }
+  .nameplate-text {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    color: var(--text);
+    letter-spacing: 0.01em;
+  }
+  .nameplate-sub {
+    display: block;
+    font-family: var(--font-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--red);
+    margin-top: 2px;
+  }
+  @media (max-width: 640px) {
+    .nameplate-text { font-size: 1.8rem; }
+  }
+</style>

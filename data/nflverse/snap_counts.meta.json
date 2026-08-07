@@ -1,0 +1,6 @@
+{
+  "dataset": "snap_counts",
+  "source_url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2025.csv",
+  "reflects_season": 2025,
+  "fetched_at": "2026-08-07T22:23:28.752Z"
+}

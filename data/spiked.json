@@ -1,0 +1,4 @@
+{
+  "_comment": "Every pitch that was rejected by the filter or killed by the critic, logged for the public Spiked page. reason_stage: filter | critic. reason_code identifies which rule fired.",
+  "entries": []
+}

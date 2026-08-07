@@ -1,0 +1,78 @@
+/*
+  Design concept: a modern sports-media front page — ESPN / Bleacher Report
+  territory. White page, bold red as the primary ink, heavy condensed
+  headlines, thick rules and blocky red tags instead of hairline dividers.
+
+  The red is Wolf's own canon color from writers/wolf.md — he's the
+  longest-tenured, loudest columnist, so the site's house color is his.
+  Vail (blue) and Doyle (green) keep their own canon colors for byline
+  identity against the white/red base.
+*/
+
+:root {
+  /* -- The page -- */
+  --bg: #ffffff;
+  --surface: #f5f6f7;    /* card / rail panel background */
+  --border: #e1e3e6;     /* rules, dividers, card borders */
+  --text: #14171a;       /* primary text, near-black */
+  --text-dim: #5c636b;   /* secondary text */
+
+  /* -- The three inks -- */
+  --red: #b3261e;         /* house accent = Wolf's canon color, from writers/wolf.md */
+  --wolf-red: #b3261e;
+  --vail-blue: #1b5e8c;   /* Vail's canon color, from writers/vail.md */
+  --doyle-green: #2e6b4f; /* Doyle's canon color, from writers/doyle.md */
+
+  /* -- Type -- */
+  --font-display: 'Anton', 'Arial Narrow', sans-serif;
+  --font-body: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-ui: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-ui-wide: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  /* -- Rhythm -- */
+  --radius: 2px;
+  --shadow-card: 0 1px 0 var(--border);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+
+  /* -- Focus -- */
+  --focus-ring: 3px solid var(--red);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    --transition-fast: 120ms ease;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+  }
+}
+
+/* Signature element: a bold, slightly skewed red tag — used for eyebrows,
+   the nameplate mark, and rail module headers. The site's answer to
+   ESPN's diagonal-cut red banners. */
+.red-tag {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  padding: 3px 10px 2px;
+  transform: skewX(-8deg);
+}
+.red-tag > * {
+  display: inline-block;
+  transform: skewX(8deg);
+}
+
+.writer-wolf { --writer-color: var(--wolf-red); }
+.writer-vail { --writer-color: var(--vail-blue); }
+.writer-doyle { --writer-color: var(--doyle-green); }
