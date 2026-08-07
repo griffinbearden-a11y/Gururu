@@ -1,0 +1,13 @@
+{
+  // Tells Cloudflare's deploy step this is a plain static-assets site, not a
+  // Worker. Without this file, `wrangler deploy` auto-detects "Astro" and
+  // runs `astro add cloudflare` to inject a server-side adapter, which then
+  // tries to prerender pages inside the Workers runtime — where `node:fs`
+  // (used by gray-matter and src/lib/data.ts) isn't available. This file
+  // makes it just upload ./dist as static files instead.
+  "name": "gururu",
+  "compatibility_date": "2026-08-07",
+  "assets": {
+    "directory": "./dist"
+  }
+}
