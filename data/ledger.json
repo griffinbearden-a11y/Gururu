@@ -1,4 +1,32 @@
 {
   "_comment": "One entry per published article. Read by the pitch filter (cooldowns, dup-thesis check) and fed to writers as recent-context. Newest last.",
-  "entries": []
+  "entries": [
+    {
+      "writer": "wolf",
+      "date": "2026-08-08T13:00:00.000Z",
+      "slug": "2026-08-08-the-howlin-preseason-pick-2026",
+      "format": "howlin_preseason_pick",
+      "subject_teams": [],
+      "thesis": "Dirty Magic, Winterfell Whitewalkers, and SHMEATtheBOY are the three teams worth watching in 2026 — everyone else is noise.",
+      "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-08-08T13:45:00.000Z",
+      "slug": "2026-08-08-three-champions-one-author-auditing-the-streak",
+      "format": "rebuttal",
+      "subject_teams": [1, 4, 12],
+      "thesis": "The Howlin' Wolf's three-year prediction streak is verifiable in exactly one of three seasons, and in that one season he named multiple contenders and claimed the streak on whichever happened to win.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-08-08T14:30:00.000Z",
+      "slug": "2026-08-08-the-wire-a-receiver-swap-and-a-tight-end-trade",
+      "format": "the_wire",
+      "subject_teams": [],
+      "thesis": "Before a single game has been played, Winterfell Whitewalkers and Macon Muskrats made the league's first real trade of the year, and it's the kind of move that tells you what both of them think they're building.",
+      "is_backfill": false
+    }
+  ]
 }
