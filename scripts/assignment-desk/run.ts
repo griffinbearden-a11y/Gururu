@@ -18,7 +18,7 @@ import {
   recordPitchSuccess,
   markReacted,
 } from '../lib/circuit-breakers.ts';
-import { weeklySpendCapExceeded } from '../lib/anthropic.ts';
+import { weeklySpendCapExceeded } from '../lib/llm.ts';
 import { logRun } from '../lib/run-log.ts';
 
 const MAX_REVISION_ATTEMPTS = 2;

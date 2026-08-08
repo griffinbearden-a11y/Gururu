@@ -40,7 +40,7 @@ jobs:
         run: npm run ingest:sleeper
       - name: Run assignment desk
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: npm run desk:run
       - name: Commit and push if anything changed
         run: |

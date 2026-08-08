@@ -1,6 +1,6 @@
 // Step 1: Pitch. Cheap call — low effort, no web search. Five pitches back
 // as JSON; the filter (code, not model) decides which survive.
-import { callClaude, parseJSON } from '../lib/anthropic.ts';
+import { callClaude, parseJSON } from '../lib/llm.ts';
 import { readJSON } from '../lib/fsjson.ts';
 import { getSeasonPhase } from '../lib/season.ts';
 import { loadWriterPersona, buildContextBundle, type WriterId } from './context.ts';

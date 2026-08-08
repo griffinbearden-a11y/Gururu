@@ -6,7 +6,7 @@
 import nodemailer from 'nodemailer';
 import { readJSON } from './lib/fsjson.ts';
 import { getRunLog, type RunLogEntry } from './lib/run-log.ts';
-import { getWeeklySpend } from './lib/anthropic.ts';
+import { getWeeklySpend } from './lib/llm.ts';
 import { isPaused } from './lib/circuit-breakers.ts';
 
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;

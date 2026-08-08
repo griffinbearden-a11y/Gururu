@@ -8,7 +8,7 @@
 // 2025 is grounded in real Sleeper data (this league's one prior season on
 // record). 2023/2024 are grounded entirely in league_lore.md.
 //
-// Usage: ANTHROPIC_API_KEY=... tsx scripts/backfill-wolf.ts
+// Usage: GEMINI_API_KEY=... tsx scripts/backfill-wolf.ts
 import { readFileSync, existsSync } from 'node:fs';
 import { loadWriterPersona, loadLore } from './assignment-desk/context.ts';
 import { writeDraft } from './assignment-desk/draft.ts';

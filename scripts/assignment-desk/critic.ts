@@ -3,7 +3,7 @@
 // the one place where scope discipline matters most: the critic that starts
 // sanding down voice, bias, tone, or profanity kills the site within a
 // month, so the prompt says so explicitly with a worked example.
-import { callClaude, parseJSON } from '../lib/anthropic.ts';
+import { callClaude, parseJSON } from '../lib/llm.ts';
 import { buildContextBundle, type WriterId } from './context.ts';
 import type { Pitch } from './pitch.ts';
 import type { Draft } from './draft.ts';

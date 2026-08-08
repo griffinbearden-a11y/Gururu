@@ -1,22 +1,20 @@
-// Thin wrapper around the Anthropic SDK that tracks spend against the
-// circuit breaker. Model: Claude Sonnet 5, per the build brief.
-//
-// Pricing is the standard post-intro rate ($3/$15 per MTok) rather than the
-// $2/$10 introductory rate that runs through 2026-08-31 — safer to
-// overestimate spend against the $5/week cap than underestimate it.
-import Anthropic from '@anthropic-ai/sdk';
+// Thin wrapper around the Gemini API that tracks usage against the circuit
+// breaker. Model: Gemini 2.5 Flash, which has a no-cost free tier (rate
+// limited, not a spend-capped paid plan) — see
+// https://ai.google.dev/gemini-api/docs/pricing for current limits.
+import { GoogleGenAI } from '@google/genai';
 import { readJSON, writeJSON } from './fsjson.ts';
 
-export const MODEL = 'claude-sonnet-5';
-
-const PRICE_PER_MTOK = { input: 3.0, output: 15.0 };
+export const MODEL = 'gemini-2.5-flash';
 
 const SPEND_LOG_PATH = 'data/cache/api_spend.json';
+// Free tier: $0/token, so this cap is a no-op unless you switch to a paid
+// Gemini model — kept around so callers that check it don't need changes.
 const WEEKLY_SPEND_CAP_USD = 5.0;
 
-let client: Anthropic | null = null;
-function getClient(): Anthropic {
-  if (!client) client = new Anthropic();
+let client: GoogleGenAI | null = null;
+function getClient(): GoogleGenAI {
+  if (!client) client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   return client;
 }
 
@@ -43,13 +41,13 @@ export async function weeklySpendCapExceeded(): Promise<boolean> {
   return (await getWeeklySpend()) >= WEEKLY_SPEND_CAP_USD;
 }
 
-async function recordSpend(inputTokens: number, outputTokens: number): Promise<void> {
-  const cost = (inputTokens / 1_000_000) * PRICE_PER_MTOK.input + (outputTokens / 1_000_000) * PRICE_PER_MTOK.output;
+// Free tier has no per-token cost, so this just tallies call counts for
+// visibility in the health email — spend_usd stays 0.
+async function recordSpend(calls = 1): Promise<void> {
   const log = await readJSON<SpendLog>(SPEND_LOG_PATH, { weeks: {} });
   const key = weekKey();
   const entry = log.weeks[key] ?? { spend_usd: 0, calls: 0 };
-  entry.spend_usd += cost;
-  entry.calls += 1;
+  entry.calls += calls;
   log.weeks[key] = entry;
   await writeJSON(SPEND_LOG_PATH, log);
 }
@@ -61,24 +59,35 @@ export interface CallOptions {
   webSearch?: boolean;
 }
 
+// Maps Claude-style "effort" to Gemini's thinking token budget. 0 disables
+// thinking entirely (fastest/cheapest); higher tiers get more budget.
+const THINKING_BUDGET: Record<NonNullable<CallOptions['effort']>, number> = {
+  low: 0,
+  medium: 4096,
+  high: 8192,
+  xhigh: 16384,
+  max: 24576,
+};
+
 // A single user-turn call, no conversation state. Returns the concatenated
 // text content. Throws on API errors — callers decide how to count that
 // against the pitch-failure circuit breaker.
 export async function callClaude(userMessage: string, opts: CallOptions): Promise<string> {
-  const anthropic = getClient();
-  const response = await anthropic.messages.create({
+  const ai = getClient();
+  const response = await ai.models.generateContent({
     model: MODEL,
-    max_tokens: opts.maxTokens,
-    system: opts.system,
-    ...(opts.effort ? { output_config: { effort: opts.effort } } : {}),
-    ...(opts.webSearch ? { tools: [{ type: 'web_search_20260209', name: 'web_search' } as any] } : {}),
-    messages: [{ role: 'user', content: userMessage }],
+    contents: userMessage,
+    config: {
+      systemInstruction: opts.system,
+      maxOutputTokens: opts.maxTokens,
+      ...(opts.effort ? { thinkingConfig: { thinkingBudget: THINKING_BUDGET[opts.effort] } } : {}),
+      ...(opts.webSearch ? { tools: [{ googleSearch: {} }] } : {}),
+    },
   });
 
-  await recordSpend(response.usage.input_tokens, response.usage.output_tokens);
+  await recordSpend();
 
-  const textBlocks = response.content.filter((b): b is Anthropic.TextBlock => b.type === 'text');
-  return textBlocks.map((b) => b.text).join('\n');
+  return response.text ?? '';
 }
 
 // Pitch/critic calls expect strict JSON back. Strips markdown code fences if

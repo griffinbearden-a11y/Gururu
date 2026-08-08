@@ -29,7 +29,8 @@ src/                     The Astro site
 1. **Install dependencies**: `npm install`
 2. **GitHub repo secrets** (Settings -> Secrets and variables -> Actions):
    - `SLEEPER_LEAGUE_ID` — the current season's league ID
-   - `ANTHROPIC_API_KEY` — for the assignment desk
+   - `GEMINI_API_KEY` — for the assignment desk (free-tier Gemini API key from
+     [aistudio.google.com](https://aistudio.google.com/apikey))
    - `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` — any SMTP provider
      (Gmail with an app password works and is free) for the weekly health email
    - `HEALTH_EMAIL_TO` — where the health report goes
@@ -54,7 +55,7 @@ npm run desk:run          # run one pass of the assignment desk
 npm run health:email       # prints the report if SMTP env vars aren't set
 ```
 
-Set `SLEEPER_LEAGUE_ID` and `ANTHROPIC_API_KEY` in your shell env for the
+Set `SLEEPER_LEAGUE_ID` and `GEMINI_API_KEY` in your shell env for the
 ingestion/desk commands to work locally.
 
 **Astro content-cache gotcha**: if you edit or delete files under

@@ -1,5 +1,5 @@
 // Step 3: Draft. Full context, web search enabled for real NFL facts.
-import { callClaude, parseJSON } from '../lib/anthropic.ts';
+import { callClaude, parseJSON } from '../lib/llm.ts';
 import { loadWriterPersona, buildContextBundle, type WriterId } from './context.ts';
 import type { Pitch } from './pitch.ts';
 
