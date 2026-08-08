@@ -79,6 +79,16 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-08T04:40:43.229Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-08T08:06:46.010Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-08T08:06:46.709Z"
     }
   ]
 }
