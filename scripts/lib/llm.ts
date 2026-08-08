@@ -5,7 +5,9 @@
 import { GoogleGenAI } from '@google/genai';
 import { readJSON, writeJSON } from './fsjson.ts';
 
-export const MODEL = 'gemini-2.5-flash';
+// "-latest" alias always points at Google's current default Flash model, so
+// this doesn't break again the next time a dated model version is retired.
+export const MODEL = 'gemini-flash-latest';
 
 const SPEND_LOG_PATH = 'data/cache/api_spend.json';
 // Free tier: $0/token, so this cap is a no-op unless you switch to a paid
