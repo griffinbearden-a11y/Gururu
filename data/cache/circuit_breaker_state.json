@@ -1,6 +1,8 @@
 {
-  "paused": false,
+  "paused": true,
   "daily_publish_counts": {},
-  "consecutive_pitch_failures": 0,
-  "reacted_transaction_ids": []
+  "consecutive_pitch_failures": 3,
+  "reacted_transaction_ids": [],
+  "paused_reason": "3 consecutive pitch-step failures",
+  "paused_at": "2026-08-08T00:10:41.364Z"
 }
