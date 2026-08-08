@@ -66,7 +66,7 @@ Return ONLY a JSON array of exactly 5 pitch objects, no markdown fences, no comm
 
   const raw = await callClaude(userMessage, {
     system: persona.systemPrompt,
-    maxTokens: 2048,
+    maxTokens: 4096,
     effort: 'low',
   });
 

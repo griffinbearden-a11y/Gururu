@@ -54,7 +54,7 @@ If you made no forward-looking claims, "predictions" should be an empty array.`;
 
   const raw = await callClaude(userMessage, {
     system: persona.systemPrompt,
-    maxTokens: 4096,
+    maxTokens: 8192,
     effort: 'high',
     webSearch: true,
   });

@@ -41,7 +41,7 @@ ${draft.body_markdown}`;
 
   const raw = await callClaude(userMessage, {
     system: CRITIC_SYSTEM_PROMPT,
-    maxTokens: 1024,
+    maxTokens: 2048,
     effort: 'medium',
   });
 

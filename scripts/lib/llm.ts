@@ -2,7 +2,7 @@
 // breaker. Model: Gemini 2.5 Flash, which has a no-cost free tier (rate
 // limited, not a spend-capped paid plan) — see
 // https://ai.google.dev/gemini-api/docs/pricing for current limits.
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 import { readJSON, writeJSON } from './fsjson.ts';
 
 // "-latest" alias always points at Google's current default Flash model, so
@@ -61,14 +61,23 @@ export interface CallOptions {
   webSearch?: boolean;
 }
 
+// Maps Claude-style "effort" to Gemini's thinkingLevel. The numeric
+// thinkingBudget field (used on older Gemini models) 400s on whatever model
+// "gemini-flash-latest" currently resolves to — it expects this string enum
+// instead. Leaving thinkingConfig unset lets the model think with no budget
+// cap, which was silently eating the maxOutputTokens allowance and
+// truncating pitch JSON mid-string.
+const THINKING_LEVEL: Record<NonNullable<CallOptions['effort']>, ThinkingLevel> = {
+  low: ThinkingLevel.MINIMAL,
+  medium: ThinkingLevel.LOW,
+  high: ThinkingLevel.MEDIUM,
+  xhigh: ThinkingLevel.HIGH,
+  max: ThinkingLevel.HIGH,
+};
+
 // A single user-turn call, no conversation state. Returns the concatenated
 // text content. Throws on API errors — callers decide how to count that
 // against the pitch-failure circuit breaker.
-//
-// opts.effort is a holdover from the Claude version of this interface —
-// Gemini's thinkingBudget equivalent rejected requests with a bare 400
-// (allowed range is undocumented/model-dependent), so it's dropped rather
-// than guessed at.
 export async function callClaude(userMessage: string, opts: CallOptions): Promise<string> {
   const ai = getClient();
   const response = await ai.models.generateContent({
@@ -77,6 +86,7 @@ export async function callClaude(userMessage: string, opts: CallOptions): Promis
     config: {
       systemInstruction: opts.system,
       maxOutputTokens: opts.maxTokens,
+      ...(opts.effort ? { thinkingConfig: { thinkingLevel: THINKING_LEVEL[opts.effort] } } : {}),
       ...(opts.webSearch ? { tools: [{ googleSearch: {} }] } : {}),
     },
   });
