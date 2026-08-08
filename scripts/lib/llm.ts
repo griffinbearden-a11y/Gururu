@@ -61,19 +61,14 @@ export interface CallOptions {
   webSearch?: boolean;
 }
 
-// Maps Claude-style "effort" to Gemini's thinking token budget. 0 disables
-// thinking entirely (fastest/cheapest); higher tiers get more budget.
-const THINKING_BUDGET: Record<NonNullable<CallOptions['effort']>, number> = {
-  low: 0,
-  medium: 4096,
-  high: 8192,
-  xhigh: 16384,
-  max: 24576,
-};
-
 // A single user-turn call, no conversation state. Returns the concatenated
 // text content. Throws on API errors — callers decide how to count that
 // against the pitch-failure circuit breaker.
+//
+// opts.effort is a holdover from the Claude version of this interface —
+// Gemini's thinkingBudget equivalent rejected requests with a bare 400
+// (allowed range is undocumented/model-dependent), so it's dropped rather
+// than guessed at.
 export async function callClaude(userMessage: string, opts: CallOptions): Promise<string> {
   const ai = getClient();
   const response = await ai.models.generateContent({
@@ -82,7 +77,6 @@ export async function callClaude(userMessage: string, opts: CallOptions): Promis
     config: {
       systemInstruction: opts.system,
       maxOutputTokens: opts.maxTokens,
-      ...(opts.effort ? { thinkingConfig: { thinkingBudget: THINKING_BUDGET[opts.effort] } } : {}),
       ...(opts.webSearch ? { tools: [{ googleSearch: {} }] } : {}),
     },
   });
