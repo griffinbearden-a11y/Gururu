@@ -234,6 +234,16 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-12T22:05:05.117Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-12T22:22:20.414Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-12T22:23:02.433Z"
     }
   ]
 }

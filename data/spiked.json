@@ -20,6 +20,16 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-08-12T22:04:35.723Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "After the Banner: What Comes Next for Jake Kennon and AthensAssholes?",
+      "thesis": "Jake Kennon’s aggressive offloading of proven veterans like Ja'Marr Chase and Josh Jacobs isn't a panic move, but a calculated effort to reposition a former champion before the roster ages out entirely.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-12T22:22:26.896Z"
     }
   ]
 }
