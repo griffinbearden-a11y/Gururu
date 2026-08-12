@@ -4,11 +4,9 @@
 // ~60-second clips a week.
 const ELEVEN_LABS_URL = (voiceId: string) => `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
 
-// A stock premade voice from ElevenLabs' free-tier voice library — deep,
-// gravelly, fits a blues-radio-DJ character. Verify it's still available in
-// your ElevenLabs dashboard (Voice Library) and override via
-// ELEVENLABS_VOICE_ID if it's been retired or you prefer a different one.
-const DEFAULT_VOICE_ID = 'VR6AewLTigWG4xSOukaG'; // "Arnold"
+// Wolf's voice, added to the ElevenLabs account's voice library. Override
+// via ELEVENLABS_VOICE_ID if you swap it out later.
+const DEFAULT_VOICE_ID = '7fbQ7yJuEo56rYjrYaEh';
 
 export async function synthesizeSpeech(text: string): Promise<Buffer> {
   const apiKey = process.env.ELEVENLABS_API_KEY;
