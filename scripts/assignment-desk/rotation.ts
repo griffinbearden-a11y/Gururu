@@ -23,8 +23,8 @@ const PRESEASON_ROTATION: Record<number, WriterId[]> = {
   1: ['wolf'],
   2: ['vail'],
   // TEMPORARY: Wednesday added for a one-time catch-up after a few missed
-  // days — revert once Doyle's extra article has published.
-  3: ['doyle'],
+  // days — revert once Doyle's and Vail's extra articles have published.
+  3: ['doyle', 'vail'],
 };
 
 // The last of each writer's three weekly slots is their wildcard slot.
