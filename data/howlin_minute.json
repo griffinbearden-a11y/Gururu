@@ -1,4 +1,16 @@
 {
   "_comment": "One entry per published Howlin' Minute audio segment. audio_path is a public URL path served from public/audio/howlin-minute/. subject_teams (roster_ids) feeds the equal-airtime tracker; come_up_player feeds the recurring bit's no-repeat check. Newest last.",
-  "entries": []
+  "entries": [
+    {
+      "slug": "2026-08-12-the-ghost-of-topeka",
+      "date": "2026-08-12T23:49:36.393Z",
+      "title": "The Ghost of Topeka",
+      "script_text": "You sitting there in Topeka, Rickyshanks, you think a little August shuffling makes you a general? I gave you the crown in twenty-three and you've been living off my ghost ever since. You want to trade away the heavy iron for rookie flyers? Go ahead. See how far a shiny new toy gets you when the winter wind blows through this league. I built dynasties with my bare hands while you were still figuring out how to set a lineup, and I am sick to death of men who forget who put them on the map. You want to win? It takes blood and it takes want-to, not a calculator and not a prayer. Look out for George Pickens, folks—that boy’s been sleeping upside down like a bat and he’s ready to hang from the rafters.",
+      "audio_path": "/audio/howlin-minute/2026-08-12-the-ghost-of-topeka.mp3",
+      "subject_teams": [
+        1
+      ],
+      "come_up_player": "George Pickens"
+    }
+  ]
 }
