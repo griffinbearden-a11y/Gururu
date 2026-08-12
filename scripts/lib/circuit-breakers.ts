@@ -4,9 +4,7 @@
 import { readJSON, writeJSON } from './fsjson.ts';
 
 const STATE_PATH = 'data/cache/circuit_breaker_state.json';
-// TEMPORARY: bumped from 2 to 3 for a one-time catch-up after a few missed
-// days — revert to 2 once today's extra article has published.
-const MAX_ARTICLES_PER_DAY = 3;
+const MAX_ARTICLES_PER_DAY = 2;
 const MAX_CONSECUTIVE_PITCH_FAILURES = 3;
 
 interface CircuitState {
