@@ -147,7 +147,7 @@ Return ONLY a JSON object, no markdown fences, no commentary:
 
   const raw = await callClaude(userMessage, {
     system: persona.systemPrompt,
-    maxTokens: 2048,
+    maxTokens: 4096,
     effort: 'high',
   });
 
@@ -198,8 +198,6 @@ async function main() {
     return;
   }
 
-  let script = await writeScript();
-
   const asPitch = (s: Script): Pitch => ({
     headline: s.title,
     thesis: s.thesis,
@@ -214,19 +212,29 @@ async function main() {
     predictions: [],
   });
 
-  let attempts = 1;
-  let structuralNotes = await validateStructure(script);
-  let verdict = structuralNotes.length
-    ? { verdict: 'revise' as const, reasons: structuralNotes }
-    : await critiqueDraft('wolf', asPitch(script), asDraft(script));
-
-  while (verdict.verdict === 'revise' && attempts <= MAX_REVISION_ATTEMPTS) {
-    script = await writeScript(verdict.reasons);
-    structuralNotes = await validateStructure(script);
+  let script: Script;
+  let verdict: { verdict: 'publish' | 'revise' | 'kill'; reasons: string[] };
+  try {
+    script = await writeScript();
+    let attempts = 1;
+    let structuralNotes = await validateStructure(script);
     verdict = structuralNotes.length
       ? { verdict: 'revise' as const, reasons: structuralNotes }
       : await critiqueDraft('wolf', asPitch(script), asDraft(script));
-    attempts++;
+
+    while (verdict.verdict === 'revise' && attempts <= MAX_REVISION_ATTEMPTS) {
+      script = await writeScript(verdict.reasons);
+      structuralNotes = await validateStructure(script);
+      verdict = structuralNotes.length
+        ? { verdict: 'revise' as const, reasons: structuralNotes }
+        : await critiqueDraft('wolf', asPitch(script), asDraft(script));
+      attempts++;
+    }
+  } catch (err) {
+    // A transient API failure (rate limit, truncation, etc.) should skip
+    // today's segment, not crash the whole GitHub Actions job.
+    console.error("Howlin' Minute generation failed:", err);
+    return;
   }
 
   if (verdict.verdict !== 'publish') {
