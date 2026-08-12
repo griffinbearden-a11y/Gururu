@@ -107,10 +107,24 @@ export async function getRecentTransactionsSummary(limit = 15): Promise<string> 
   return all
     .slice(0, limit)
     .map((tx) => {
-      const teamNames = tx.roster_ids.map((id) => teamByRoster.get(id) ?? `Roster ${id}`).join(', ');
-      const adds = tx.adds ? Object.keys(tx.adds).map((id) => players[id]?.full_name ?? id).join(', ') : '';
-      const drops = tx.drops ? Object.keys(tx.drops).map((id) => players[id]?.full_name ?? id).join(', ') : '';
-      return `  [${new Date(tx.status_updated).toISOString().slice(0, 10)}] ${tx.type} — ${teamNames}${adds ? `; added: ${adds}` : ''}${drops ? `; dropped: ${drops}` : ''}`;
+      // Group added players by the specific roster they landed on. A flat
+      // "added: A, B, C" list across a multi-team trade is ambiguous about
+      // who actually got what — that ambiguity is what caused a real
+      // published error (a trade's two sides got swapped in an article).
+      const byDestination = new Map<number, string[]>();
+      if (tx.adds) {
+        for (const [playerId, rosterId] of Object.entries(tx.adds)) {
+          const name = players[playerId]?.full_name ?? playerId;
+          if (!byDestination.has(rosterId)) byDestination.set(rosterId, []);
+          byDestination.get(rosterId)!.push(name);
+        }
+      }
+      const parts = tx.roster_ids.map((id) => {
+        const team = teamByRoster.get(id) ?? `Roster ${id}`;
+        const gained = byDestination.get(id);
+        return gained?.length ? `${team} gets: ${gained.join(', ')}` : team;
+      });
+      return `  [${new Date(tx.status_updated).toISOString().slice(0, 10)}] ${tx.type} — ${parts.join(' | ')}`;
     })
     .join('\n');
 }

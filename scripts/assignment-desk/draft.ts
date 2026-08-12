@@ -42,6 +42,8 @@ export async function writeDraft(
 # Your assignment
 Write the article for this pitch. Use the web search results above for any real NFL player facts, depth chart notes, or recent performance you reference — every claim about a real NFL player must trace to provided context or a search result above, never invented.
 
+When describing a trade, check the "X gets: ..." breakdown in the Recent Transactions section above carefully before writing who acquired whom — do not guess or reconstruct trade direction from memory of the players' names alone.
+
 Headline: ${pitch.headline}
 Thesis: ${pitch.thesis}
 Format: ${pitch.format}
