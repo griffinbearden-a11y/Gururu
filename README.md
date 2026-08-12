@@ -31,6 +31,12 @@ src/                     The Astro site
    - `SLEEPER_LEAGUE_ID` — the current season's league ID
    - `GEMINI_API_KEY` — for the assignment desk (free-tier Gemini API key from
      [aistudio.google.com](https://aistudio.google.com/apikey))
+   - `TAVILY_API_KEY` — web search for the draft step's real-NFL-facts
+     grounding (free tier, no card required, from
+     [tavily.com](https://tavily.com)). Gemini's own search grounding tool
+     requires a billing-enabled account even on free-tier models, so this
+     project does the search itself and hands Gemini plain-text results
+     instead.
    - `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` — any SMTP provider
      (Gmail with an app password works and is free) for the weekly health email
    - `HEALTH_EMAIL_TO` — where the health report goes

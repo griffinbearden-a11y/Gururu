@@ -1,7 +1,7 @@
 {
   "paused": false,
   "daily_publish_counts": {},
-  "consecutive_pitch_failures": 2,
+  "consecutive_pitch_failures": 0,
   "reacted_transaction_ids": [
     "1388729102453735424",
     "1388660428262883328",

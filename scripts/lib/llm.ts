@@ -58,7 +58,6 @@ export interface CallOptions {
   system: string;
   maxTokens: number;
   effort?: 'low' | 'medium' | 'high' | 'xhigh' | 'max';
-  webSearch?: boolean;
 }
 
 // Maps Claude-style "effort" to Gemini's thinkingLevel. The numeric
@@ -78,6 +77,10 @@ const THINKING_LEVEL: Record<NonNullable<CallOptions['effort']>, ThinkingLevel> 
 // A single user-turn call, no conversation state. Returns the concatenated
 // text content. Throws on API errors — callers decide how to count that
 // against the pitch-failure circuit breaker.
+//
+// No Google Search grounding tool here on purpose: it 429s immediately on
+// the free tier (grounding appears to require a billing-enabled account).
+// scripts/lib/search.ts does web search separately via Tavily instead.
 export async function callClaude(userMessage: string, opts: CallOptions): Promise<string> {
   const ai = getClient();
   const response = await ai.models.generateContent({
@@ -87,7 +90,6 @@ export async function callClaude(userMessage: string, opts: CallOptions): Promis
       systemInstruction: opts.system,
       maxOutputTokens: opts.maxTokens,
       ...(opts.effort ? { thinkingConfig: { thinkingLevel: THINKING_LEVEL[opts.effort] } } : {}),
-      ...(opts.webSearch ? { tools: [{ googleSearch: {} }] } : {}),
     },
   });
 

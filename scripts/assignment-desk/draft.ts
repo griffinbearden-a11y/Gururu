@@ -1,5 +1,8 @@
-// Step 3: Draft. Full context, web search enabled for real NFL facts.
+// Step 3: Draft. Full context, plus a Tavily web search for real NFL facts
+// (Gemini's own search grounding 429s on the free tier, so we search
+// ourselves and hand the model plain-text results instead).
 import { callClaude, parseJSON } from '../lib/llm.ts';
+import { searchWeb } from '../lib/search.ts';
 import { loadWriterPersona, buildContextBundle, type WriterId } from './context.ts';
 import type { Pitch } from './pitch.ts';
 
@@ -29,10 +32,15 @@ export async function writeDraft(
     ? `\n\n# Revision required\nA prior draft of this piece was sent back by the editor with these notes. Address them directly:\n${revisionNotes.map((n) => `- ${n}`).join('\n')}`
     : '';
 
-  const userMessage = `${contextBundle}
+  const searchResults = await searchWeb(`${pitch.headline} ${pitch.thesis} NFL 2026 fantasy football`);
+  const searchBlock = searchResults
+    ? `\n\n# Web search results\n${searchResults}`
+    : '\n\n# Web search results\n(No search results available this run — do not invent specific real-world NFL facts beyond what appears in the context above.)';
+
+  const userMessage = `${contextBundle}${searchBlock}
 
 # Your assignment
-Write the article for this pitch. Use web search for any real NFL player facts, depth chart notes, or recent performance you reference — every claim about a real NFL player must trace to provided context or a search result, never invented.
+Write the article for this pitch. Use the web search results above for any real NFL player facts, depth chart notes, or recent performance you reference — every claim about a real NFL player must trace to provided context or a search result above, never invented.
 
 Headline: ${pitch.headline}
 Thesis: ${pitch.thesis}
@@ -56,7 +64,6 @@ If you made no forward-looking claims, "predictions" should be an empty array.`;
     system: persona.systemPrompt,
     maxTokens: 8192,
     effort: 'high',
-    webSearch: true,
   });
 
   return parseJSON<Draft>(raw);

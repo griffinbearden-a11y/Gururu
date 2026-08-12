@@ -94,7 +94,15 @@ async function processAssignment(
   }
 
   for (const pitch of survivors) {
-    const draft = await draftAndReview(writerId, pitch);
+    let draft: Draft | null;
+    try {
+      draft = await draftAndReview(writerId, pitch);
+      await recordPitchSuccess();
+    } catch (err) {
+      console.error(`Draft/critic step failed for ${writerId}:`, err);
+      await recordPitchFailure();
+      continue;
+    }
     if (draft) {
       const result = await commitArticle(writerId, pitch, draft);
       await recordPublish();

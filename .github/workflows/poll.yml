@@ -41,6 +41,7 @@ jobs:
       - name: Run assignment desk
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: npm run desk:run
       - name: Commit and push if anything changed
         run: |
