@@ -20,6 +20,8 @@ data/nflverse/          Weekly player stats / snap counts / depth charts
 writers/                Persona files (system prompts) + this project's brief
 scripts/                 Ingestion + the assignment-desk pipeline
 scripts/assignment-desk/  pitch -> filter -> draft -> critic -> commit
+scripts/howlin-minute/    Wolf's twice-weekly audio segment (script + TTS)
+public/audio/             Committed Howlin' Minute mp3s
 src/                     The Astro site
 .github/workflows/       Cron jobs
 ```
@@ -40,6 +42,10 @@ src/                     The Astro site
    - `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` — any SMTP provider
      (Gmail with an app password works and is free) for the weekly health email
    - `HEALTH_EMAIL_TO` — where the health report goes
+   - `ELEVENLABS_API_KEY` — voice for the Howlin' Minute audio segment
+     (free tier, no card required, from [elevenlabs.io](https://elevenlabs.io)).
+     Optional `ELEVENLABS_VOICE_ID` overrides the default voice — see
+     `scripts/lib/tts.ts`.
 3. **Fill in [`data/league_lore.md`](data/league_lore.md)** — Sleeper only has
    one prior season on record for this league; 2023/2024 history and anything
    else Sleeper can't see comes from this file. It's a template right now.
@@ -84,6 +90,13 @@ Circuit breakers (`scripts/lib/circuit-breakers.ts`): max 2 articles/day, max
 $5 API spend/week, one reaction per transaction ever, and the whole system
 pauses after 3 consecutive pitch-step failures or a malformed Sleeper
 response — check `data/cache/circuit_breaker_state.json` if publishing stops.
+
+`.github/workflows/howlin-minute.yml` runs separately, Monday and Thursday
+regardless of Wolf's article rotation: a ~60-second spoken-word script
+(Gemini, same critic pass as articles) turned into audio (ElevenLabs) and
+committed to `public/audio/howlin-minute/`, indexed in
+`data/howlin_minute.json`, served at `/howlin-minute/`. Shares the same
+`isPaused()`/weekly-spend circuit breakers as the article pipeline.
 
 ## Known follow-ups
 

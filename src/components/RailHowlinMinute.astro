@@ -1,0 +1,25 @@
+---
+import RailModule from './RailModule.astro';
+import { getHowlinMinuteEntries } from '../lib/data';
+import { relativeTime } from '../lib/time';
+
+const entries = [...getHowlinMinuteEntries()].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+const latest = entries[0];
+---
+{latest && (
+  <RailModule title="The Howlin' Minute" href="/howlin-minute/">
+    <p class="clip-title">{latest.title}</p>
+    <audio controls preload="none" src={latest.audio_path} class="clip-audio">
+      Your browser doesn't support inline audio. <a href={latest.audio_path}>Download the clip</a>.
+    </audio>
+    <time datetime={latest.date} class="clip-time">{relativeTime(new Date(latest.date))}</time>
+  </RailModule>
+)}
+
+<style>
+  .clip-title { margin: 0 0 var(--space-2); font-size: 0.9rem; font-weight: 700; }
+  .clip-audio { width: 100%; display: block; margin-bottom: var(--space-2); }
+  .clip-time { font-family: var(--font-ui); font-size: 0.75rem; color: var(--text-dim); }
+</style>

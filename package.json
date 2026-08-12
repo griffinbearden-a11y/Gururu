@@ -15,7 +15,8 @@
     "ingest:nflverse": "tsx scripts/ingest-nflverse.ts",
     "desk:run": "tsx scripts/assignment-desk/run.ts",
     "health:email": "tsx scripts/health-email.ts",
-    "backfill:wolf": "tsx scripts/backfill-wolf.ts"
+    "backfill:wolf": "tsx scripts/backfill-wolf.ts",
+    "howlin-minute": "tsx scripts/howlin-minute/run.ts"
   },
   "dependencies": {
     "@google/genai": "^2.16.0",

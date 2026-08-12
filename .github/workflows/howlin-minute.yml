@@ -1,0 +1,44 @@
+name: Howlin' Minute
+
+# Fixed schedule, independent of Wolf's article rotation: Monday and
+# Thursday, 12:00 UTC (~8am ET). Script via Gemini (free tier), voice via
+# ElevenLabs (free tier, ~10 min/month of audio).
+on:
+  schedule:
+    - cron: '0 12 * * 1,4'
+  workflow_dispatch: {}
+
+concurrency:
+  group: howlin-minute
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Ingest Sleeper data
+        env:
+          SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
+        run: npm run ingest:sleeper
+      - name: Generate Howlin' Minute
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: npm run howlin-minute
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "daily-guru-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "howlin-minute: new segment"
+          git push

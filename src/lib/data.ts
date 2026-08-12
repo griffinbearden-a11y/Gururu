@@ -93,6 +93,17 @@ export const getFormats = () =>
     { formats: [] }
   ).formats;
 
+export interface HowlinMinuteEntry {
+  slug: string;
+  date: string;
+  title: string;
+  script_text: string;
+  audio_path: string;
+}
+
+export const getHowlinMinuteEntries = () =>
+  readJSON<{ entries: HowlinMinuteEntry[] }>('data/howlin_minute.json', { entries: [] }).entries;
+
 export interface WriterMeta {
   id: 'wolf' | 'vail' | 'doyle';
   name: string;

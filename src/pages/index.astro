@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import RailStandings from '../components/RailStandings.astro';
 import RailWolfTracker from '../components/RailWolfTracker.astro';
+import RailHowlinMinute from '../components/RailHowlinMinute.astro';
 import RailWire from '../components/RailWire.astro';
 import RailPowerRankings from '../components/RailPowerRankings.astro';
 import RailCommissionerLink from '../components/RailCommissionerLink.astro';
@@ -67,6 +68,7 @@ const river = rest.slice(3, 15);
     </div>
     <aside class="rail" aria-label="League information">
       <RailWolfTracker />
+      <RailHowlinMinute />
       <RailStandings />
       <RailWire />
       <RailPowerRankings />

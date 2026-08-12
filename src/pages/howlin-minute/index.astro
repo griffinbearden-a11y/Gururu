@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getHowlinMinuteEntries } from '../../lib/data';
+import { relativeTime } from '../../lib/time';
+
+const entries = [...getHowlinMinuteEntries()].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+---
+<BaseLayout title="The Howlin' Minute" description="Sixty seconds of Wolf, unfiltered, twice a week.">
+  <div class="container howlin-page">
+    <h1>The Howlin' Minute</h1>
+    <p class="dek">Sixty seconds of The Howlin' Wolf, off the top of his head. Twice a week, whether you asked or not.</p>
+
+    {entries.length === 0 && <p class="empty">Nothing recorded yet. Check back soon.</p>}
+
+    <ul class="clip-list">
+      {entries.map((e) => (
+        <li class="clip">
+          <div class="clip-head">
+            <h2>{e.title}</h2>
+            <time datetime={e.date}>{relativeTime(new Date(e.date))}</time>
+          </div>
+          <audio controls preload="none" src={e.audio_path}>
+            Your browser doesn't support inline audio. <a href={e.audio_path}>Download the clip</a>.
+          </audio>
+          <details>
+            <summary>Transcript</summary>
+            <p class="transcript">{e.script_text}</p>
+          </details>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .howlin-page { max-width: 720px; padding: var(--space-4) var(--space-3) var(--space-5); }
+  .dek { color: var(--text-dim); margin-bottom: var(--space-4); }
+  .clip-list { list-style: none; margin: 0; padding: 0; }
+  .clip {
+    padding: var(--space-4) 0;
+    border-top: 1px solid var(--border);
+  }
+  .clip:first-child { border-top: none; }
+  .clip-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-2);
+  }
+  .clip-head h2 { margin: 0; font-size: 1.2rem; }
+  .clip-head time { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-dim); white-space: nowrap; }
+  audio { width: 100%; margin-bottom: var(--space-2); }
+  details { font-size: 0.9rem; }
+  summary { cursor: pointer; color: var(--text-dim); font-family: var(--font-ui); }
+  .transcript { color: var(--text-dim); line-height: 1.6; margin-top: var(--space-2); }
+  .empty { color: var(--text-dim); }
+</style>
