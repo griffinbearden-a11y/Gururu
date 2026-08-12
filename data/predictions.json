@@ -1,4 +1,14 @@
 {
   "_comment": "Every forward-looking claim any writer makes, scored after the fact. Powers the Wolf Pick Tracker and every writer's public track record. outcome: pending | hit | miss | push. verified: true if checkable against real Sleeper data, false if it rests on the writer's own account (e.g. pre-2025 seasons Sleeper doesn't have).",
-  "entries": []
+  "entries": [
+    {
+      "writer": "wolf",
+      "article_slug": "2026-08-12-the-commissioner-doesnt-ask-for-permission",
+      "claim": "Dirty Magic will win the 2026 league championship.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2027-01-05",
+      "outcome": "pending",
+      "verified": true
+    }
+  ]
 }

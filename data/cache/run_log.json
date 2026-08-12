@@ -224,6 +224,16 @@
       "script": "ingest-nflverse",
       "status": "success",
       "at": "2026-08-12T12:34:39.069Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-12T22:04:31.201Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-12T22:05:05.117Z"
     }
   ]
 }

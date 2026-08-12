@@ -1,4 +1,25 @@
 {
   "_comment": "Every pitch that was rejected by the filter or killed by the critic, logged for the public Spiked page. reason_stage: filter | critic. reason_code identifies which rule fired.",
-  "entries": []
+  "entries": [
+    {
+      "writer": "wolf",
+      "headline": "TOPEKA JUST SOLD THEIR SOUL TO A REAL CONTENDER",
+      "thesis": "Rickyshanks229 surrendered elite producers to Dirty Magic because deep down he knows the 2026 title belongs to a man who actually wants it.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-12T22:04:35.723Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "AN OPEN LETTER TO RICKYSHANKS229: THANK YOU FOR GETTING OUT OF THE WAY",
+      "thesis": "By handing over Amon-Ra St. Brown and Kyren Williams to WillMinick, you finally admitted that your 2023 title was an accident and you don't have the stomach for 2026.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-12T22:04:35.723Z"
+    }
+  ]
 }
