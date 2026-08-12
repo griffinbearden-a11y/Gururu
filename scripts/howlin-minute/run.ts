@@ -14,7 +14,7 @@ import { weeklySpendCapExceeded } from '../lib/llm.ts';
 import { readJSON, writeJSON } from '../lib/fsjson.ts';
 import { logRun } from '../lib/run-log.ts';
 
-const MAX_REVISION_ATTEMPTS = 2;
+const MAX_REVISION_ATTEMPTS = 3;
 const AUDIO_DIR = 'public/audio/howlin-minute';
 const DATA_PATH = 'data/howlin_minute.json';
 const HISTORY_LOOKBACK = 10; // how many past segments feed continuity + dedup context
@@ -130,9 +130,9 @@ ${howlinContext}
 # Your assignment
 This is "The Howlin' Minute" — a short spoken-word audio segment, roughly 60 seconds when read aloud (target 130-160 words). Rant about whatever's on your mind from the league right now: a trade, a team, your streak, your grudges — your call entirely, but use the continuity and airtime notes above: reference past segments where it's natural, and favor a team that's overdue for a mention if one fits the moment.
 
-Do NOT make this segment's central thesis the same topic as one of your last 20 published articles above (same trade, same team storyline, same claim). A brief callback line to something you already wrote is fine and encouraged — "I already told you Tuesday..." — but the actual subject of this rant needs to be something you haven't already spent a full column on. If the freshest news is a trade you already graded in print, pick a different angle entirely: another team, your streak, a grudge, a prediction — anything that isn't a rehash.
+Do NOT make this segment's central thesis the same topic as one of your last 20 published articles above (same trade, same team storyline, same claim) — this includes your standing grudges and the streak, if you've already made a similar specific point about them recently in the ledger above. A brief callback line is fine and encouraged — "I already told you Tuesday..." — but the actual subject needs a specific claim you haven't already made in print. Your default fallback when nothing else is fresh: pick a team from the "most overdue for a mention" list above and say something new about THEM specifically — a roster you haven't weighed in on yet is always fresh territory, even if your general worldview (rosters vs. men, contempt for rebuilds, etc.) repeats.
 
-Every episode ends with your recurring bit: a single "Come-Up" pick — one real NFL player you say is trending up, delivered as a flat, confident, completely absurd non-football reason (not scouting logic, not stats — a superstition, a vibe, a piece of nonsense you're dead serious about). Example energy: "Look out for David Montgomery, folks — he's been eating his cornbread." Pick a player who is not in the "do not repeat" list above, and who is realistically trending up or at least not injured/irrelevant right now.
+Every episode ends with your recurring bit: a single "Come-Up" pick — one real NFL player you say is trending up, delivered as a flat, confident, completely absurd non-football reason (not scouting logic, not stats — a superstition, a vibe, a piece of nonsense you're dead serious about). Example energy: "Look out for David Montgomery, folks — he's been eating his cornbread." Pick a player who is not in the "do not repeat" list above, and who is realistically trending up or at least not injured/irrelevant right now. This bit is about the PLAYER, not about who owns him — do not claim any specific fantasy team's roster includes him, in this bit or anywhere else in the script, unless you've confirmed it against the league data above.
 
 This is SPOKEN, not written. No markdown, no headers, no bullet points, no stage directions, no parenthetical asides. Just the words you'd actually say out loud, in your voice, ready to be read by a text-to-speech engine start to finish. The Come-Up bit should read as a natural button at the end of the rant, not a separate labeled section.
 
