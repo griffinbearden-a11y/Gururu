@@ -5,7 +5,7 @@
 // Usage: tsx scripts/howlin-minute/run.ts
 import { callClaude, parseJSON } from '../lib/llm.ts';
 import { synthesizeSpeech } from '../lib/tts.ts';
-import { loadWriterPersona, buildContextBundle } from '../assignment-desk/context.ts';
+import { loadWriterPersona, buildContextBundle, getTeamDirectory } from '../assignment-desk/context.ts';
 import { critiqueDraft } from '../assignment-desk/critic.ts';
 import type { Pitch } from '../assignment-desk/pitch.ts';
 import type { Draft } from '../assignment-desk/draft.ts';
@@ -17,13 +17,16 @@ import { logRun } from '../lib/run-log.ts';
 const MAX_REVISION_ATTEMPTS = 2;
 const AUDIO_DIR = 'public/audio/howlin-minute';
 const DATA_PATH = 'data/howlin_minute.json';
+const HISTORY_LOOKBACK = 10; // how many past segments feed continuity + dedup context
 
 export interface HowlinMinuteEntry {
   slug: string;
   date: string;
   title: string;
   script_text: string;
-  audio_path: string; // public URL path, e.g. /audio/howlin-minute/2026-08-14-xyz.mp3
+  audio_path: string;
+  subject_teams: number[];
+  come_up_player: string;
 }
 
 function slugify(title: string): string {
@@ -42,15 +45,79 @@ async function hasPostedToday(): Promise<boolean> {
   return entries.some((e) => e.date.slice(0, 10) === today);
 }
 
+// Builds the continuity + equal-airtime + recurring-bit guidance block fed
+// to every generation call. Recency/count tracking here is what makes
+// "everyone gets equal airtime over time" and "don't repeat last week's
+// Come-Up pick" actually enforceable instead of just a vibe in the prompt.
+async function buildHowlinMinuteContext(): Promise<string> {
+  const [{ entries: history }, teams] = await Promise.all([
+    readJSON<{ entries: HowlinMinuteEntry[] }>(DATA_PATH, { entries: [] }),
+    getTeamDirectory(),
+  ]);
+
+  const recent = [...history].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  const pastSegments = recent.slice(0, HISTORY_LOOKBACK).length
+    ? recent
+        .slice(0, HISTORY_LOOKBACK)
+        .map((e) => `  [${e.date.slice(0, 10)}] "${e.title}" — ${e.script_text.slice(0, 140)}...`)
+        .join('\n')
+    : '  (none yet — this is the first segment)';
+
+  const lastMentioned = new Map<number, string>();
+  const mentionCount = new Map<number, number>();
+  for (const e of recent) {
+    for (const rid of e.subject_teams ?? []) {
+      if (!lastMentioned.has(rid)) lastMentioned.set(rid, e.date);
+      mentionCount.set(rid, (mentionCount.get(rid) ?? 0) + 1);
+    }
+  }
+  const airtime = teams
+    .map((t) => ({
+      name: t.team_name,
+      rosterId: t.roster_id,
+      lastMentioned: lastMentioned.get(t.roster_id) ?? null,
+      count: mentionCount.get(t.roster_id) ?? 0,
+    }))
+    .sort((a, b) => {
+      if (!a.lastMentioned && !b.lastMentioned) return a.count - b.count;
+      if (!a.lastMentioned) return -1;
+      if (!b.lastMentioned) return 1;
+      return new Date(a.lastMentioned).getTime() - new Date(b.lastMentioned).getTime();
+    });
+  const airtimeBlock = airtime
+    .map((t) => `  ${t.rosterId}: ${t.name} — ${t.lastMentioned ? `last mentioned ${t.lastMentioned.slice(0, 10)}` : 'never mentioned'}, ${t.count}x total`)
+    .join('\n');
+  const underCovered = airtime.slice(0, 4).map((t) => t.name).join(', ');
+
+  const recentComeUps = recent
+    .slice(0, HISTORY_LOOKBACK)
+    .map((e) => e.come_up_player)
+    .filter(Boolean)
+    .join(', ') || '(none yet)';
+
+  return `# Past Howlin' Minute segments (for continuity — reference these when it fits, callbacks to your own prior rants are good)
+${pastSegments}
+
+# Team airtime tracker (every team needs to get covered over time, not every episode — but lean toward teams you haven't touched in a while when it fits naturally)
+${airtimeBlock}
+Most overdue for a mention: ${underCovered}
+
+# Recent "Come-Up" picks — DO NOT repeat any of these players
+${recentComeUps}`;
+}
+
 interface Script {
   title: string;
   thesis: string;
   script_text: string;
+  subject_teams: number[];
+  come_up_player: string;
 }
 
 async function writeScript(revisionNotes?: string[]): Promise<Script> {
   const persona = loadWriterPersona('wolf');
-  const contextBundle = await buildContextBundle('wolf');
+  const [contextBundle, howlinContext] = await Promise.all([buildContextBundle('wolf'), buildHowlinMinuteContext()]);
 
   const revisionBlock = revisionNotes?.length
     ? `\n\n# Revision required\nA prior draft was sent back with these notes. Address them directly:\n${revisionNotes.map((n) => `- ${n}`).join('\n')}`
@@ -58,18 +125,24 @@ async function writeScript(revisionNotes?: string[]): Promise<Script> {
 
   const userMessage = `${contextBundle}
 
+${howlinContext}
+
 # Your assignment
-This is "The Howlin' Minute" — a short spoken-word audio segment, roughly 60 seconds when read aloud (target 130-160 words). Rant about whatever's on your mind from the league right now: a trade, a team, your streak, your grudges — your call entirely.
+This is "The Howlin' Minute" — a short spoken-word audio segment, roughly 60 seconds when read aloud (target 130-160 words). Rant about whatever's on your mind from the league right now: a trade, a team, your streak, your grudges — your call entirely, but use the continuity and airtime notes above: reference past segments where it's natural, and favor a team that's overdue for a mention if one fits the moment.
 
-This is SPOKEN, not written. No markdown, no headers, no bullet points, no stage directions, no parenthetical asides. Just the words you'd actually say out loud, in your voice, ready to be read by a text-to-speech engine start to finish.
+Every episode ends with your recurring bit: a single "Come-Up" pick — one real NFL player you say is trending up, delivered as a flat, confident, completely absurd non-football reason (not scouting logic, not stats — a superstition, a vibe, a piece of nonsense you're dead serious about). Example energy: "Look out for David Montgomery, folks — he's been eating his cornbread." Pick a player who is not in the "do not repeat" list above, and who is realistically trending up or at least not injured/irrelevant right now.
 
-Every claim about a real NFL player or a real league trade must trace to the context above — do not invent facts, and double check trade direction (who actually got who) against the "X gets: ..." breakdown in Recent Transactions before you say it out loud.${revisionBlock}
+This is SPOKEN, not written. No markdown, no headers, no bullet points, no stage directions, no parenthetical asides. Just the words you'd actually say out loud, in your voice, ready to be read by a text-to-speech engine start to finish. The Come-Up bit should read as a natural button at the end of the rant, not a separate labeled section.
+
+Every claim about a real NFL player or a real league trade (other than the joke reasoning in the Come-Up bit) must trace to the context above — do not invent facts, and double check trade direction (who actually got who) against the "X gets: ..." breakdown in Recent Transactions before you say it out loud.${revisionBlock}
 
 Return ONLY a JSON object, no markdown fences, no commentary:
 {
   "title": "a short title for this segment",
   "thesis": "one sentence summarizing what you're ranting about",
-  "script_text": "the full spoken script, plain text, no formatting"
+  "script_text": "the full spoken script, plain text, no formatting, ending with the Come-Up bit",
+  "subject_teams": [roster_ids of any teams you actually talked about, empty array if none specific],
+  "come_up_player": "full name of the real NFL player in your Come-Up bit"
 }`;
 
   const raw = await callClaude(userMessage, {
@@ -79,6 +152,35 @@ Return ONLY a JSON object, no markdown fences, no commentary:
   });
 
   return parseJSON<Script>(raw);
+}
+
+// Structural checks the API critic pass doesn't cover: is the Come-Up player
+// a real, resolvable player, and did the model actually avoid the do-not-
+// repeat list. Cheap, no API call — catches these before burning a critic
+// call on something regenerable in code.
+async function validateStructure(script: Script): Promise<string[]> {
+  const notes: string[] = [];
+  const players = await readJSON<Record<string, { full_name: string }>>('data/cache/players.json', {});
+  const nameLower = script.come_up_player?.trim().toLowerCase();
+  const known = Object.values(players).some((p) => p.full_name?.toLowerCase() === nameLower);
+  if (!nameLower) {
+    notes.push('come_up_player is missing — every segment must end with a Come-Up pick.');
+  } else if (!known) {
+    notes.push(`"${script.come_up_player}" does not match any real player in the player database — use a real, currently-rostered-somewhere-in-the-NFL name.`);
+  }
+
+  const { entries: history } = await readJSON<{ entries: HowlinMinuteEntry[] }>(DATA_PATH, { entries: [] });
+  const recentComeUps = new Set(
+    [...history]
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, HISTORY_LOOKBACK)
+      .map((e) => e.come_up_player?.toLowerCase())
+  );
+  if (nameLower && recentComeUps.has(nameLower)) {
+    notes.push(`"${script.come_up_player}" was already a Come-Up pick recently — choose someone new.`);
+  }
+
+  return notes;
 }
 
 async function main() {
@@ -102,21 +204,28 @@ async function main() {
     headline: s.title,
     thesis: s.thesis,
     format: 'howlin_minute',
-    subject_teams: [],
+    subject_teams: s.subject_teams ?? [],
     why_now: "Recurring Howlin' Minute segment",
   });
   const asDraft = (s: Script): Draft => ({
     title: s.title,
     body_markdown: s.script_text,
-    subject_player_names: [],
+    subject_player_names: s.come_up_player ? [s.come_up_player] : [],
     predictions: [],
   });
 
-  let verdict = await critiqueDraft('wolf', asPitch(script), asDraft(script));
   let attempts = 1;
+  let structuralNotes = await validateStructure(script);
+  let verdict = structuralNotes.length
+    ? { verdict: 'revise' as const, reasons: structuralNotes }
+    : await critiqueDraft('wolf', asPitch(script), asDraft(script));
+
   while (verdict.verdict === 'revise' && attempts <= MAX_REVISION_ATTEMPTS) {
     script = await writeScript(verdict.reasons);
-    verdict = await critiqueDraft('wolf', asPitch(script), asDraft(script));
+    structuralNotes = await validateStructure(script);
+    verdict = structuralNotes.length
+      ? { verdict: 'revise' as const, reasons: structuralNotes }
+      : await critiqueDraft('wolf', asPitch(script), asDraft(script));
     attempts++;
   }
 
@@ -143,6 +252,8 @@ async function main() {
     title: script.title,
     script_text: script.script_text,
     audio_path: audioPublicPath,
+    subject_teams: script.subject_teams ?? [],
+    come_up_player: script.come_up_player,
   });
   await writeJSON(DATA_PATH, data);
 

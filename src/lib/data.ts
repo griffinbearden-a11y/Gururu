@@ -99,6 +99,8 @@ export interface HowlinMinuteEntry {
   title: string;
   script_text: string;
   audio_path: string;
+  subject_teams: number[];
+  come_up_player: string;
 }
 
 export const getHowlinMinuteEntries = () =>

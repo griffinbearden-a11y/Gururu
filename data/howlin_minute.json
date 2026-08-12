@@ -1,4 +1,4 @@
 {
-  "_comment": "One entry per published Howlin' Minute audio segment. audio_path is a public URL path served from public/audio/howlin-minute/. Newest last.",
+  "_comment": "One entry per published Howlin' Minute audio segment. audio_path is a public URL path served from public/audio/howlin-minute/. subject_teams (roster_ids) feeds the equal-airtime tracker; come_up_player feeds the recurring bit's no-repeat check. Newest last.",
   "entries": []
 }

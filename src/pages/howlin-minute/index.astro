@@ -24,6 +24,7 @@ const entries = [...getHowlinMinuteEntries()].sort(
           <audio controls preload="none" src={e.audio_path}>
             Your browser doesn't support inline audio. <a href={e.audio_path}>Download the clip</a>.
           </audio>
+          {e.come_up_player && <p class="come-up">Come-Up pick: <strong>{e.come_up_player}</strong></p>}
           <details>
             <summary>Transcript</summary>
             <p class="transcript">{e.script_text}</p>
@@ -54,6 +55,8 @@ const entries = [...getHowlinMinuteEntries()].sort(
   .clip-head h2 { margin: 0; font-size: 1.2rem; }
   .clip-head time { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-dim); white-space: nowrap; }
   audio { width: 100%; margin-bottom: var(--space-2); }
+  .come-up { font-size: 0.85rem; color: var(--text-dim); margin: 0 0 var(--space-2); }
+  .come-up strong { color: var(--text); }
   details { font-size: 0.9rem; }
   summary { cursor: pointer; color: var(--text-dim); font-family: var(--font-ui); }
   .transcript { color: var(--text-dim); line-height: 1.6; margin-top: var(--space-2); }
