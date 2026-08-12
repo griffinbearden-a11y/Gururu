@@ -30,6 +30,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-08-12T22:22:26.896Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Rebuild Efficiency Index: Quantifying AthensAssholes' Roster Liquidation",
+      "thesis": "By converting Baker Mayfield, Josh Jacobs, Nico Collins, Javonte Williams, and Marvin Harrison into youth and premium picks across multiple transactions, AthensAssholes has executed the highest-EV rebuild trajectory in the league.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-12T22:45:26.089Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Asset Consolidation and Historical Repeatability: The Defending Champion's Ledger",
+      "thesis": "Macon Muskrats trading Garrett Wilson for a rookie wide receiver represents a high-variance prospective move that fails to establish the structural longevity historically required to sustain repeat titles.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-12T22:45:26.089Z"
     }
   ]
 }

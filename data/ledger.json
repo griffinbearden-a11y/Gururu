@@ -60,6 +60,18 @@
       "subject_teams": [],
       "thesis": "Tuesday's piece on JUICE misstated two trade details: Amon-Ra St. Brown and Kyren Williams went to Dirty Magic, not Topeka Cosbies, and Nico Collins went to AthensAssholes, not Dirty Magic.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-08-12T22:45:54.488Z",
+      "slug": "2026-08-12-amon-ra-st-brown-kyren-williams-and-the-math-of-capital-allo",
+      "format": "by_the_numbers",
+      "subject_teams": [
+        1,
+        2
+      ],
+      "thesis": "By surrendering a rookie receiver and an aging tight end for two elite, volume-proven assets, Dirty Magic executed a textbook value-extraction trade that shifts their contention window immediately forward while Topeka Cosbies absorbed significant prospective risk.",
+      "is_backfill": false
     }
   ]
 }
