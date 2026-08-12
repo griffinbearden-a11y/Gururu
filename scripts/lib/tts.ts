@@ -4,9 +4,14 @@
 // ~60-second clips a week.
 const ELEVEN_LABS_URL = (voiceId: string) => `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
 
-// Wolf's voice, added to the ElevenLabs account's voice library. Override
-// via ELEVENLABS_VOICE_ID if you swap it out later.
-const DEFAULT_VOICE_ID = '7fbQ7yJuEo56rYjrYaEh';
+// ElevenLabs' free tier blocks API access to voices added from the
+// community Voice Library ("Free users cannot use library voices via the
+// API"). "Adam" is one of ElevenLabs' own premade voices — owned by
+// ElevenLabs itself, usable by ID via the API on the free tier without
+// needing to appear in the account's Voices tab. Override via
+// ELEVENLABS_VOICE_ID once billing allows the originally-picked voice, or
+// to try a different premade one.
+const DEFAULT_VOICE_ID = 'pNInz6obpgDQGcFmaJgB'; // "Adam"
 
 export async function synthesizeSpeech(text: string): Promise<Buffer> {
   const apiKey = process.env.ELEVENLABS_API_KEY;
