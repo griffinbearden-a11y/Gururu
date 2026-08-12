@@ -183,19 +183,21 @@ async function validateStructure(script: Script): Promise<string[]> {
   return notes;
 }
 
-async function main() {
+type RunResult = { status: 'published' | 'skipped' } | { status: 'failed'; detail: string };
+
+async function main(): Promise<RunResult> {
   const { paused, reason } = await isPaused();
   if (paused) {
     console.log(`System is paused: ${reason}. Skipping Howlin' Minute.`);
-    return;
+    return { status: 'skipped' };
   }
   if (await weeklySpendCapExceeded()) {
     console.log('Weekly API spend cap reached — skipping.');
-    return;
+    return { status: 'skipped' };
   }
   if (await hasPostedToday()) {
     console.log("Already posted a Howlin' Minute today — skipping.");
-    return;
+    return { status: 'skipped' };
   }
 
   const asPitch = (s: Script): Pitch => ({
@@ -232,14 +234,16 @@ async function main() {
     }
   } catch (err) {
     // A transient API failure (rate limit, truncation, etc.) should skip
-    // today's segment, not crash the whole GitHub Actions job.
+    // today's segment, not crash the whole GitHub Actions job — but it
+    // must still be logged as a failure, not silently reported as success.
+    const detail = err instanceof Error ? err.message : String(err);
     console.error("Howlin' Minute generation failed:", err);
-    return;
+    return { status: 'failed', detail };
   }
 
   if (verdict.verdict !== 'publish') {
     console.log(`Howlin' Minute killed or unresolved after revisions (${verdict.verdict}): ${verdict.reasons.join(' ')}`);
-    return;
+    return { status: 'skipped' };
   }
 
   const audio = await synthesizeSpeech(script.script_text);
@@ -266,10 +270,15 @@ async function main() {
   await writeJSON(DATA_PATH, data);
 
   console.log(`Published Howlin' Minute: ${slug}`);
+  return { status: 'published' };
 }
 
 main()
-  .then(() => logRun('howlin-minute', 'success'))
+  .then((result) =>
+    result.status === 'failed'
+      ? logRun('howlin-minute', 'failure', result.detail)
+      : logRun('howlin-minute', 'success')
+  )
   .catch(async (err) => {
     console.error(err);
     await logRun('howlin-minute', 'failure', err instanceof Error ? err.message : String(err));

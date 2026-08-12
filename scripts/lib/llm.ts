@@ -5,9 +5,14 @@
 import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 import { readJSON, writeJSON } from './fsjson.ts';
 
-// "-latest" alias always points at Google's current default Flash model, so
-// this doesn't break again the next time a dated model version is retired.
-export const MODEL = 'gemini-flash-latest';
+// "-latest" alias always points at Google's current default model for the
+// tier, so this doesn't break again the next time a dated model version is
+// retired. Flash-Lite specifically (not plain Flash) — plain "gemini-flash-
+// latest" currently resolves to a new/preview model with a free-tier cap of
+// just 20 requests/day, shared across every script using this key. Flash-
+// Lite is positioned for higher free-tier throughput; smaller model, but
+// plenty capable for these short opinionated pieces.
+export const MODEL = 'gemini-flash-lite-latest';
 
 const SPEND_LOG_PATH = 'data/cache/api_spend.json';
 // Free tier: $0/token, so this cap is a no-op unless you switch to a paid
