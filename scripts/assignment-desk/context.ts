@@ -140,14 +140,32 @@ export async function getWriterState(writerId: WriterId): Promise<WriterStateEnt
   return all[writerId];
 }
 
-export async function buildContextBundle(writerId: WriterId): Promise<string> {
+// includeLedger defaults true (the normal article-pipeline behavior: don't
+// repeat a thesis you've already run as a column). Howlin' Minute passes
+// false when building the context used for its critic pass — riffing on the
+// same trade again in a completely different, shorter medium isn't a
+// duplicate the way running the same thesis as a second article would be,
+// and it has its own separate continuity/dedup tracking against its own
+// segment history instead (see scripts/howlin-minute/run.ts).
+export async function buildContextBundle(writerId: WriterId, opts: { includeLedger?: boolean } = {}): Promise<string> {
+  const includeLedger = opts.includeLedger ?? true;
   const [lore, leagueSummary, recentTx, ledger, state] = await Promise.all([
     loadLore(),
     getLeagueSummary(),
     getRecentTransactionsSummary(),
-    getRecentLedger(20),
+    includeLedger ? getRecentLedger(20) : Promise.resolve([]),
     getWriterState(writerId),
   ]);
+
+  const ledgerSection = includeLedger
+    ? [
+        '',
+        '# Last 20 published articles (ledger)',
+        ledger.length
+          ? ledger.map((e) => `  [${e.date.slice(0, 10)}] ${e.writer}/${e.format} — subjects:[${e.subject_teams.join(',')}] — "${e.thesis}"`).join('\n')
+          : '(none published yet)',
+      ]
+    : [];
 
   return [
     '# League lore (static, hand-written)',
@@ -158,11 +176,7 @@ export async function buildContextBundle(writerId: WriterId): Promise<string> {
     '',
     '# Recent transactions',
     recentTx || '(none)',
-    '',
-    '# Last 20 published articles (ledger)',
-    ledger.length
-      ? ledger.map((e) => `  [${e.date.slice(0, 10)}] ${e.writer}/${e.format} — subjects:[${e.subject_teams.join(',')}] — "${e.thesis}"`).join('\n')
-      : '(none published yet)',
+    ...ledgerSection,
     '',
     '# Your standing state',
     `Grudges: ${JSON.stringify(state?.grudges ?? [])}`,

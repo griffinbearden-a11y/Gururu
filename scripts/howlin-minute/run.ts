@@ -217,19 +217,26 @@ async function main(): Promise<RunResult> {
   let script: Script;
   let verdict: { verdict: 'publish' | 'revise' | 'kill'; reasons: string[] };
   try {
+    // Ledger excluded here on purpose: this is a critic pass for a ~60-
+    // second audio riff, not an article. Riffing on the same trade Wolf
+    // already wrote a column about is expected, not a duplicate — the
+    // article-pipeline's "don't repeat a recent thesis" check would
+    // otherwise kill every segment about anything currently newsworthy.
+    const critiqueContext = await buildContextBundle('wolf', { includeLedger: false });
+
     script = await writeScript();
     let attempts = 1;
     let structuralNotes = await validateStructure(script);
     verdict = structuralNotes.length
       ? { verdict: 'revise' as const, reasons: structuralNotes }
-      : await critiqueDraft('wolf', asPitch(script), asDraft(script));
+      : await critiqueDraft('wolf', asPitch(script), asDraft(script), critiqueContext);
 
     while (verdict.verdict === 'revise' && attempts <= MAX_REVISION_ATTEMPTS) {
       script = await writeScript(verdict.reasons);
       structuralNotes = await validateStructure(script);
       verdict = structuralNotes.length
         ? { verdict: 'revise' as const, reasons: structuralNotes }
-        : await critiqueDraft('wolf', asPitch(script), asDraft(script));
+        : await critiqueDraft('wolf', asPitch(script), asDraft(script), critiqueContext);
       attempts++;
     }
   } catch (err) {
