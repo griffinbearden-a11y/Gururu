@@ -374,6 +374,17 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-13T20:02:53.831Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-13T21:22:00.888Z"
+    },
+    {
+      "script": "howlin-minute",
+      "status": "failure",
+      "detail": "Unterminated string in JSON at position 657 (line 4 column 503)",
+      "at": "2026-08-13T21:22:19.842Z"
     }
   ]
 }
