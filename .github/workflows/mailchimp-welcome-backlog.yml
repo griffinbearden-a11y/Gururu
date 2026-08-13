@@ -1,0 +1,27 @@
+name: Mailchimp welcome backlog (one-off)
+
+# Manual only — not a cron. Run this once to welcome everyone who joined
+# before the "Signs up for Email" automation existed in Mailchimp. Running
+# it again re-sends the same welcome to the whole current list, so don't
+# just re-trigger it out of habit.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Send welcome backlog
+        env:
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+        run: npm run mailchimp:welcome-backlog
