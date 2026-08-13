@@ -304,6 +304,16 @@
       "script": "howlin-minute",
       "status": "success",
       "at": "2026-08-12T23:49:36.396Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-13T05:18:25.937Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-13T05:18:26.585Z"
     }
   ]
 }
