@@ -19,6 +19,7 @@
     "howlin-minute": "tsx scripts/howlin-minute/run.ts"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
     "@google/genai": "^2.16.0",
     "astro": "^7.2.0",
     "gray-matter": "^4.0.3",

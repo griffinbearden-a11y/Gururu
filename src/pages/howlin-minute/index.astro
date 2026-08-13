@@ -18,7 +18,7 @@ const entries = [...getHowlinMinuteEntries()].sort(
       {entries.map((e) => (
         <li class="clip">
           <div class="clip-head">
-            <h2>{e.title}</h2>
+            <h2><a href={`/howlin-minute/${e.slug}/`}>{e.title}</a></h2>
             <time datetime={e.date}>{relativeTime(new Date(e.date))}</time>
           </div>
           <audio controls preload="none" src={e.audio_path}>
@@ -53,6 +53,8 @@ const entries = [...getHowlinMinuteEntries()].sort(
     margin-bottom: var(--space-2);
   }
   .clip-head h2 { margin: 0; font-size: 1.2rem; }
+  .clip-head h2 a { color: inherit; text-decoration: none; }
+  .clip-head h2 a:hover { color: var(--red); }
   .clip-head time { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-dim); white-space: nowrap; }
   audio { width: 100%; margin-bottom: var(--space-2); }
   .come-up { font-size: 0.85rem; color: var(--text-dim); margin: 0 0 var(--space-2); }

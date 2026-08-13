@@ -1,0 +1,140 @@
+---
+// Email signup popup, shown once per visitor (dismissal/subscription is
+// remembered in localStorage). Posts directly to Mailchimp's hosted
+// endpoint — no backend on this site handles or stores the email at all.
+//
+// SETUP REQUIRED: replace the two placeholders below with real values from
+// your Mailchimp audience's embedded-form code (Audience -> Signup forms ->
+// Embedded forms). The action URL and the hidden field's name are specific
+// to your account and list.
+const MAILCHIMP_FORM_ACTION = 'https://REPLACE-ME.list-manage.com/subscribe/post?u=REPLACE_U&id=REPLACE_ID';
+const MAILCHIMP_HONEYPOT_FIELD = 'b_REPLACE_U_REPLACE_ID'; // bot-trap field name, must stay empty
+---
+<div id="signup-popup" class="signup-overlay" hidden>
+  <div class="signup-modal" role="dialog" aria-modal="true" aria-labelledby="signup-heading">
+    <button type="button" class="signup-close" aria-label="Close">&times;</button>
+    <p class="eyebrow">Stay in the loop</p>
+    <h2 id="signup-heading">Get an email when something new drops</h2>
+    <p class="signup-copy">Articles and the Howlin' Minute, straight to your inbox. No spam, unsubscribe anytime.</p>
+    <form
+      action={MAILCHIMP_FORM_ACTION}
+      method="post"
+      target="_blank"
+      class="signup-form"
+      id="signup-form"
+    >
+      <label class="sr-only" for="signup-email">Email address</label>
+      <input id="signup-email" type="email" name="EMAIL" placeholder="you@example.com" required />
+      <div aria-hidden="true" class="signup-honeypot">
+        <input type="text" name={MAILCHIMP_HONEYPOT_FIELD} tabindex="-1" value="" />
+      </div>
+      <button type="submit">Sign up</button>
+    </form>
+    <button type="button" class="signup-dismiss">No thanks</button>
+  </div>
+</div>
+
+<script>
+  const STORAGE_KEY = 'daily-guru-signup-dismissed';
+  const overlay = document.getElementById('signup-popup');
+  const form = document.getElementById('signup-form') as HTMLFormElement | null;
+  const closeBtn = overlay?.querySelector('.signup-close');
+  const dismissBtn = overlay?.querySelector('.signup-dismiss');
+
+  function dismiss() {
+    localStorage.setItem(STORAGE_KEY, '1');
+    overlay?.setAttribute('hidden', '');
+  }
+
+  if (overlay && !localStorage.getItem(STORAGE_KEY)) {
+    setTimeout(() => overlay.removeAttribute('hidden'), 1500);
+  }
+
+  closeBtn?.addEventListener('click', dismiss);
+  dismissBtn?.addEventListener('click', dismiss);
+  form?.addEventListener('submit', () => dismiss());
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !overlay?.hasAttribute('hidden')) dismiss();
+  });
+</script>
+
+<style>
+  .signup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3);
+    z-index: 100;
+  }
+  .signup-modal {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    max-width: 420px;
+    width: 100%;
+    padding: var(--space-4);
+  }
+  .signup-close {
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-dim);
+    padding: var(--space-1);
+  }
+  .signup-close:hover { color: var(--text); }
+  .signup-modal h2 { margin: 0 0 var(--space-2); font-size: 1.3rem; }
+  .signup-copy { color: var(--text-dim); margin: 0 0 var(--space-3); }
+  .signup-form { display: flex; gap: var(--space-2); margin-bottom: var(--space-2); }
+  .signup-form input[type='email'] {
+    flex: 1;
+    min-width: 0;
+    padding: var(--space-2);
+    border: 1px solid var(--border);
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .signup-form button[type='submit'] {
+    background: var(--red);
+    color: #fff;
+    border: none;
+    padding: var(--space-2) var(--space-3);
+    font-family: var(--font-ui-wide);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .signup-form button[type='submit']:hover { opacity: 0.9; }
+  .signup-honeypot { position: absolute; left: -9999px; }
+  .signup-dismiss {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: var(--space-1);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+</style>

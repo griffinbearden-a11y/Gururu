@@ -1,6 +1,7 @@
 ---
 import Nameplate from '../components/Nameplate.astro';
 import Footer from '../components/Footer.astro';
+import SignupPopup from '../components/SignupPopup.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -17,6 +18,7 @@ const { title, description = "Macon's only dynasty fantasy football press corps.
     <meta name="robots" content="noindex, nofollow" />
     <title>{title} — The Daily Guru</title>
     <meta name="description" content={description} />
+    <link rel="alternate" type="application/rss+xml" title="The Daily Guru" href="/rss.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,5 +33,6 @@ const { title, description = "Macon's only dynasty fantasy football press corps.
       <slot />
     </main>
     <Footer />
+    <SignupPopup />
   </body>
 </html>

@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Byline from '../../components/Byline.astro';
+import { getHowlinMinuteEntries } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const entries = getHowlinMinuteEntries();
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+<BaseLayout title={`${entry.title} — The Howlin' Minute`} description={entry.script_text.slice(0, 160)}>
+  <article class="container clip-page">
+    <p class="eyebrow">The Howlin' Minute</p>
+    <h1 class="clip-title">{entry.title}</h1>
+    <div class="clip-meta">
+      <Byline writerId="wolf" date={new Date(entry.date)} />
+    </div>
+    <audio controls preload="metadata" src={entry.audio_path}>
+      Your browser doesn't support inline audio. <a href={entry.audio_path}>Download the clip</a>.
+    </audio>
+    {entry.come_up_player && <p class="come-up">Come-Up pick: <strong>{entry.come_up_player}</strong></p>}
+    <h2>Transcript</h2>
+    <p class="transcript">{entry.script_text}</p>
+  </article>
+</BaseLayout>
+
+<style>
+  .clip-page { max-width: 700px; padding-top: var(--space-4); padding-bottom: var(--space-5); }
+  .clip-title { font-size: 2rem; margin-bottom: var(--space-2); }
+  .clip-meta {
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border);
+  }
+  audio { width: 100%; margin-bottom: var(--space-3); }
+  .come-up { font-size: 0.9rem; color: var(--text-dim); margin: 0 0 var(--space-4); }
+  .come-up strong { color: var(--text); }
+  h2 { font-size: 1.2rem; margin-bottom: var(--space-2); }
+  .transcript { font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); }
+</style>
