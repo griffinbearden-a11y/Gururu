@@ -1,0 +1,49 @@
+name: Mailchimp welcome new signups
+
+# Mailchimp's own "welcome new signups" automation requires a paid plan to
+# activate at all, even a single step — so this does the same job hourly
+# instead. Cheap: one members-list read per run, and an email send only
+# happens when there's actually someone new.
+on:
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  # Shares the group with poll.yml/nflverse-weekly.yml/howlin-minute.yml —
+  # all four commit to main, so they need to be serialized against each
+  # other's push.
+  group: poll-and-generate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Welcome new signups
+        env:
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+        run: npm run mailchimp:welcome
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "daily-guru-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet && exit 0
+          git commit -m "mailchimp: welcomed new signups"
+          for i in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          echo "Failed to push after retries." >&2
+          exit 1

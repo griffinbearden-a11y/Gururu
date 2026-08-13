@@ -46,8 +46,9 @@ src/                     The Astro site
      (free tier, no card required, from [elevenlabs.io](https://elevenlabs.io)).
      Optional `ELEVENLABS_VOICE_ID` overrides the default voice — see
      `scripts/lib/tts.ts`.
-   - `MAILCHIMP_API_KEY` — sends the "new post" notification email to
-     subscribers (Account -> Extras -> API keys in Mailchimp, free tier).
+   - `MAILCHIMP_API_KEY` — sends "new post" notification emails and welcome
+     emails to subscribers (Account -> Extras -> API keys in Mailchimp,
+     free tier).
      The audience ID is hardcoded in `scripts/lib/mailchimp.ts` since it
      isn't sensitive (it's already public in the site's signup form). The
      site's own signup popup (`src/components/SignupPopup.astro`) posts
@@ -105,10 +106,11 @@ committed to `public/audio/howlin-minute/`, indexed in
 `data/howlin_minute.json`, served at `/howlin-minute/`. Shares the same
 `isPaused()`/weekly-spend circuit breakers as the article pipeline.
 
-Both pipelines share a concurrency group (`poll-and-generate`) with
-`nflverse-weekly.yml` so their commits/pushes to `main` can't race each
-other — see `scripts/lib/mailchimp.ts` below for why the push step also
-retries with `git pull --rebase`.
+All four scheduled workflows (`poll.yml`, `howlin-minute.yml`,
+`nflverse-weekly.yml`, `mailchimp-welcome.yml`) share a concurrency group
+(`poll-and-generate`) since they all commit/push to `main` — that serializes
+them so they can't race each other's push. The commit step in each also
+retries with `git pull --rebase` as a backup.
 
 **Email notifications**: `scripts/lib/mailchimp.ts` sends a one-off email
 via Mailchimp's API the moment an article or Howlin' Minute segment
@@ -116,6 +118,14 @@ actually publishes — not Mailchimp's RSS Campaign feature, which is no
 longer available in the current UI on a free plan. `src/pages/rss.xml.ts`
 still exists as a combined feed (articles + clips) for any feed reader
 that wants it, it just isn't what triggers the emails.
+
+**Welcome emails**: `.github/workflows/mailchimp-welcome.yml` runs hourly
+and does what Mailchimp's own "welcome new signups" automation would if the
+free plan allowed activating automations at all (it doesn't, confirmed —
+even a 1-step journey requires a paid plan). `scripts/mailchimp/welcome-new-signups.ts`
+diffs the current subscriber list against `data/cache/mailchimp_welcomed.json`
+(which stores Mailchimp's own hashed member id, never a raw email address)
+and sends a welcome email to anyone new via a throwaway static segment.
 
 ## Known follow-ups
 
