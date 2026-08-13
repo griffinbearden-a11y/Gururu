@@ -149,7 +149,7 @@ Return ONLY a JSON object, no markdown fences, no commentary:
 
   const raw = await callClaude(userMessage, {
     system: persona.systemPrompt,
-    maxTokens: 4096,
+    maxTokens: 8192,
     effort: 'high',
   });
 
