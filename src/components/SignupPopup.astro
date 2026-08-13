@@ -60,11 +60,18 @@ const MAILCHIMP_HONEYPOT_FIELD = 'b_866f8b5f44493047eb6bb571d_a7fc6a6e4d'; // bo
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: var(--space-3);
     z-index: 100;
+  }
+  /* display:flex only applies when visible — otherwise this class's own
+     display rule permanently overrides the [hidden] attribute's effect
+     (author CSS beats the browser's built-in [hidden]{display:none} rule
+     even though it looks like it shouldn't), and the popup never actually
+     goes away no matter what the JS does to the attribute. */
+  .signup-overlay:not([hidden]) {
+    display: flex;
   }
   .signup-modal {
     position: relative;
