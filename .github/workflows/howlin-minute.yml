@@ -9,7 +9,10 @@ on:
   workflow_dispatch: {}
 
 concurrency:
-  group: howlin-minute
+  # Same group as poll.yml/nflverse-weekly.yml on purpose: all three commit
+  # and push to main, and sharing a group serializes them so they can't race
+  # each other's push (queues instead of running in parallel and colliding).
+  group: poll-and-generate
   cancel-in-progress: false
 
 permissions:
@@ -40,5 +43,11 @@ jobs:
           git config user.name "daily-guru-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
-          git diff --staged --quiet || git commit -m "howlin-minute: new segment"
-          git push
+          git diff --staged --quiet && exit 0
+          git commit -m "howlin-minute: new segment"
+          for i in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          echo "Failed to push after retries — likely a persistent conflict with a concurrent poll run." >&2
+          exit 1

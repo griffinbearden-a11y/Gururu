@@ -48,5 +48,11 @@ jobs:
           git config user.name "daily-guru-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
-          git diff --staged --quiet || git commit -m "poll: data + generation update"
-          git push
+          git diff --staged --quiet && exit 0
+          git commit -m "poll: data + generation update"
+          for i in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          echo "Failed to push after retries — likely a persistent conflict with a concurrent howlin-minute run." >&2
+          exit 1
