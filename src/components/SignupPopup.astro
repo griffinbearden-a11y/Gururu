@@ -3,12 +3,9 @@
 // remembered in localStorage). Posts directly to Mailchimp's hosted
 // endpoint — no backend on this site handles or stores the email at all.
 //
-// SETUP REQUIRED: replace the two placeholders below with real values from
-// your Mailchimp audience's embedded-form code (Audience -> Signup forms ->
-// Embedded forms). The action URL and the hidden field's name are specific
-// to your account and list.
-const MAILCHIMP_FORM_ACTION = 'https://REPLACE-ME.list-manage.com/subscribe/post?u=REPLACE_U&id=REPLACE_ID';
-const MAILCHIMP_HONEYPOT_FIELD = 'b_REPLACE_U_REPLACE_ID'; // bot-trap field name, must stay empty
+const MAILCHIMP_FORM_ACTION =
+  'https://dev.us10.list-manage.com/subscribe/post?u=866f8b5f44493047eb6bb571d&id=a7fc6a6e4d&f_id=00ec4fe4f0';
+const MAILCHIMP_HONEYPOT_FIELD = 'b_866f8b5f44493047eb6bb571d_a7fc6a6e4d'; // bot-trap field, must stay empty
 ---
 <div id="signup-popup" class="signup-overlay" hidden>
   <div class="signup-modal" role="dialog" aria-modal="true" aria-labelledby="signup-heading">
