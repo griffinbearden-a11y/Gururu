@@ -46,6 +46,13 @@ src/                     The Astro site
      (free tier, no card required, from [elevenlabs.io](https://elevenlabs.io)).
      Optional `ELEVENLABS_VOICE_ID` overrides the default voice — see
      `scripts/lib/tts.ts`.
+   - `MAILCHIMP_API_KEY` — sends the "new post" notification email to
+     subscribers (Account -> Extras -> API keys in Mailchimp, free tier).
+     The audience ID is hardcoded in `scripts/lib/mailchimp.ts` since it
+     isn't sensitive (it's already public in the site's signup form). The
+     site's own signup popup (`src/components/SignupPopup.astro`) posts
+     directly to Mailchimp's hosted subscribe endpoint — no backend on this
+     site ever sees a subscriber's email.
 3. **Fill in [`data/league_lore.md`](data/league_lore.md)** — Sleeper only has
    one prior season on record for this league; 2023/2024 history and anything
    else Sleeper can't see comes from this file. It's a template right now.
@@ -97,6 +104,18 @@ regardless of Wolf's article rotation: a ~60-second spoken-word script
 committed to `public/audio/howlin-minute/`, indexed in
 `data/howlin_minute.json`, served at `/howlin-minute/`. Shares the same
 `isPaused()`/weekly-spend circuit breakers as the article pipeline.
+
+Both pipelines share a concurrency group (`poll-and-generate`) with
+`nflverse-weekly.yml` so their commits/pushes to `main` can't race each
+other — see `scripts/lib/mailchimp.ts` below for why the push step also
+retries with `git pull --rebase`.
+
+**Email notifications**: `scripts/lib/mailchimp.ts` sends a one-off email
+via Mailchimp's API the moment an article or Howlin' Minute segment
+actually publishes — not Mailchimp's RSS Campaign feature, which is no
+longer available in the current UI on a free plan. `src/pages/rss.xml.ts`
+still exists as a combined feed (articles + clips) for any feed reader
+that wants it, it just isn't what triggers the emails.
 
 ## Known follow-ups
 

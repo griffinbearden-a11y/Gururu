@@ -20,6 +20,8 @@ import {
 } from '../lib/circuit-breakers.ts';
 import { weeklySpendCapExceeded } from '../lib/llm.ts';
 import { logRun } from '../lib/run-log.ts';
+import { sendNewPostEmail } from '../lib/mailchimp.ts';
+import { SITE_URL } from '../lib/site.ts';
 
 const MAX_REVISION_ATTEMPTS = 2;
 
@@ -107,6 +109,10 @@ async function processAssignment(
       const result = await commitArticle(writerId, pitch, draft);
       await recordPublish();
       console.log(`Published ${writerId}: ${result.slug}`);
+      await sendNewPostEmail({
+        subject: `New on The Daily Guru: ${draft.title}`,
+        html: `<p>${pitch.thesis}</p><p><a href="${SITE_URL}/articles/${result.slug}/">Read it</a></p>`,
+      });
       return true;
     }
     // Killed or unresolved after revisions — fall back to the next

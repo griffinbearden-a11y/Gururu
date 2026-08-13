@@ -13,6 +13,8 @@ import { isPaused } from '../lib/circuit-breakers.ts';
 import { weeklySpendCapExceeded } from '../lib/llm.ts';
 import { readJSON, writeJSON } from '../lib/fsjson.ts';
 import { logRun } from '../lib/run-log.ts';
+import { sendNewPostEmail } from '../lib/mailchimp.ts';
+import { SITE_URL } from '../lib/site.ts';
 
 const MAX_REVISION_ATTEMPTS = 3;
 const AUDIO_DIR = 'public/audio/howlin-minute';
@@ -272,6 +274,10 @@ async function main(): Promise<RunResult> {
   await writeJSON(DATA_PATH, data);
 
   console.log(`Published Howlin' Minute: ${slug}`);
+  await sendNewPostEmail({
+    subject: `New Howlin' Minute: ${script.title}`,
+    html: `<p>${script.script_text.slice(0, 200)}...</p><p><a href="${SITE_URL}/howlin-minute/${slug}/">Listen</a></p>`,
+  });
   return { status: 'published' };
 }
 
