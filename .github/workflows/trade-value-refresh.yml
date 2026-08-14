@@ -1,0 +1,39 @@
+name: Daily trade value refresh
+
+on:
+  schedule:
+    - cron: '0 11 * * *' # once daily, well clear of the poll/waiver cron windows
+  workflow_dispatch: {}
+
+concurrency:
+  group: poll-and-generate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run trade-value:refresh
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "daily-guru-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet && exit 0
+          git commit -m "trade values: daily refresh"
+          for i in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          echo "Failed to push after retries." >&2
+          exit 1

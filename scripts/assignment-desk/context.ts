@@ -4,6 +4,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import matter from 'gray-matter';
 import { readJSON } from '../lib/fsjson.ts';
+import { getRecentTradeGrades, formatGradesForWriter } from '../lib/trade-value/writer-hook.ts';
 
 export type WriterId = 'wolf' | 'vail' | 'doyle';
 
@@ -141,10 +142,11 @@ export async function getWriterState(writerId: WriterId): Promise<WriterStateEnt
 }
 
 export async function buildContextBundle(writerId: WriterId): Promise<string> {
-  const [lore, leagueSummary, recentTx, ledger, state] = await Promise.all([
+  const [lore, leagueSummary, recentTx, tradeGrades, ledger, state] = await Promise.all([
     loadLore(),
     getLeagueSummary(),
     getRecentTransactionsSummary(),
+    getRecentTradeGrades(5),
     getRecentLedger(20),
     getWriterState(writerId),
   ]);
@@ -158,6 +160,9 @@ export async function buildContextBundle(writerId: WriterId): Promise<string> {
     '',
     '# Recent transactions',
     recentTx || '(none)',
+    '',
+    "# Recent trade grades (Vail's Trade Tools — market value axis + team fit axis, not the same number)",
+    tradeGrades.length ? tradeGrades.map(formatGradesForWriter).join('\n\n') : '(no graded trades yet)',
     '',
     '# Last 20 published articles (ledger)',
     ledger.length

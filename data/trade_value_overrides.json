@@ -1,0 +1,4 @@
+{
+  "_comment": "Manual nudges applied on top of FantasyCalc after the league-bias adjustments. Key = Sleeper player_id, value = multiplier (1.0 = no change). Use this to react to news the API hasn't caught up on yet, or to correct a value that doesn't reflect this league's scoring quirks.",
+  "overrides": {}
+}

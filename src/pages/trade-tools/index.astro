@@ -1,0 +1,413 @@
+---
+// Vail's Trade Tools — Trade Analyzer + Trade Finder (Part 6 of the trade
+// tools brief). Everything is pre-priced at build time (Parts 1-3); this
+// page just assembles the asset pool + team contention scores and ships
+// them to the browser. No fetches happen client-side or at request time —
+// consistent with the rest of the site's "git is the database" model.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getValueCache } from '../../../scripts/lib/trade-value/values.ts';
+import { buildPickValuationContext } from '../../../scripts/lib/trade-value/picks.ts';
+import { buildLeagueRosterContext } from '../../../scripts/lib/trade-value/roster-context.ts';
+import { buildAssetPool } from '../../../scripts/lib/trade-value/asset-pool.ts';
+import { buildTeamMeta } from '../../../scripts/lib/trade-value/team-meta.ts';
+
+const cache = await getValueCache();
+const hasValues = cache.playerCount > 0;
+
+let dataJson = '{}';
+let teamCount = 0;
+if (hasValues) {
+  const pickCtx = await buildPickValuationContext(cache);
+  const rosterCtx = await buildLeagueRosterContext(cache);
+  const pool = await buildAssetPool(cache, pickCtx);
+  const teamMeta = await buildTeamMeta();
+  teamCount = Object.keys(rosterCtx.teams).length;
+  dataJson = JSON.stringify({ teams: rosterCtx.teams, teamMeta, pool }).replace(/</g, '\\u003c');
+}
+---
+<BaseLayout title="Vail's Trade Tools" description="Build a hypothetical dynasty trade, or find what you could realistically offer for a target player — graded on market value and team fit.">
+  <div class="container trade-tools-page writer-vail">
+    <header class="trade-tools-header">
+      <span class="red-tag" style="background:var(--vail-blue)"><span>Vail's Trade Tools</span></span>
+      <h1>Trade Analyzer &amp; Trade Finder</h1>
+      <p class="byline">Market value is zero-sum. Team fit isn't. Both are shown, always.</p>
+    </header>
+
+    {!hasValues && (
+      <p class="empty">
+        No trade value data cached yet. Run <code>npm run trade-value:refresh</code> and rebuild.
+      </p>
+    )}
+
+    {hasValues && (
+      <>
+        <div class="trade-tabs" role="tablist">
+          <button type="button" class="trade-tab" data-tab="analyzer" role="tab" aria-selected="true">Trade Analyzer</button>
+          <button type="button" class="trade-tab" data-tab="finder" role="tab" aria-selected="false">Trade Finder</button>
+        </div>
+
+        <section class="trade-panel" data-panel="analyzer">
+          <div class="analyzer-controls">
+            <label>Teams in this trade
+              <select id="analyzer-team-count">
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </label>
+            <div id="analyzer-team-selects" class="team-selects"></div>
+          </div>
+          <div class="analyzer-workspace">
+            <div id="analyzer-rosters" class="analyzer-rosters"></div>
+            <aside id="analyzer-summary" class="analyzer-summary"></aside>
+          </div>
+          <div id="analyzer-grades" class="analyzer-grades"></div>
+        </section>
+
+        <section class="trade-panel" data-panel="finder" hidden>
+          <div class="finder-controls">
+            <label>My team
+              <select id="finder-my-team"></select>
+            </label>
+            <label>Their team
+              <select id="finder-their-team"></select>
+            </label>
+            <label>Target player
+              <select id="finder-target"></select>
+            </label>
+            <button type="button" id="finder-find-btn">Find packages</button>
+          </div>
+          <details class="finder-untouchables-details">
+            <summary>Untouchables (players I won't include)</summary>
+            <div id="finder-untouchables" class="untouchables"></div>
+          </details>
+          <div id="finder-results" class="finder-results"></div>
+        </section>
+
+        <script type="application/json" id="trade-tools-data" set:html={dataJson} />
+        <script>
+          import { mount } from '../../lib/trade-tools/client.ts';
+          const el = document.getElementById('trade-tools-data');
+          const data = JSON.parse(el?.textContent || '{}');
+          mount(data);
+        </script>
+      </>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .trade-tools-page {
+    padding: var(--space-4) var(--space-3) var(--space-5);
+    max-width: 1360px;
+  }
+  .trade-tools-header { margin-bottom: var(--space-4); }
+  .trade-tools-header h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    margin: var(--space-2) 0 var(--space-1);
+  }
+  .byline { color: var(--text-dim); font-family: var(--font-ui); }
+  .empty { color: var(--text-dim); padding: var(--space-4) 0; }
+
+  .trade-tabs {
+    display: flex;
+    gap: var(--space-2);
+    border-bottom: 2px solid var(--border);
+    margin-bottom: var(--space-4);
+  }
+  .trade-tab {
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: var(--space-2) var(--space-1);
+    font-family: var(--font-ui-wide);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    cursor: pointer;
+  }
+  .trade-tab[aria-selected='true'] { color: var(--vail-blue); border-bottom-color: var(--vail-blue); }
+
+  .analyzer-controls, .finder-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: end;
+    margin-bottom: var(--space-4);
+  }
+  .analyzer-controls label, .finder-controls label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+  .team-selects { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+  select, button {
+    font-family: var(--font-ui-wide);
+    font-size: 0.9rem;
+    padding: var(--space-1) var(--space-2);
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+  }
+  #finder-find-btn {
+    background: var(--vail-blue);
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .analyzer-workspace {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    align-items: start;
+  }
+  @media (min-width: 900px) {
+    .analyzer-workspace { grid-template-columns: minmax(0, 1fr) 300px; }
+  }
+
+  .analyzer-rosters { min-width: 0; }
+  :global(.team-columns) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-3);
+  }
+  :global(.team-column) {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    max-height: 640px;
+  }
+  :global(.team-column-header) {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    border-bottom: 3px solid var(--vail-blue);
+    background: var(--bg);
+  }
+  :global(.team-column-header h3) { margin: 0; font-family: var(--font-display); font-size: 1.1rem; line-height: 1.1; }
+  :global(.contention-note) { color: var(--text-dim); font-size: 0.72rem; margin: 2px 0 0; }
+  :global(.team-avatar) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  :global(.team-avatar-fallback) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--vail-blue);
+    color: #fff;
+    font-family: var(--font-display);
+  }
+
+  :global(.card-list) {
+    overflow-y: auto;
+    padding: var(--space-2);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  :global(.player-card) {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: var(--space-2);
+    row-gap: 0;
+    text-align: left;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 6px var(--space-2) 6px 28px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    color: var(--text);
+  }
+  :global(.player-card:hover) { border-color: var(--vail-blue); }
+  :global(.player-card.selected) {
+    background: var(--surface);
+    opacity: 0.72;
+    border-color: var(--vail-blue);
+  }
+  :global(.card-check) {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: #fff;
+  }
+  :global(.player-card.selected .card-check) { background: var(--vail-blue); border-color: var(--vail-blue); }
+  :global(.card-avatar), :global(.card-avatar-wrap) {
+    grid-row: 1 / 3;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  :global(.card-avatar-wrap) { position: relative; display: block; }
+  :global(.card-avatar-wrap .card-avatar) { position: absolute; inset: 0; }
+  :global(.card-avatar-fallback) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--border);
+    color: var(--text-dim);
+    font-family: var(--font-ui-wide);
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  :global(.card-avatar-pick) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--vail-blue);
+    color: #fff;
+    font-family: var(--font-ui-wide);
+    font-weight: 700;
+    font-size: 0.55rem;
+    letter-spacing: 0.03em;
+    grid-row: 1 / 3;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+  :global(.card-name) { font-weight: 600; font-size: 0.85rem; line-height: 1.2; }
+  :global(.card-meta) { grid-column: 2; font-size: 0.72rem; color: var(--text-dim); }
+  :global(.card-value) {
+    grid-row: 1 / 3;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    align-self: center;
+  }
+  :global(.card-tag) {
+    grid-column: 1 / 4;
+    font-family: var(--font-ui-wide);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 0.66rem;
+    color: var(--vail-blue);
+    margin-top: 2px;
+  }
+
+  :global(.player-card-compact) {
+    grid-template-rows: auto;
+    padding: 4px var(--space-2) 4px 8px;
+  }
+  :global(.player-card-compact .card-avatar), :global(.player-card-compact .card-avatar-wrap) { grid-row: 1; width: 26px; height: 26px; }
+  :global(.player-card-compact .card-meta) { grid-column: 2; }
+  :global(.player-card-compact.selected) { border-color: var(--red); background: var(--surface); }
+
+  .analyzer-summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: var(--space-3);
+    position: sticky;
+    top: var(--space-3);
+  }
+  :global(.summary-title) { font-family: var(--font-display); font-size: 1.1rem; margin: 0 0 var(--space-3); }
+  :global(.summary-team) { margin-bottom: var(--space-4); }
+  :global(.summary-team:last-child) { margin-bottom: 0; }
+  :global(.summary-team-header) { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2); }
+  :global(.summary-team-header .team-avatar) { width: 28px; height: 28px; font-size: 0.8rem; }
+  :global(.summary-team-header h4) { margin: 0; font-family: var(--font-display); font-size: 0.95rem; }
+  :global(.summary-columns) { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+  :global(.summary-columns h5) {
+    font-family: var(--font-ui-wide);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.66rem;
+    color: var(--text-dim);
+    margin: 0 0 4px;
+  }
+  :global(.summary-empty) { color: var(--text-dim); font-size: 0.75rem; font-style: italic; margin: 0; }
+  :global(.summary-row) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  :global(.summary-avatar), :global(.summary-avatar-wrap) { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; flex-shrink: 0; position: relative; }
+  :global(.summary-avatar-wrap .summary-avatar) { position: absolute; inset: 0; }
+  :global(.summary-avatar-fallback) {
+    display: flex; align-items: center; justify-content: center;
+    background: var(--border); color: var(--text-dim); font-size: 0.6rem; font-weight: 700;
+  }
+  :global(.summary-avatar-pick) {
+    display: flex; align-items: center; justify-content: center;
+    background: var(--vail-blue); color: #fff; font-size: 0.45rem; font-weight: 700;
+  }
+  :global(.summary-row-info) { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+  :global(.summary-row-info strong) { font-size: 0.78rem; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  :global(.summary-row-sub) { font-size: 0.68rem; color: var(--text-dim); }
+  :global(.summary-remove) {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 2px;
+  }
+  :global(.summary-remove:hover) { color: var(--red); }
+
+  :global(.grade-verdict) { margin-bottom: var(--space-3); }
+  :global(.grade-verdict p) { margin: var(--space-2) 0 0; }
+  :global(.team-grades) { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-3); }
+  :global(.team-grade) { background: var(--surface); padding: var(--space-3); border-left: 4px solid var(--vail-blue); }
+  :global(.team-grade h4) { margin: 0 0 4px; font-family: var(--font-display); font-size: 1.05rem; }
+  :global(.grade-line) { font-family: var(--font-ui-wide); font-weight: 700; margin: 0 0 4px; }
+  :global(.grade-detail) { color: var(--text-dim); font-size: 0.82rem; margin: 2px 0; }
+
+  .finder-untouchables-details { margin-bottom: var(--space-4); }
+  .untouchables { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 6px; padding: var(--space-2) 0; }
+  :global(.finder-note) { color: var(--text-dim); font-style: italic; font-size: 0.85rem; margin-bottom: var(--space-3); }
+  :global(.finder-result) { border-top: 2px solid var(--border); padding-top: var(--space-3); margin-top: var(--space-3); }
+  :global(.finder-result h4) { font-family: var(--font-display); margin: 0 0 4px; }
+  :global(.finder-headline) { display: flex; align-items: center; gap: var(--space-2); margin: 4px 0 var(--space-2); }
+  :global(.fit-badge) {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 2px 12px;
+    line-height: 1.3;
+  }
+  :global(.fit-badge.grade-good) { background: var(--vail-blue); }
+  :global(.fit-badge.grade-mid) { background: var(--text-dim); }
+  :global(.fit-badge.grade-bad) { background: var(--red); }
+  :global(.fit-badge-label) {
+    font-family: var(--font-ui-wide);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+  }
+  :global(.finder-sides) { margin-top: var(--space-2); font-size: 0.85rem; }
+  :global(.finder-sides div) { margin: 2px 0; }
+</style>
