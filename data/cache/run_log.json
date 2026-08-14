@@ -440,6 +440,16 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-14T05:45:23.654Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-14T09:39:53.290Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-14T09:39:53.965Z"
     }
   ]
 }
