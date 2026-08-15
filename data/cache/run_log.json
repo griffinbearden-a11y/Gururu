@@ -775,6 +775,11 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-08-15T21:53:48.842Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-15T22:57:08.745Z"
     }
   ]
 }
