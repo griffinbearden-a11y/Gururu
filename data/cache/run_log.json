@@ -550,6 +550,16 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-08-14T23:59:13.532Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-15T03:02:35.820Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-15T03:02:36.541Z"
     }
   ]
 }
