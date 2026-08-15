@@ -640,6 +640,11 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-08-15T09:57:06.105Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-15T10:57:13.552Z"
     }
   ]
 }
