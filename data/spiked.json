@@ -50,6 +50,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-08-12T22:45:26.089Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Long Game in South Georgia: Why JUICE Is Quietly Getting Younger While Everyone Else Chases August",
+      "thesis": "Josh Cochran's measured, pick-heavy approach in Athens represents the most disciplined rebuild in the league right now, even if it lacks the immediate noise of a blockbuster trade.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-08-16T03:16:22.589Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Business: The Minick Cousins and the August Transaction Wire",
+      "thesis": "Will Minick and Ross Minick share a last name and a conference, but their recent roster churn shows two entirely different theories of how to manage a dynasty franchise.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-16T03:16:22.589Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "After the Banner Comes the Quiet: What Happens to Topeka and Athens in Year After",
+      "thesis": "Transitioning from championship glory to a reloaded rookie pick strategy requires a delicate touch that both Rickyshanks and Jake Kennon are attempting to navigate this summer.",
+      "format": "anniversary_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-16T03:16:22.590Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Note on Recent Trade Processing and the Commissioner's Desk",
+      "thesis": "While the platform migration and recent trade wave have gone smoothly on the surface, the speed at which blockbuster deals are clearing deserves a quiet, steady look from the press box.",
+      "format": "corrections",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
+      "spiked_at": "2026-08-16T03:16:22.590Z"
     }
   ]
 }
