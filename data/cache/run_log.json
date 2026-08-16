@@ -820,6 +820,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-16T04:03:09.279Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-16T05:47:59.307Z"
     }
   ]
 }
