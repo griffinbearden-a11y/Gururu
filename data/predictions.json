@@ -36,6 +36,15 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-08-17-the-muskrats-can-run-all-they-want-from-the-past",
+      "claim": "Macon Muskrats will fail to win the championship in 2026",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

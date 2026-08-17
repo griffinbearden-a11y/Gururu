@@ -140,6 +140,46 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"howlin_preseason_pick\" within their last 5 articles.",
       "spiked_at": "2026-08-17T03:16:04.544Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Doesn't Know What a Trade Looks Like",
+      "thesis": "Marcus Vail spent his morning auditing Dirty Magic's acquisition of Amon-Ra St. Brown like a nervous accountant counting pennies while Will Minick is out here building a dynasty in broad daylight.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-17T04:07:48.357Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic is Built for Blood",
+      "thesis": "Will Minick didn't take over as commissioner to run a charity league, he took the job to hoard elite volume and crush anyone weak enough to stand in his way.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-17T04:07:48.358Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Stop Complaining and Play the Game",
+      "thesis": "Every time a manager cries about roster balance or trade fairness in the league chat, they're just advertising to the rest of us that they don't have the stomach for dynasty football.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-08-17T04:07:48.358Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Josh Cochran is Hoarding Dead Assets",
+      "thesis": "JUICE sitting there hoarding rookie picks instead of trading for proven winners is just a coward's way of delaying the inevitable humiliation.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-17T04:07:48.359Z"
     }
   ]
 }
