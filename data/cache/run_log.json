@@ -1200,6 +1200,16 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-17T13:56:21.389Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-17T13:57:20.884Z"
+    },
+    {
+      "script": "howlin-minute",
+      "status": "success",
+      "at": "2026-08-17T13:57:48.682Z"
     }
   ]
 }
