@@ -1210,6 +1210,11 @@
       "script": "howlin-minute",
       "status": "success",
       "at": "2026-08-17T13:57:48.682Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-17T14:02:29.203Z"
     }
   ]
 }
