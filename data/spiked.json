@@ -90,6 +90,56 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
       "spiked_at": "2026-08-16T03:16:22.590Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Doesn't Know What a Trade Is",
+      "thesis": "Marcus Vail spent his whole column crying about math while WillMinick pulled off a robbery that actually wins titles.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-17T03:16:04.541Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Three Kings of 2026",
+      "thesis": "SHMEATtheBOY, Dirty Magic, and Winterfell Whitewalkers are the only three men in this league carrying any iron this year.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-17T03:16:04.542Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Josh Cochran is Holding a Yard Sale for Losers",
+      "thesis": "JUICE hoarding rookie picks while the rest of us actually try to win football games is an admission of total surrender.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-17T03:16:04.543Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The League Commissioner Does Not Answer to Accountants",
+      "thesis": "WillMinick runs this league with an iron fist and every single trade he makes is legal, righteous, and beyond reproach.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-08-17T03:16:04.543Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Three Straight Years of Prophecy",
+      "thesis": "I called Topeka in twenty-three, Athens in twenty-four, and Macon in twenty-five, and I am the only man in this room whose word has ever meant a damn thing.",
+      "format": "howlin_preseason_pick",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"howlin_preseason_pick\" within their last 5 articles.",
+      "spiked_at": "2026-08-17T03:16:04.544Z"
     }
   ]
 }
