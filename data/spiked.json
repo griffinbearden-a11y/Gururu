@@ -180,6 +180,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-08-17T04:07:48.359Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Purgatory Index: Mapping the Cost of Perpetual Mid-Tier Composed Rosters",
+      "thesis": "Teams that refuse to either consolidate assets or execute a total teardown consume roster slots and waiver wire equity without ever achieving a top-four expected win probability.",
+      "format": "purgatory_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 10 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-18T03:09:41.328Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Age Curves and Depreciation: Evaluating the 2025 Champion's Roster Profile",
+      "thesis": "Historical positional aging curves suggest that championships won on the back of twenty-seven-plus-year-old skill players carry a greater than seventy percent regression probability in year two.",
+      "format": "age_curve_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-18T03:09:41.329Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "By the Numbers: Quantifying the Net Asset Delta of August Trading Activity",
+      "thesis": "Across five recorded July and August trades involving premium assets, the market demonstrated a systematic undervaluation of future draft capital relative to short-term positional scoring projections.",
+      "format": "by_the_numbers",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"by_the_numbers\" within their last 5 articles.",
+      "spiked_at": "2026-08-18T03:09:41.329Z"
     }
   ]
 }
