@@ -1800,6 +1800,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-19T23:35:34.060Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-19T23:57:13.870Z"
     }
   ]
 }
