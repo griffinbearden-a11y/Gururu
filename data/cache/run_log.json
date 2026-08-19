@@ -1655,6 +1655,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-19T10:03:10.161Z"
+    },
+    {
+      "script": "ingest-nflverse",
+      "status": "success",
+      "at": "2026-08-19T10:58:27.764Z"
     }
   ]
 }
