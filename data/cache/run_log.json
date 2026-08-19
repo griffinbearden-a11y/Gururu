@@ -1660,6 +1660,11 @@
       "script": "ingest-nflverse",
       "status": "success",
       "at": "2026-08-19T10:58:27.764Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-19T11:04:04.073Z"
     }
   ]
 }
