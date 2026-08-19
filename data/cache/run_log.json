@@ -1765,6 +1765,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-19T20:01:59.132Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-19T21:13:10.767Z"
     }
   ]
 }
