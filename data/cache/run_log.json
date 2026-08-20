@@ -1900,6 +1900,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-20T11:48:18.088Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-20T13:59:59.720Z"
     }
   ]
 }
