@@ -2020,6 +2020,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-20T23:44:03.790Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-20T23:59:45.440Z"
     }
   ]
 }
