@@ -1965,6 +1965,16 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-20T17:56:18.775Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-20T19:44:17.090Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-20T19:44:17.794Z"
     }
   ]
 }
