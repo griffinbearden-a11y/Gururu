@@ -2225,6 +2225,11 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-08-21T21:59:00.335Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-21T23:00:39.374Z"
     }
   ]
 }
