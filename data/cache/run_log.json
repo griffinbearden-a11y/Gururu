@@ -2125,6 +2125,16 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-08-21T12:04:48.220Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-21T14:06:09.378Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-21T14:06:10.001Z"
     }
   ]
 }
