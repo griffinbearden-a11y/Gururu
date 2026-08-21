@@ -2170,6 +2170,16 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-08-21T17:50:43.487Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-08-21T17:54:54.057Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-08-21T17:54:54.724Z"
     }
   ]
 }
