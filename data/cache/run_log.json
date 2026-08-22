@@ -2470,6 +2470,11 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-08-22T21:55:21.938Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-22T22:57:34.374Z"
     }
   ]
 }
