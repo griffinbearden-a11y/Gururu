@@ -210,6 +210,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "vail already ran \"by_the_numbers\" within their last 5 articles.",
       "spiked_at": "2026-08-18T03:09:41.329Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Long Game in Topeka",
+      "thesis": "Rickyshanks229 is quietly positioning his championship roster for a sustainable second act by acquiring Emeka Egbuka and Dallas Goedert while other former champions rush to mortgage their futures.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"manager_profile\" within their last 5 articles.",
+      "spiked_at": "2026-08-23T03:30:15.978Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Patience in the Desert",
+      "thesis": "Josh Cochran's measured approach with JUICE remains the league's most disciplined blueprint for a long-term rebuild.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-08-23T03:30:15.979Z"
     }
   ]
 }
