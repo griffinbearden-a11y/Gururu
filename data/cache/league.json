@@ -62,11 +62,6 @@
   },
   "avatar": "fc93944d0f8b29f4620cf6940b2fd003",
   "company_id": null,
-  "last_message_id": "1395502540602241024",
-  "sport": "nfl",
-  "season_type": "regular",
-  "season": "2026",
-  "shard": 114,
   "scoring_settings": {
     "sack": 1.5,
     "fgm_40_49": 4,
@@ -133,6 +128,11 @@
     "pts_allow_7_13": 4,
     "st_ff": 1
   },
+  "season": "2026",
+  "season_type": "regular",
+  "sport": "nfl",
+  "shard": 114,
+  "last_message_id": "1395502540602241024",
   "draft_id": "1317231936678158336",
   "last_author_avatar": null,
   "last_author_display_name": "sys",
