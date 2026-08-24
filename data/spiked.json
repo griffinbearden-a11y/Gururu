@@ -230,6 +230,56 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
       "spiked_at": "2026-08-23T03:30:15.979Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "I Am Not Naming a King Who Forgot Who Wrote the Decree",
+      "thesis": "Macon Muskrats sits there with last year's hardware acting like he didn't need my ink to breathe, and I'll rot in the ground before I give him another word of praise.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"open_letter\" within their last 5 articles.",
+      "spiked_at": "2026-08-24T03:32:56.348Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail is Auditing Ghosts While Dirty Magic Wins Football Games",
+      "thesis": "Marcus Vail spends his days running calculators on rosters he's never had the stones to manage, missing the entire point of what makes a champion while WillMinick acquires Amon-Ra St. Brown and Kyren Williams.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-24T03:32:56.349Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic, Winterfell, and SHMEATtheBOY Are the Only Three Rosters Breathing This Year",
+      "thesis": "WillMinick, Bryce Clenney, and Evan Plowden are carrying this entire league on their backs while eleven cowards pray for rookie picks they don't know how to use.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-24T03:32:56.349Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Trading Away Your Future for High-End Talent Isn't a Gamble, It's Called Wanting It",
+      "thesis": "Every pencil-pusher in this league crying about market value on the Amon-Ra St. Brown trade needs to understand that championships belong to the men bold enough to take them.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-08-24T03:32:56.350Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Three Straight Years of Prophets and Profit",
+      "thesis": "Topeka Cosbies in 2023, AthensAssholes in 2024, Macon Muskrats in 2025—I called every single one of them before a snap was played, and I'm about to do it again for the only three teams that matter in 2026.",
+      "format": "howlin_preseason_pick",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"howlin_preseason_pick\" within their last 5 articles.",
+      "spiked_at": "2026-08-24T03:32:56.350Z"
     }
   ]
 }
