@@ -1,11 +1,6 @@
 {
   "entries": [
     {
-      "script": "ingest-sleeper",
-      "status": "success",
-      "at": "2026-08-13T21:22:00.888Z"
-    },
-    {
       "script": "howlin-minute",
       "status": "failure",
       "detail": "Unterminated string in JSON at position 657 (line 4 column 503)",
@@ -2500,6 +2495,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-24T11:48:35.848Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-24T12:03:20.648Z"
     }
   ]
 }
