@@ -280,6 +280,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"howlin_preseason_pick\" within their last 5 articles.",
       "spiked_at": "2026-08-24T03:32:56.350Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Josh Cochran Is Squandering a Dynasty on the Corner",
+      "thesis": "JUICE holding onto the first rookie pick isn't a masterclass in patience, it's an admission that a grown man is too scared to buy a winner and would rather draft ghosts.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"open_letter\" within their last 5 articles.",
+      "spiked_at": "2026-08-24T04:12:05.710Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Commissioner Ledger Stands Untouched Because Will Minick Runs This League Right",
+      "thesis": "Every single manager whining about roster balance and aggressive trades in August needs to shut their mouths and play the game because Will Minick is running a tight ship.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-08-24T04:12:05.711Z"
     }
   ]
 }
