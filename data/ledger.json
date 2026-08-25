@@ -126,6 +126,15 @@
       "subject_teams": [],
       "thesis": "Marcus Vail wrote a hit piece questioning a three-year championship prediction streak built on pure football instinct, proving once again that a man with a spreadsheet can stare right at a trophy and still not see who is holding it.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-08-25T03:15:57.197Z",
+      "slug": "2026-08-25-tiers-the-illusion-of-contention-in-a-twelve-team-field",
+      "format": "tiers",
+      "subject_teams": [],
+      "thesis": "When twelve teams are sorted by expected value rather than last year's emotional resonance, exactly three rosters possess the asset depth required to contend, while the remaining nine are engaged in various stages of self-deception.",
+      "is_backfill": false
     }
   ]
 }

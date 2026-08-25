@@ -300,6 +300,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
       "spiked_at": "2026-08-24T04:12:05.711Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Contention Window: AthensAssholes and the Depreciation of Brand-Name Assets",
+      "thesis": "The roster assembled by AthensAssholes carries a contention window that is routinely overestimated by eighteen months due to the market's irrational attachment to aging skill-position profiles.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"contention_window\" within their last 5 articles.",
+      "spiked_at": "2026-08-25T03:15:39.422Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "By the Numbers: Transaction Volatility and August Market Inefficiencies",
+      "thesis": "Across the five major trades executed since late July, teams trading away volume-proven assets for prospective rookie capital have consistently absorbed negative market value when evaluated against historical hit rates.",
+      "format": "by_the_numbers",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"by_the_numbers\" within their last 5 articles.",
+      "spiked_at": "2026-08-25T03:15:39.423Z"
     }
   ]
 }

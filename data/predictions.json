@@ -72,6 +72,15 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-08-25-tiers-the-illusion-of-contention-in-a-twelve-team-field",
+      "claim": "The bottom nine rosters in the preseason tier list will fail to achieve top-three regular season scoring efficiency.",
+      "subject": "The field",
+      "resolution_date": "2027-01-05",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
