@@ -1,11 +1,6 @@
 {
   "entries": [
     {
-      "script": "ingest-sleeper",
-      "status": "success",
-      "at": "2026-08-16T11:00:49.255Z"
-    },
-    {
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-08-16T11:00:49.914Z"
@@ -2500,6 +2495,11 @@
       "status": "failure",
       "detail": "{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
       "at": "2026-08-28T21:50:45.435Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-08-28T21:55:15.756Z"
     }
   ]
 }
