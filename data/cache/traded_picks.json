@@ -1,9 +1,23 @@
 [
   {
+    "round": 1,
+    "season": "2026",
+    "roster_id": 1,
+    "owner_id": 4,
+    "previous_owner_id": 1
+  },
+  {
     "round": 2,
     "season": "2026",
     "roster_id": 1,
     "owner_id": 10,
+    "previous_owner_id": 1
+  },
+  {
+    "round": 3,
+    "season": "2027",
+    "roster_id": 1,
+    "owner_id": 4,
     "previous_owner_id": 1
   },
   {
@@ -14,10 +28,31 @@
     "previous_owner_id": 2
   },
   {
+    "round": 4,
+    "season": "2026",
+    "roster_id": 2,
+    "owner_id": 3,
+    "previous_owner_id": 2
+  },
+  {
     "round": 5,
     "season": "2026",
     "roster_id": 2,
     "owner_id": 8,
+    "previous_owner_id": 2
+  },
+  {
+    "round": 3,
+    "season": "2027",
+    "roster_id": 2,
+    "owner_id": 4,
+    "previous_owner_id": 2
+  },
+  {
+    "round": 5,
+    "season": "2028",
+    "roster_id": 2,
+    "owner_id": 3,
     "previous_owner_id": 2
   },
   {
@@ -32,6 +67,13 @@
     "season": "2026",
     "roster_id": 3,
     "owner_id": 7,
+    "previous_owner_id": 3
+  },
+  {
+    "round": 3,
+    "season": "2026",
+    "roster_id": 3,
+    "owner_id": 11,
     "previous_owner_id": 3
   },
   {
@@ -98,6 +140,20 @@
     "previous_owner_id": 3
   },
   {
+    "round": 1,
+    "season": "2026",
+    "roster_id": 4,
+    "owner_id": 11,
+    "previous_owner_id": 4
+  },
+  {
+    "round": 2,
+    "season": "2026",
+    "roster_id": 4,
+    "owner_id": 3,
+    "previous_owner_id": 4
+  },
+  {
     "round": 5,
     "season": "2026",
     "roster_id": 4,
@@ -136,8 +192,8 @@
     "round": 2,
     "season": "2026",
     "roster_id": 6,
-    "owner_id": 1,
-    "previous_owner_id": 6
+    "owner_id": 2,
+    "previous_owner_id": 1
   },
   {
     "round": 1,
@@ -206,8 +262,8 @@
     "round": 5,
     "season": "2026",
     "roster_id": 9,
-    "owner_id": 3,
-    "previous_owner_id": 9
+    "owner_id": 11,
+    "previous_owner_id": 3
   },
   {
     "round": 1,
@@ -229,6 +285,13 @@
     "roster_id": 10,
     "owner_id": 6,
     "previous_owner_id": 10
+  },
+  {
+    "round": 1,
+    "season": "2026",
+    "roster_id": 11,
+    "owner_id": 3,
+    "previous_owner_id": 11
   },
   {
     "round": 1,
