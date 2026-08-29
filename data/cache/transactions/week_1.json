@@ -1,6 +1,52 @@
 [
   {
     "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1787958175525,
+    "settings": null,
+    "leg": 1,
+    "draft_picks": [],
+    "creator": "1004975760962097152",
+    "transaction_id": "1399201637226000384",
+    "adds": null,
+    "drops": {
+      "4098": 9
+    },
+    "consenter_ids": [
+      9
+    ],
+    "roster_ids": [
+      9
+    ],
+    "status_updated": 1787958175525,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1787958161614,
+    "settings": null,
+    "leg": 1,
+    "draft_picks": [],
+    "creator": "1004975760962097152",
+    "transaction_id": "1399201578879082496",
+    "adds": null,
+    "drops": {
+      "4950": 9
+    },
+    "consenter_ids": [
+      9
+    ],
+    "roster_ids": [
+      9
+    ],
+    "status_updated": 1787958161614,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
     "type": "trade",
     "metadata": {
       "notes": "Your trade was processed successfully!",
