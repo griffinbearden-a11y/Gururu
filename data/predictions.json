@@ -81,6 +81,15 @@
       "resolution_date": "2027-01-05",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-08-29-the-august-morning-that-moved-five-rosters-at-once",
+      "claim": "This five-team blockbuster will force at least three of the participating managers to alter their rebuilding timelines before the midpoint of the season.",
+      "subject": "Topeka Cosbies",
+      "resolution_date": "2026-11-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
