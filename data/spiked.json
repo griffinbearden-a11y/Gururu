@@ -320,6 +320,46 @@
       "reason_code": "format_reuse",
       "reason_detail": "vail already ran \"by_the_numbers\" within their last 5 articles.",
       "spiked_at": "2026-08-25T03:15:39.423Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Quiet Afternoon in Buckhead",
+      "thesis": "While the rest of the league trades marquee veterans and chases August headlines, Banks is quietly positioning the Buckhead Beavers for another patient, foundational draft year.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"manager_profile\" within their last 5 articles.",
+      "spiked_at": "2026-08-30T00:02:25.226Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Family Ledger",
+      "thesis": "The annual summer trade volume between Will and Ross Minick reflects a unique family dynamic that quietly shapes the league's asset distribution every August.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
+      "spiked_at": "2026-08-30T00:02:25.226Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Laying Down the Foundation in Macon",
+      "thesis": "Josh Cochran's measured approach with JUICE demonstrates that sustainable turnarounds are built through patience and pick accumulation rather than knee-jerk August panic.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-08-30T00:02:25.227Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Correction on the Summer Shuffling",
+      "thesis": "We need to clear up a few mixed signals from the recent five-team blockbuster to ensure the transaction record accurately reflects where these pieces landed.",
+      "format": "corrections",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
+      "spiked_at": "2026-08-30T00:02:25.228Z"
     }
   ]
 }

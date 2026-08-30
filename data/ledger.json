@@ -144,6 +144,27 @@
       "subject_teams": [],
       "thesis": "A massive five-team blockbuster involving CeeDee Lamb, Garrett Wilson, and a dozen other pieces reveals how quickly the league's competitive hierarchy can shift before a single regular-season snap.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-08-30T00:02:49.224Z",
+      "slug": "2026-08-30-sorting-through-the-august-shuffling",
+      "format": "the_wire",
+      "subject_teams": [],
+      "thesis": "The recent wave of minor roster adjustments across the waiver wire reveals how the lower half of the league is frantically trying to patch depth before Week 1.",
+      "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-08-30T00:03:06.392Z",
+      "slug": "2026-08-30-winterfell-just-handed-vic-blends-a-lifeline-and-called-it-a",
+      "format": "trade_grade",
+      "subject_teams": [
+        3,
+        5
+      ],
+      "thesis": "Winterfell Whitewalkers just executed an absolute disaster of a trade with Vic Blends, proving that even a fancied contender can lose its mind before the season starts.",
+      "is_backfill": false
     }
   ]
 }

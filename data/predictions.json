@@ -90,6 +90,24 @@
       "resolution_date": "2026-11-01",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-08-30-sorting-through-the-august-shuffling",
+      "claim": "Vic Blends will maintain Kyler Murray on the active roster through the opening month as a hedge against early-season volatility.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-10-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-08-30-winterfell-just-handed-vic-blends-a-lifeline-and-called-it-a",
+      "claim": "Winterfell Whitewalkers will recover from this lopsided trade and remain a top contender through the 2026 season.",
+      "subject": "Winterfell Whitewalkers",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

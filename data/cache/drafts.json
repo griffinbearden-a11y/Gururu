@@ -19,9 +19,9 @@
       "1276322679443439616": 7,
       "1276600626364571648": 2
     },
-    "last_message_id": "1399556089095172096",
-    "last_message_time": 1788042683437,
-    "last_picked": 1788042683426,
+    "last_message_id": "1399563048338923520",
+    "last_message_time": 1788044342650,
+    "last_picked": 1788044341762,
     "league_id": "1317231936673947648",
     "metadata": {
       "description": "",
@@ -41,7 +41,7 @@
       "cpu_autopick": 1,
       "enforce_position_limits": 1,
       "nomination_timer": 60,
-      "pick_timer": 180,
+      "pick_timer": 60,
       "player_type": 0,
       "reversal_round": 0,
       "rounds": 5,
@@ -57,7 +57,7 @@
     },
     "sport": "nfl",
     "start_time": 1788040817382,
-    "status": "drafting",
+    "status": "complete",
     "type": "snake"
   }
 ]
