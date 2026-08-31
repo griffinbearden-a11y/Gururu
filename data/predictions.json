@@ -108,6 +108,24 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-08-31-dirty-magic-doesnt-wait-for-tomorrow",
+      "claim": "Dirty Magic will finish the season as a top-tier championship contender.",
+      "subject": "Dirty Magic (WillMinick)",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-08-31-a-zero-sum-illusion-evaluating-the-macon-shlomo-exchange-thr",
+      "claim": "Neither the Macon Muskrats nor Shlomo Teittleman will experience a statistically significant shift in their end-of-season win-probability distribution as a direct result of Trade 1399561843818635264.",
+      "subject": "Macon Muskrats and Shlomo Teittleman",
+      "resolution_date": "2027-01-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

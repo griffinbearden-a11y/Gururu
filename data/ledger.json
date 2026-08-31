@@ -165,6 +165,29 @@
       ],
       "thesis": "Winterfell Whitewalkers just executed an absolute disaster of a trade with Vic Blends, proving that even a fancied contender can lose its mind before the season starts.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-08-31T00:02:45.587Z",
+      "slug": "2026-08-31-dirty-magic-doesnt-wait-for-tomorrow",
+      "format": "contender_check",
+      "subject_teams": [
+        2
+      ],
+      "thesis": "Will Minick's roster management is a masterclass in aggressive leadership while the rest of the league watches and whines.",
+      "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-08-31T00:03:06.881Z",
+      "slug": "2026-08-31-a-zero-sum-illusion-evaluating-the-macon-shlomo-exchange-thr",
+      "format": "by_the_numbers",
+      "subject_teams": [
+        4,
+        10
+      ],
+      "thesis": "Trade 1399561843818635264 between Macon Muskrats and Shlomo Teittleman registered as a neutral C-tier swap because both rosters exchanged equivalent long-term variance without shifting their underlying championship probabilities.",
+      "is_backfill": false
     }
   ]
 }

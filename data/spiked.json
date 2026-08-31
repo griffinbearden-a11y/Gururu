@@ -360,6 +360,36 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
       "spiked_at": "2026-08-30T00:02:25.228Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Doesn't Know What a Contender Looks Like",
+      "thesis": "Marcus Vail hid behind a spreadsheet to question my title picks because he's never built a winner in his life.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-08-31T00:02:18.887Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Just Handed Vic Blends a Charity Case",
+      "thesis": "Bryce Clenney gave away value to a bottom-dweller in a trade that makes me question my own preseason faith.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
+      "spiked_at": "2026-08-31T00:02:18.888Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Sorting Twelve Teams by Expected Value Before the First Snap",
+      "thesis": "When twelve rosters are sorted by true asset depth rather than emotional resonance, exactly three teams possess contention viability while nine others occupy various degrees of self-deception.",
+      "format": "tiers",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"When twelve teams are sorted by expected value rather than last year's emotional resonance, exactly three rosters possess the asset depth required to contend, while the remaining nine are engaged in various stages of self-deception.\" (2026-08-25).",
+      "spiked_at": "2026-08-31T00:02:52.411Z"
     }
   ]
 }
