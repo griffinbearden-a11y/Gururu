@@ -390,6 +390,46 @@
       "reason_code": "duplicate_thesis",
       "reason_detail": "Substantially duplicates vail's \"When twelve teams are sorted by expected value rather than last year's emotional resonance, exactly three rosters possess the asset depth required to contend, while the remaining nine are engaged in various stages of self-deception.\" (2026-08-25).",
       "spiked_at": "2026-08-31T00:02:52.411Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Tiers: Sorting Twelve Identical Records by Expected Value",
+      "thesis": "Dividing twelve zero-and-zero teams into tiers based on projected roster value reveals that nine franchises are engaged in optimistic self-deception while three hold the necessary asset depth to withstand variance.",
+      "format": "tiers",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"tiers\" within their last 5 articles.",
+      "spiked_at": "2026-09-01T00:04:22.241Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Banks is Building a Foundation in the Basement Again",
+      "thesis": "The Buckhead Beavers are leaning fully into their historical identity as a slow-burn rebuild, and there is a quiet logic to collecting picks while everyone else mortgages their future.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"manager_profile\" within their last 5 articles.",
+      "spiked_at": "2026-09-01T00:04:39.582Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Minick Family Trade Desk is Open for Business",
+      "thesis": "The annual August trade traffic between Will and Ross Minick reflects a unique family dynamic that continues to shape the waiver and transaction wires.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
+      "spiked_at": "2026-09-01T00:04:39.583Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Parsing the Pre-Week One Waiver Scramble Across the League",
+      "thesis": "The recent flurry of kicker and depth additions from Vic Blends and the Topeka Cosbies shows that even the most established rosters are jittery before the first kickoff.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-09-01T00:04:39.583Z"
     }
   ]
 }

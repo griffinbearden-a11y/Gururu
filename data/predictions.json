@@ -126,6 +126,24 @@
       "resolution_date": "2027-01-01",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-01-luck-index-zero-weeks-played-zero-variance-explained",
+      "claim": "Standings variance after six weeks of play will show no statistically significant correlation with August trade market valuations.",
+      "subject": "League-wide",
+      "resolution_date": "2026-10-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-01-josh-cochran-and-the-art-of-waiting-out-the-august-noise",
+      "claim": "JUICE's current asset accumulation will yield a significantly younger, more productive core by the start of the 2027 season.",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2027-09-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

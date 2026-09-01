@@ -188,6 +188,26 @@
       ],
       "thesis": "Trade 1399561843818635264 between Macon Muskrats and Shlomo Teittleman registered as a neutral C-tier swap because both rosters exchanged equivalent long-term variance without shifting their underlying championship probabilities.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-01T00:04:32.786Z",
+      "slug": "2026-09-01-luck-index-zero-weeks-played-zero-variance-explained",
+      "format": "luck_index",
+      "subject_teams": [],
+      "thesis": "A league with an identical zero-point baseline across all twelve rosters cannot meaningfully compute a luck index until sample sizes exceed zero, yet several managers continue to treat preseason projections as historical fact.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-01T00:04:54.343Z",
+      "slug": "2026-09-01-josh-cochran-and-the-art-of-waiting-out-the-august-noise",
+      "format": "rebuild_tracker",
+      "subject_teams": [
+        9
+      ],
+      "thesis": "While the rest of the league trades future draft capital for veteran running backs ahead of Week 1, JUICE is quietly adding young assets that will look brilliant twelve months from now.",
+      "is_backfill": false
     }
   ]
 }
