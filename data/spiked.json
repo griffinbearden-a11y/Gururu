@@ -610,6 +610,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-02T01:34:38.386Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Just Handed JUICE a Masterclass in How to Ruin a Roster",
+      "thesis": "Winterfell Whitewalkers gift-wrapped a fleece to a franchise that doesn't even know what a football looks like.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T03:03:27.914Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Josh Cochran Is Building a Museum for Losers While the Grown Men Play for Keeps",
+      "thesis": "JUICE holding the first rookie pick isn't a strategy, it's a permanent memorial to a man who refuses to win.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T03:03:27.915Z"
     }
   ]
 }
