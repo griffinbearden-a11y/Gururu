@@ -430,6 +430,86 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
       "spiked_at": "2026-09-01T00:04:39.583Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Just Handed Vic Blends a Charity Case",
+      "thesis": "Bryce Clenney gift-wrapped an absolute disaster of a trade to Vic Blends, proving that even an anointed contender can lose its mind before the first Sunday even kicks off.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T00:04:14.628Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Couldn't Spot a Champion If It Bit Him on the Spreadsheet",
+      "thesis": "Marcus Vail wrote another useless numbers piece questioning a three-year championship prediction streak built on pure football instinct, proving once again that a man with a calculator can stare right at a trophy and still not see who is holding it.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T00:04:14.629Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Will Minick Is Running This League Right While the Rest of You Whine",
+      "thesis": "Will Minick's roster management and commissioner hand are a masterclass in aggressive leadership while the rest of the league watches and cries about balance.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T00:04:14.629Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "SHMEATtheBOY Is Locked and Loaded for 2026",
+      "thesis": "Evan Plowden has his roster primed to validate my preseason faith while the rest of the mid-tier pretends they have a plan.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T00:04:14.630Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Gave Away the Farm and Called It a Plan",
+      "thesis": "Winterfell Whitewalkers just handed JUICE an absolute fleece in Trade 1399558654964871168, proving that panic sets in before Week 1 even kicks off.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T00:05:18.052Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Wants to Look at Spreadsheets While Winterfell Whitewalkers Bleeds Out",
+      "thesis": "Marcus Vail can audit trade values until his fingers bleed, but he still cannot see that a contender giving away assets to JUICE is a total disaster of will.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T00:05:18.053Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Are Burning Daylight After a Clown-Show Trade",
+      "thesis": "Bryce Clenney has exactly twelve months to salvage a contention window he is actively sabotaging by feeding assets to bottom-feeders.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T00:05:18.054Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Josh Cochran, Stop Hoarding Draft Picks and Grow a Pair",
+      "thesis": "JUICE is squatting on rookie picks and trade wins like a coward hoarding canned goods in a basement.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T00:05:18.055Z"
     }
   ]
 }
