@@ -510,6 +510,106 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-02T00:05:18.055Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Just Handed Vic Blends a Charity Case",
+      "thesis": "Trade 1399562689440686080 was a complete surrender by Bryce Clenney, proving that even an anointed contender can lose its mind before the season starts.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T01:34:35.007Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Doesn't Know a Championship When It's Staring Him in the Face",
+      "thesis": "Marcus Vail spent his latest column whining about predictive history instead of recognizing that Dirty Magic is building a juggernaut while the rest of the league watches.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T01:34:35.009Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Will Minick is Running This League Right While Everyone Else Cries",
+      "thesis": "Dirty Magic adding premium assets is a masterclass in aggressive leadership, and anyone questioning the commissioner's roster needs to shut up and play the game.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T01:34:35.010Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "JUICE is Collecting First-Round Picks Like a Man Planning to Lose Forever",
+      "thesis": "Josh Cochran holding the first rookie pick isn't a masterclass in rebuilding, it's a permanent admission of failure from a franchise that refuses to compete.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T01:34:35.011Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "SHMEATtheBOY is Standing Still While the World Burns",
+      "thesis": "Evan Plowden's perpetual mid-tier drift is an insult to every manager actually trying to capture the trophy this fall.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-09-02T01:34:35.161Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Just Handed JUICE the Crown on a Silver Platter",
+      "thesis": "Winterfell Whitewalkers trading elite assets to JUICE is an absolute embarrassment that proves Bryce Clenney has completely lost the plot before a single game has kicked off.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T01:34:38.216Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Josh Cochran Is Hoarding Rookie Picks While Everyone Else Plays Real Football",
+      "thesis": "JUICE holding the first rookie pick is not a masterclass in patience, it is a permanent admission of failure by a manager too cowardly to compete.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T01:34:38.224Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Frankie Doyle Is Writing Love Letters to a Man Who Refuses to Win",
+      "thesis": "Frankie Doyle praising JUICE's pathetic rebuilding strategy proves once and again that some writers in this league prefer writing obituaries to covering contenders.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T01:34:38.384Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Are Burning Every Bridge to the Title",
+      "thesis": "If Bryce Clenney thinks bleeding roster value to JUICE is a viable path to a championship, he needs his head examined by someone who actually knows how to win.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T01:34:38.385Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Josh Cochran, Put the Calculator Down and Try Winning a Game",
+      "thesis": "You can hoard all the rookie picks and trade chips you want, Josh, but until you field a team that actually scares somebody, you are just taking up space in my league.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-02T01:34:38.386Z"
     }
   ]
 }

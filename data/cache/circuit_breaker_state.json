@@ -13,7 +13,7 @@
     "2026-08-31": 2,
     "2026-09-01": 2
   },
-  "consecutive_pitch_failures": 1,
+  "consecutive_pitch_failures": 0,
   "reacted_transaction_ids": [
     "1388729102453735424",
     "1388660428262883328",
