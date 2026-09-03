@@ -217,6 +217,27 @@
       "subject_teams": [],
       "thesis": "Anyone punting a season before Week 1 is stealing from the eleven men who actually showed up to play.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-03T00:04:36.722Z",
+      "slug": "2026-09-03-all-play-records-and-the-illusion-of-preseason-hierarchy",
+      "format": "all_play_record",
+      "subject_teams": [],
+      "thesis": "Calculating an all-play record before a single snap has been played demonstrates that every manager currently possesses an identical expected value of zero, regardless of what their roster construction might suggest.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-03T00:05:00.007Z",
+      "slug": "2026-09-03-the-long-shadow-of-a-championship-year",
+      "format": "manager_profile",
+      "subject_teams": [
+        1,
+        12
+      ],
+      "thesis": "Holding an early rookie pick after reaching the mountaintop changes a manager's psychology far more than it improves their immediate depth.",
+      "is_backfill": false
     }
   ]
 }

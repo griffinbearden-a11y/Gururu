@@ -630,6 +630,66 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-02T03:03:27.915Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Luck Index: Zero Points and Infinite Presumptions",
+      "thesis": "A league with a zero-point baseline across all twelve rosters cannot meaningfully compute a luck index until sample sizes exceed zero, yet several managers continue to treat preseason projections as historical fact.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"luck_index\" within their last 5 articles.",
+      "spiked_at": "2026-09-03T00:04:21.668Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Contention Windows and the Cost of Emotional Valuation",
+      "thesis": "Contention windows in twelve-team dynasty leagues are routinely overestimated by eighteen months due to the emotional weighting managers assign to brand-name assets.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"contention_window\" within their last 5 articles.",
+      "spiked_at": "2026-09-03T00:04:21.668Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "By the Numbers: Sorting Variance from Strategy",
+      "thesis": "Nearly everything this league calls skill is variance wearing a costume, and a statistical audit of roster values reveals that most managers are simply reacting to noise.",
+      "format": "by_the_numbers",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"by_the_numbers\" within their last 5 articles.",
+      "spiked_at": "2026-09-03T00:04:21.669Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Quiet Walk Through the Basement Where the Future Is Actually Being Built",
+      "thesis": "While the rest of the league obsesses over weekly matchups and short-term veteran rentals, the true mechanics of dynasty longevity are being hammered out in rosters like JUICE and the Buckhead Beavers through slow, unglamorous asset accumulation.",
+      "format": "roster_archaeology",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-03T00:04:44.148Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "When Family Business Becomes the League's Most Reliable Trading Post",
+      "thesis": "The regular summer exchanges between Will and Ross Minick are less about collusion and more about two relatives trying to solve separate competitive puzzles using the same family logic.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-03T00:04:44.149Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Art of Staying Perpetually Somewhere in the Middle",
+      "thesis": "Evan Plowden's refusal to either tear down his roster or mortgage the future for a single championship push might actually be the most honest approach in the league.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 10 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-03T00:04:44.149Z"
     }
   ]
 }
