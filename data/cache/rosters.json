@@ -10,16 +10,28 @@
     ],
     "league_id": "1317231936673947648",
     "metadata": {
+      "p_nick_10213": "Still here",
+      "p_nick_11583": "Jelly Legs",
       "p_nick_11631": "Is he still Alive?",
       "p_nick_11638": "Gun Violence Survivor",
       "p_nick_11647": "Played at Troy w kyle toole",
+      "p_nick_12015": "The Chunk",
+      "p_nick_12490": "Touchdown Toots",
+      "p_nick_12514": "Nigberts Nightmare",
+      "p_nick_12522": "Grimace",
       "p_nick_12529": "Give him the fucking ball",
+      "p_nick_12533": "Little Bill",
+      "p_nick_13279": "El Chupacabra",
+      "p_nick_13413": "Bronco Killer",
       "p_nick_4137": "RIP",
       "p_nick_4454": "Waiver wire",
-      "p_nick_4881": "Mr. Cosby",
+      "p_nick_4881": "Mr. Cosby/Godfather",
       "p_nick_5012": "Fucking autodraft",
+      "p_nick_5022": "Odysseus",
+      "p_nick_6786": "Fleeced Bearden",
       "p_nick_7547": "The Franchise",
-      "p_nick_8150": "Back?"
+      "p_nick_8150": "Back?",
+      "p_nick_9225": "Depth"
     },
     "owner_id": "1276237496287498240",
     "player_map": null,
@@ -40,7 +52,7 @@
       "5022",
       "6786",
       "9225",
-      "TEN"
+      "DET"
     ],
     "reserve": null,
     "roster_id": 1,
@@ -65,7 +77,7 @@
       "13279",
       "11631",
       "12015",
-      "TEN"
+      "DET"
     ],
     "taxi": null
   },
