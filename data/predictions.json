@@ -171,6 +171,15 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-05-asset-depreciation-curves",
+      "claim": "Non-elite running backs acquired via late-summer waivers will experience a market value depreciation exceeding fifty percent by the midpoint of the 2026 season.",
+      "subject": "Late-round running back market",
+      "resolution_date": "2026-11-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

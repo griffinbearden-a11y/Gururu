@@ -247,6 +247,15 @@
       "subject_teams": [],
       "thesis": "A dynasty league is built on sweat, blood, and a refusal to punt, and anyone whining about asset allocation needs to take a long look in the mirror.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-05T00:04:38.439Z",
+      "slug": "2026-09-05-asset-depreciation-curves",
+      "format": "valuation_half_life",
+      "subject_teams": [],
+      "thesis": "The market value of a running back drafted outside the first round decays at a rate that renders preseason trade premiums mathematically indefensible.",
+      "is_backfill": false
     }
   ]
 }

@@ -294,6 +294,13 @@
       "description": "A dynasty league is built on sweat, blood, and a refusal to punt, and anyone whining about asset allocation needs to take a long look in the mirror.",
       "season_window": "in_season",
       "league_wide": true
+    },
+    {
+      "key": "valuation_half_life",
+      "display_name": "Valuation Half Life",
+      "description": "The market value of a running back drafted outside the first round decays at a rate that renders preseason trade premiums mathematically indefensible.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }

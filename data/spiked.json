@@ -700,6 +700,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 10 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-04T00:07:48.041Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The 0.0-0.0 Variance Illusion",
+      "thesis": "Calculating expected wins before a single regular-season snap has been played demonstrates that every manager currently possesses an identical expected value of zero, regardless of what their roster construction might suggest.",
+      "format": "all_play_record",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Calculating an all-play record before a single snap has been played demonstrates that every manager currently possesses an identical expected value of zero, regardless of what their roster construction might suggest.\" (2026-09-03).",
+      "spiked_at": "2026-09-05T00:04:27.233Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Winterfell's Self-Inflicted Deficit",
+      "thesis": "Trade 1399562689440686080 and Trade 1399558654964871168 represent a systemic misallocation of resources by Winterfell Whitewalkers that cannot be rationalized as team-building.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-05T00:04:27.234Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Contention Windows and Emotional Depreciation",
+      "thesis": "Contention windows in twelve-team dynasty leagues are routinely overestimated by eighteen months due to the emotional weighting managers assign to brand-name assets.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-05T00:04:27.235Z"
     }
   ]
 }
