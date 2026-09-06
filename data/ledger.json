@@ -256,6 +256,15 @@
       "subject_teams": [],
       "thesis": "The market value of a running back drafted outside the first round decays at a rate that renders preseason trade premiums mathematically indefensible.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-06T00:04:24.259Z",
+      "slug": "2026-09-06-a-note-on-recent-processing-times",
+      "format": "corrections",
+      "subject_teams": [],
+      "thesis": "As transaction volume spikes heading into the regular season, the commissioner's office has managed waiver processing with a steady hand, though the lingering questions around platform migration history remind us why administrative transparency matters.",
+      "is_backfill": false
     }
   ]
 }

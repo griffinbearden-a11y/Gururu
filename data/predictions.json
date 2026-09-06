@@ -180,6 +180,15 @@
       "resolution_date": "2026-11-01",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-06-a-note-on-recent-processing-times",
+      "claim": "Waiver processing and administrative logs will stabilize smoothly as the regular season schedule settles into its weekly rhythm.",
+      "subject": "WillMinick",
+      "resolution_date": "2026-09-28",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

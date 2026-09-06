@@ -730,6 +730,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-05T00:04:27.235Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Quiet Accumulation of Assets",
+      "thesis": "While the rest of the league spends the final days before kickoff chasing veterans, Josh Cochran's methodical approach in JUICE is laying the groundwork for a sustainable window.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-09-06T00:04:10.749Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Family Ledger Across Town",
+      "thesis": "The annual August trade traffic between Will and Ross Minick isn't just about roster optimization; it reflects a long-running family dynamic that subtly shapes the league's trade ecosystem.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
+      "spiked_at": "2026-09-06T00:04:10.750Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Life After the Trophy",
+      "thesis": "Holding an early rookie pick after reaching the mountaintop changes a manager's psychology far more than it improves their immediate depth, leaving former champions to navigate a strange kind of hangover.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"manager_profile\" within their last 5 articles.",
+      "spiked_at": "2026-09-06T00:04:10.751Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Patching the Foundations Before the Storm",
+      "thesis": "The recent wave of minor waiver additions across the lower half of the standings reveals how managers are frantically trying to patch depth before Week 1 rather than committing to a full teardown.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-09-06T00:04:10.752Z"
     }
   ]
 }
