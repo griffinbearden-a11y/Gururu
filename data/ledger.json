@@ -265,6 +265,15 @@
       "subject_teams": [],
       "thesis": "As transaction volume spikes heading into the regular season, the commissioner's office has managed waiver processing with a steady hand, though the lingering questions around platform migration history remind us why administrative transparency matters.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-09-07T00:04:23.298Z",
+      "slug": "2026-09-07-holding-an-early-rookie-pick-is-an-admission-that-you-plan-o",
+      "format": "rookie_pick_market",
+      "subject_teams": [],
+      "thesis": "Hoarding rookie draft capital is the coward's way out of competing, and anyone sitting on top rookie picks instead of trading for proven talent deserves to finish in the cellar.",
+      "is_backfill": false
     }
   ]
 }

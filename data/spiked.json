@@ -770,6 +770,36 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
       "spiked_at": "2026-09-06T00:04:10.752Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Doesn't Know What a Contender Looks Like If It Bit Him on the Spreadsheet",
+      "thesis": "Marcus Vail is auditing a dynasty league he never had the spine to win, hiding behind spreadsheets while SHMEATtheBOY, Dirty Magic, and the Whitewalkers actually build teams that want to win games.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-09-07T00:04:08.048Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic Is Running This League While Everyone Else Whines About the Math",
+      "thesis": "Will Minick has constructed a juggernaut in Dirty Magic through pure managerial force of will, proving that roster dominance comes from wanting the trophy more than your opponents do.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-09-07T00:04:08.049Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Just Traded Away Their Future for Nothing and I Told You So",
+      "thesis": "The Whitewalkers botched their trade with Vic Blends because they panicked at the first sign of pressure, proving that even a fancied contender can lose its mind before the season starts.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
+      "spiked_at": "2026-09-07T00:04:08.050Z"
     }
   ]
 }
