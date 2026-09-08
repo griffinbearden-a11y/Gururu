@@ -198,6 +198,15 @@
       "resolution_date": "2027-01-01",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-08-the-family-business",
+      "claim": "African Anteaters will continue to prioritize developmental running back depth through the early portion of the season.",
+      "subject": "African Anteaters",
+      "resolution_date": "2026-10-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

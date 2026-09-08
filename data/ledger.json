@@ -274,6 +274,18 @@
       "subject_teams": [],
       "thesis": "Hoarding rookie draft capital is the coward's way out of competing, and anyone sitting on top rookie picks instead of trading for proven talent deserves to finish in the cellar.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-08T00:39:13.821Z",
+      "slug": "2026-09-08-the-family-business",
+      "format": "rivalry_file",
+      "subject_teams": [
+        2,
+        6
+      ],
+      "thesis": "The annual flurry of roster adjustments between the Minick cousins reflects a deeply rooted family dynamic that continues to quietly shape the league's competitive balance without ever needing to raise its voice.",
+      "is_backfill": false
     }
   ]
 }

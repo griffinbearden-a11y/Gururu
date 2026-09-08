@@ -800,6 +800,86 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
       "spiked_at": "2026-09-07T00:04:08.050Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Zero Wins and Zero Losses Across Twelve Rosters Provide an Ideal Baseline for Variance Measurement",
+      "thesis": "Calculating an all-play record before a single week of games has been completed demonstrates that every manager currently possesses an identical expected value of zero, rendering emotional preseason projections mathematically indistinguishable from random noise.",
+      "format": "all_play_record",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"all_play_record\" within their last 5 articles.",
+      "spiked_at": "2026-09-08T00:34:17.231Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "A League With Zero Points Scored Cannot Yet Compute a Luck Index Without Violating Basic Arithmetic",
+      "thesis": "A league with an identical zero-point baseline across all twelve rosters cannot meaningfully compute a luck index until sample sizes exceed zero, yet several managers continue to treat preseason power rankings as historical fact.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"luck_index\" within their last 5 articles.",
+      "spiked_at": "2026-09-08T00:34:17.233Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Contention Windows in Twelve-Team Dynasty Leagues Are Routinely Overestimated by Eighteen Months",
+      "thesis": "Contention windows in twelve-team dynasty leagues are routinely overestimated by eighteen months due to the emotional weighting managers assign to brand-name assets, particularly following championship runs like the Macon Muskrats' 2025 campaign.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Contention windows in twelve-team dynasty leagues are routinely overestimated by eighteen months due to the emotional weighting managers assign to brand-name assets.\" (2026-08-18).",
+      "spiked_at": "2026-09-08T00:34:17.234Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Evan Plowden's Perpetual Holding Pattern Remains Mathematically Indefensible Under Asset Valuation Curves",
+      "thesis": "Shlomo Teittleman's reluctance to either bottom out or mortgage the future leaves the roster in a perpetual holding pattern that sacrifices expected value for the comfort of mediocrity.",
+      "format": "purgatory_piece",
+      "reason_stage": "critic",
+      "reason_code": "unresolved_after_revisions",
+      "reason_detail": "The thesis substantially duplicates the last 20 ledger entries: ledger entry [2026-08-16] (doyle/manager_profile) states 'Evan Plowden's reluctance to either bottom out or mortgage the future leaves his roster in a perpetual holding pattern that might be entirely intentional,' which is virtually identical to the pitch thesis and body content regarding Shlomo Teittleman / Evan Plowden's perpetual holding pattern.",
+      "spiked_at": "2026-09-08T00:36:23.474Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Quiet Footing in the Backfield: Looking at Josh Cochran's Long Game",
+      "thesis": "While the rest of the league scrambles for immediate veteran production ahead of Week 1, JUICE is quietly accumulating the kind of foundational draft capital and youth that will make the 2026 season look like a stepping stone rather than a struggle.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-09-08T00:38:16.071Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Holding the Mountaintop: Life After the Trophy for Athens and Topeka",
+      "thesis": "Reaching the absolute peak of the league changes a manager's psychology far more than it improves their immediate depth, leaving former champions to navigate the strange quiet of holding early rookie picks while everyone else hunts them down.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"manager_profile\" within their last 5 articles.",
+      "spiked_at": "2026-09-08T00:38:16.073Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Middle Way: Evan Plowden's Perpetual Holding Pattern",
+      "thesis": "A persistent reluctance to either bottom out or mortgage the future leaves SHMEATtheBOY in a familiar holding pattern that might be entirely intentional rather than accidental.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"manager_profile\" within their last 5 articles.",
+      "spiked_at": "2026-09-08T00:38:16.087Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Patching the Foundations: A Look Across the Waiver Wire",
+      "thesis": "The recent wave of minor roster adjustments and depth additions across the league reveals how frantic the lower half is to patch holes before the first real whistle blows.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-09-08T00:38:16.088Z"
     }
   ]
 }
