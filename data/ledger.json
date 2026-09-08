@@ -286,6 +286,18 @@
       ],
       "thesis": "The annual flurry of roster adjustments between the Minick cousins reflects a deeply rooted family dynamic that continues to quietly shape the league's competitive balance without ever needing to raise its voice.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-08T01:53:30.794Z",
+      "slug": "2026-09-08-future-pick-debt-auditing-the-balance-sheets-of-teams-mortga",
+      "format": "future_pick_debt",
+      "subject_teams": [
+        3,
+        9
+      ],
+      "thesis": "Trading future draft capital for veteran running backs ahead of Week 1 creates a structural deficit that mathematical models show is rarely recovered through in-season variance.",
+      "is_backfill": false
     }
   ]
 }
