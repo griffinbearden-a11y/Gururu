@@ -920,6 +920,46 @@
       "reason_code": "duplicate_thesis",
       "reason_detail": "Substantially duplicates vail's \"Contention windows in twelve-team dynasty leagues are routinely overestimated by eighteen months due to the emotional weighting managers assign to brand-name assets.\" (2026-08-18).",
       "spiked_at": "2026-09-08T01:52:49.313Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Is Staring at a Spreadsheet While Dirty Magic Runs the League",
+      "thesis": "Marcus Vail wrote another useless mathematical audit of contention windows because he wouldn't know a real contender if it walked up and bit him on the calculator.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-09T00:23:44.375Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Trade 1399562689440686080 Proves Winterfell Whitewalkers Lost Their Mind",
+      "thesis": "Winterfell Whitewalkers handed Vic Blends a massive win in Trade 1399562689440686080 because even a fancied contender can panic before the season starts.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
+      "spiked_at": "2026-09-09T00:23:44.376Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic Is Showing the Rest of You How a Real Manager Operates",
+      "thesis": "Will Minick is building a dynasty with actual aggression while the rest of the league sits around whining about asset allocation and future picks.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-09-09T00:23:44.377Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Hoarding Rookie Picks Is Just a Coward's Way Out of Competing",
+      "thesis": "Sitting on top rookie picks instead of trading for proven veteran talent is an admission of failure that deserves to rot in the cellar.",
+      "format": "rookie_pick_market",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rookie_pick_market\" within their last 5 articles.",
+      "spiked_at": "2026-09-09T00:23:44.378Z"
     }
   ]
 }

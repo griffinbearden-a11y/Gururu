@@ -216,6 +216,15 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-09-09-the-commissioner-is-running-this-league-right-while-you-all",
+      "claim": "Dirty Magic will finish as a top contender in the 2026 season",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
