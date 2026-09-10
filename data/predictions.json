@@ -225,6 +225,15 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-10-rebuild-tracker-patience-and-asset-acquisition-in-the-cellar",
+      "claim": "The Buckhead Beavers will finish the 2026 season in the bottom three of total points scored.",
+      "subject": "Buckhead Beavers",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

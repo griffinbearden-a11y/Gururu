@@ -960,6 +960,86 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"rookie_pick_market\" within their last 5 articles.",
       "spiked_at": "2026-09-09T00:23:44.378Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Luck Index: 0.0 Points Against and Zero Variance",
+      "thesis": "A league with a zero-point baseline across all twelve rosters cannot compute a meaningful luck index until actual game data exists, yet managers continue to mistake preseason sentiment for historical divergence.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"luck_index\" within their last 5 articles.",
+      "spiked_at": "2026-09-10T00:22:17.765Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "All-Play Record: Twelve Identical Baselines Before Week 1",
+      "thesis": "Calculating an all-play record before a single snap has been played demonstrates that every manager currently possesses an identical expected value of zero, regardless of what their roster construction might suggest.",
+      "format": "all_play_record",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"all_play_record\" within their last 5 articles.",
+      "spiked_at": "2026-09-10T00:22:17.766Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Tiers: Sorting Twelve Rosters by Expected Value",
+      "thesis": "When twelve teams are sorted by expected value rather than last year's emotional resonance, exactly three rosters possess the asset depth required to contend, while the remaining nine are engaged in various stages of self-deception.",
+      "format": "tiers",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"When twelve teams are sorted by expected value rather than last year's emotional resonance, exactly three rosters possess the asset depth required to contend, while the remaining nine are engaged in various stages of self-deception.\" (2026-08-25).",
+      "spiked_at": "2026-09-10T00:22:17.767Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt: The Structural Deficit of Preseason Trading",
+      "thesis": "Trading future draft capital for veteran running backs ahead of Week 1 creates a structural deficit that mathematical models show is rarely recovered through in-season variance.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"future_pick_debt\" within their last 5 articles.",
+      "spiked_at": "2026-09-10T00:22:17.768Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Quiet Ledger: Documenting the Small Decisions That Keep the Basement Warm",
+      "thesis": "A franchise does not typically collapse in a single blockbuster, but rather through dozens of tiny, sensible-sounding transactions that slowly drain all the life out of a roster until the manager is left wondering why nobody wants to trade with them.",
+      "format": "basement_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 7 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-10T00:22:40.253Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "When the Trophy Gets Heavy: Life After the Mountain Peak",
+      "thesis": "Holding an early rookie pick after reaching the championship peak changes a manager's psychology far more than it improves their immediate depth, often leaving them paralyzed between defending the crown and tearing down for the next one.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates doyle's \"Holding an early rookie pick after reaching the mountaintop changes a manager's psychology far more than it improves their immediate depth.\" (2026-09-03).",
+      "spiked_at": "2026-09-10T00:22:40.254Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Family Table: How the Minicks Trade Without Breaking Thanksgiving",
+      "thesis": "The constant stream of minor transactions between the Minick cousins is less a conspiracy and more a familiar family dialogue conducted entirely through the medium of running backs and late-round picks.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-10T00:22:40.258Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Patience in the Dark: Why JUICE Continues to Collect Tomorrow",
+      "thesis": "While the rest of the league spends the early weeks chasing fading veterans, a quiet dedication to accumulating youth and flexibility remains the only rational path for a team that understands where it sits in the broader timeline.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-10T00:22:40.259Z"
     }
   ]
 }

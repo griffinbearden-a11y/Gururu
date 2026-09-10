@@ -307,6 +307,26 @@
       "subject_teams": [],
       "thesis": "WillMinick runs this league with an iron fist and every single complaint about his administration is just noise from managers who can't win a game.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-10T00:22:33.127Z",
+      "slug": "2026-09-10-rebuild-tracker-patience-and-asset-acquisition-in-the-cellar",
+      "format": "rebuild_tracker",
+      "subject_teams": [
+        7
+      ],
+      "thesis": "Bottom-dwelling franchises must accumulate draft capital rather than chasing marginal waiver running backs, though historical precedent suggests most will misallocate their assets by October.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-10T00:23:23.476Z",
+      "slug": "2026-09-10-a-correction-on-the-cellar-and-other-small-adjustments",
+      "format": "corrections",
+      "subject_teams": [],
+      "thesis": "The commissioner's office has handled a busy transactional window with reasonable care, but the lingering questions around historical platform migrations remind us why keeping an eye on the administrative machinery is always a worthwhile endeavor.",
+      "is_backfill": false
     }
   ]
 }
