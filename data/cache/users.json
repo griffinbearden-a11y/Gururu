@@ -61,7 +61,7 @@
     "avatar": "fdd380a462ba05074cd5433b5775e777",
     "display_name": "WillMinick",
     "is_bot": false,
-    "is_owner": true,
+    "is_owner": false,
     "league_id": "1317231936673947648",
     "metadata": {
       "allow_pn": "on",
@@ -76,7 +76,7 @@
     "avatar": "7572250c2fb084c434fed0e82229e183",
     "display_name": "evansplowden",
     "is_bot": false,
-    "is_owner": false,
+    "is_owner": true,
     "league_id": "1317231936673947648",
     "metadata": {
       "allow_pn": "on",
