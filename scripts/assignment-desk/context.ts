@@ -130,6 +130,65 @@ export async function getRecentTransactionsSummary(limit = 15): Promise<string> 
     .join('\n');
 }
 
+export async function getScheduleSummary(): Promise<string> {
+  const league = await readJSON<{ settings: { leg: number } } | null>('data/cache/league.json', null);
+  if (!league) return '(no schedule data)';
+  const teams = await getTeamDirectory();
+  const teamByRoster = new Map(teams.map((t) => [t.roster_id, t.team_name]));
+
+  const formatWeek = (week: number, label: string): string | null => {
+    const path = `data/cache/matchups/week_${week}.json`;
+    if (!existsSync(path)) return null;
+    const raw = JSON.parse(readFileSync(path, 'utf-8')) as { roster_id: number; matchup_id: number; points: number }[];
+    if (!raw.length) return null;
+    const byMatchup = new Map<number, typeof raw>();
+    for (const r of raw) {
+      if (!byMatchup.has(r.matchup_id)) byMatchup.set(r.matchup_id, []);
+      byMatchup.get(r.matchup_id)!.push(r);
+    }
+    const lines = [...byMatchup.values()].map(([a, b]) => {
+      const nameA = teamByRoster.get(a.roster_id) ?? `Roster ${a.roster_id}`;
+      if (!b) return `  ${nameA} — BYE`;
+      const nameB = teamByRoster.get(b.roster_id) ?? `Roster ${b.roster_id}`;
+      return `  ${nameA} (${a.points}) vs ${nameB} (${b.points})`;
+    });
+    return `Week ${week} (${label}):\n${lines.join('\n')}`;
+  };
+
+  const currentWeek = league.settings.leg;
+  const parts = [formatWeek(currentWeek, 'current'), formatWeek(currentWeek + 1, 'upcoming')].filter(
+    (p): p is string => p !== null
+  );
+  return parts.length ? parts.join('\n\n') : '(no schedule data yet)';
+}
+
+export async function getDraftResultsSummary(): Promise<string> {
+  const drafts = await readJSON<
+    { draft_id: string; status: string; settings: { rounds: number } }[]
+  >('data/cache/drafts.json', []);
+  const current = drafts[drafts.length - 1];
+  if (!current || current.status !== 'complete') return '(rookie draft not completed yet)';
+
+  const path = `data/cache/draft_picks/${current.draft_id}.json`;
+  if (!existsSync(path)) return '(no draft pick data)';
+  const picks = JSON.parse(readFileSync(path, 'utf-8')) as {
+    pick_no: number;
+    round: number;
+    roster_id: number;
+    metadata: { first_name: string; last_name: string; position: string; team: string };
+  }[];
+  const teams = await getTeamDirectory();
+  const teamByRoster = new Map(teams.map((t) => [t.roster_id, t.team_name]));
+
+  return picks
+    .sort((a, b) => a.pick_no - b.pick_no)
+    .map(
+      (p) =>
+        `  ${p.pick_no}. (Rd ${p.round}) ${teamByRoster.get(p.roster_id) ?? `Roster ${p.roster_id}`} — ${p.metadata.first_name} ${p.metadata.last_name} (${p.metadata.position}, ${p.metadata.team})`
+    )
+    .join('\n');
+}
+
 export interface WriterStateEntry {
   grudges: { target: string; team?: string; incident: string; status: string; since: string }[];
   positions: { claim: string; since: string; status: string }[];
@@ -142,13 +201,15 @@ export async function getWriterState(writerId: WriterId): Promise<WriterStateEnt
 }
 
 export async function buildContextBundle(writerId: WriterId): Promise<string> {
-  const [lore, leagueSummary, recentTx, tradeGrades, ledger, state] = await Promise.all([
+  const [lore, leagueSummary, recentTx, tradeGrades, ledger, state, schedule, draftResults] = await Promise.all([
     loadLore(),
     getLeagueSummary(),
     getRecentTransactionsSummary(),
     getRecentTradeGrades(5),
     getRecentLedger(20),
     getWriterState(writerId),
+    getScheduleSummary(),
+    getDraftResultsSummary(),
   ]);
 
   return [
@@ -157,6 +218,12 @@ export async function buildContextBundle(writerId: WriterId): Promise<string> {
     '',
     '# Current league state',
     leagueSummary,
+    '',
+    '# Schedule (current + upcoming week matchups, roster_id-based)',
+    schedule,
+    '',
+    '# This season\'s rookie draft results (5 rounds, pick order)',
+    draftResults,
     '',
     '# Recent transactions',
     recentTx || '(none)',

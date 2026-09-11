@@ -1,0 +1,50 @@
+name: Backfill catch-up
+
+# One-off, manually triggered. Publishes the power-rankings / rookie-draft-
+# grades / matchup-preview pieces that never fired because the writer
+# context bundle didn't include schedule or draft data (fixed alongside
+# this workflow). Delete this file once it's been run.
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: poll-and-generate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Ingest fresh Sleeper data
+        env:
+          SLEEPER_LEAGUE_ID: ${{ secrets.SLEEPER_LEAGUE_ID }}
+        run: npm run ingest:sleeper
+      - name: Run catch-up backfill
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+        run: npm run backfill:catchup
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "daily-guru-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet && exit 0
+          git commit -m "backfill: power rankings, rookie draft grades, week 1 matchup preview"
+          for i in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          echo "Failed to push after retries." >&2
+          exit 1

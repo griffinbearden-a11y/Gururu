@@ -16,6 +16,7 @@
     "desk:run": "tsx scripts/assignment-desk/run.ts",
     "health:email": "tsx scripts/health-email.ts",
     "backfill:wolf": "tsx scripts/backfill-wolf.ts",
+    "backfill:catchup": "tsx scripts/backfill-catchup.ts",
     "howlin-minute": "tsx scripts/howlin-minute/run.ts",
     "mailchimp:welcome": "tsx scripts/mailchimp/welcome-new-signups.ts",
     "trade-value:refresh": "tsx scripts/trade-value/refresh-values.ts",

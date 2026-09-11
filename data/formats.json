@@ -60,8 +60,8 @@
     {
       "key": "rookie_draft_grades",
       "display_name": "Rookie Draft Grades",
-      "description": "Grading a team's (or the league's) rookie draft picks.",
-      "season_window": "offseason",
+      "description": "Grading a team's (or the league's) rookie draft picks. Fair game any time — early grades right after the draft, or revisited once the picks have game tape.",
+      "season_window": "any",
       "league_wide": false
     },
     {
