@@ -246,26 +246,26 @@
     },
     {
       "writer": "wolf",
-      "article_slug": "2026-09-11-wolfs-early-power-rankings-the-elite-stand-tall-while-the-cl",
-      "claim": "Dirty Magic and Winterfell Whitewalkers will finish at the top of the standings",
-      "subject": "Dirty Magic",
+      "article_slug": "2026-09-11-wolfs-early-power-rankings",
+      "claim": "Dirty Magic will finish the season at the top of the standings.",
+      "subject": "Dirty Magic (WillMinick)",
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
     },
     {
       "writer": "doyle",
-      "article_slug": "2026-09-11-grading-the-leagues-rookie-draft",
-      "claim": "Jadarian Price will open the season as Seattle's lead back while Zach Charbonnet is on the PUP list.",
-      "subject": "Jadarian Price",
-      "resolution_date": "2026-10-01",
+      "article_slug": "2026-09-11-grading-the-leagues-rookie-draft-how-the-twelve-rooms-spent",
+      "claim": "JUICE's rookie class will yield at least two regular starting contributors by the end of the 2026 season",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
     },
     {
       "writer": "doyle",
       "article_slug": "2026-09-11-the-wire-week-1-matchup-preview",
-      "claim": "JUICE will quietly accumulate developmental assets that pay off by mid-season",
+      "claim": "JUICE will maintain its focus on accumulating young assets rather than trading for veteran running backs as the season progresses.",
       "subject": "JUICE 🧃",
       "resolution_date": "2026-11-01",
       "outcome": "pending",
@@ -274,9 +274,9 @@
     {
       "writer": "doyle",
       "article_slug": "2026-09-11-the-wire-week-1-matchup-preview",
-      "claim": "Dirty Magic will recover from a slow opening-week start to contend near the top",
-      "subject": "Dirty Magic",
-      "resolution_date": "2026-10-15",
+      "claim": "The Macon Muskrats will finish the opening week with a victory after their strong early scoring output.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-09-15",
       "outcome": "pending",
       "verified": true
     }
