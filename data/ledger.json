@@ -336,6 +336,33 @@
       "subject_teams": [],
       "thesis": "A roster that does not bleed trade equity is a corpse waiting for a shovel, and anyone treating a Week 1 lineup like a family heirloom deserves the dirt.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-09-11T20:20:36.583Z",
+      "slug": "2026-09-11-wolfs-early-power-rankings-the-elite-stand-tall-while-the-cl",
+      "format": "power_rankings",
+      "subject_teams": [],
+      "thesis": "The 2026 season is one week old and the league already has a clear top tier, a murky middle, and at least one team that overpaid for a headline in August.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-11T20:20:59.423Z",
+      "slug": "2026-09-11-grading-the-leagues-rookie-draft",
+      "format": "rookie_draft_grades",
+      "subject_teams": [],
+      "thesis": "Some teams drafted for need, some drafted for the name on the card, and it's already clear which rooms will regret which picks.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-11T20:21:15.330Z",
+      "slug": "2026-09-11-the-wire-week-1-matchup-preview",
+      "format": "matchup_preview",
+      "subject_teams": [],
+      "thesis": "The league's first full week of real games is underway, and the schedule already has a few matchups that will define how seriously to take the early standings.",
+      "is_backfill": false
     }
   ]
 }

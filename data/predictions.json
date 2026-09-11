@@ -243,6 +243,42 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-09-11-wolfs-early-power-rankings-the-elite-stand-tall-while-the-cl",
+      "claim": "Dirty Magic and Winterfell Whitewalkers will finish at the top of the standings",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-11-grading-the-leagues-rookie-draft",
+      "claim": "Jadarian Price will open the season as Seattle's lead back while Zach Charbonnet is on the PUP list.",
+      "subject": "Jadarian Price",
+      "resolution_date": "2026-10-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-11-the-wire-week-1-matchup-preview",
+      "claim": "JUICE will quietly accumulate developmental assets that pay off by mid-season",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2026-11-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-11-the-wire-week-1-matchup-preview",
+      "claim": "Dirty Magic will recover from a slow opening-week start to contend near the top",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-10-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
