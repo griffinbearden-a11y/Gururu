@@ -301,6 +301,13 @@
       "description": "The market value of a running back drafted outside the first round decays at a rate that renders preseason trade premiums mathematically indefensible.",
       "season_window": "in_season",
       "league_wide": true
+    },
+    {
+      "key": "the_inquisition",
+      "display_name": "The Inquisition",
+      "description": "A roster that does not bleed trade equity is a corpse waiting for a shovel, and anyone treating a Week 1 lineup like a family heirloom deserves the dirt.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }

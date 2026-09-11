@@ -1040,6 +1040,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-10T00:22:40.259Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "JUICE Has Surrendered Before the First Snap",
+      "thesis": "Hoarding rookie picks and sleeping on the wire is an admission of total spiritual bankruptcy disguised as a long-term plan.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-11T00:17:56.461Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "SHMEATtheBOY, Dirty Magic, and the Road to Glory",
+      "thesis": "The anointed trinity of 2026 are the only three rosters in this twelve-man asylum possessing the sheer animal will to claim the crown.",
+      "format": "howlin_preseason_pick",
+      "reason_stage": "filter",
+      "reason_code": "season_window",
+      "reason_detail": "\"howlin_preseason_pick\" runs in preseason, but it's currently in_season.",
+      "spiked_at": "2026-09-11T00:17:56.463Z"
     }
   ]
 }

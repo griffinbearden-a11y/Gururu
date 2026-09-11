@@ -234,6 +234,15 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-09-11-the-pulpit-speaks-on-the-sin-of-standing-still",
+      "claim": "Teams hoarding rookie picks and refusing to trade will finish at the bottom of the standings in December.",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
