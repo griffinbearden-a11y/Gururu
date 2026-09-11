@@ -15,8 +15,45 @@ import type { Pitch } from './assignment-desk/pitch.ts';
 import type { WriterId } from './assignment-desk/context.ts';
 import { sendNewPostEmail } from './lib/mailchimp.ts';
 import { SITE_URL } from './lib/site.ts';
+import { readJSON, writeJSON } from './lib/fsjson.ts';
 
 const MAX_REVISIONS = 2;
+
+// The first run of this script (before the FULL_COVERAGE_FORMATS structural
+// requirement existed in draft.ts) produced three pieces that were on-topic
+// but didn't actually deliver their format: a "power rankings" that only
+// discussed 5 teams, "draft grades" with no actual grades, a "matchup
+// preview" covering 2 of 6 games. Remove those before regenerating so the
+// bad versions don't linger in the ledger (and get read as precedent by
+// future pitches) alongside the corrected ones.
+const SUPERSEDED_SLUGS = [
+  '2026-09-11-wolfs-early-power-rankings-the-elite-stand-tall-while-the-cl',
+  '2026-09-11-grading-the-leagues-rookie-draft',
+  '2026-09-11-the-wire-week-1-matchup-preview',
+];
+
+async function removeSupersededArticles() {
+  const { unlink } = await import('node:fs/promises');
+  const { existsSync } = await import('node:fs');
+
+  for (const slug of SUPERSEDED_SLUGS) {
+    const path = `content/articles/${slug}.md`;
+    if (existsSync(path)) {
+      await unlink(path);
+      console.log(`Removed superseded article: ${path}`);
+    }
+  }
+
+  const ledger = await readJSON<{ _comment: string; entries: any[] }>('data/ledger.json', { _comment: '', entries: [] });
+  const before = ledger.entries.length;
+  ledger.entries = ledger.entries.filter((e) => !SUPERSEDED_SLUGS.includes(e.slug));
+  if (ledger.entries.length !== before) await writeJSON('data/ledger.json', ledger);
+
+  const predictions = await readJSON<{ _comment: string; entries: any[] }>('data/predictions.json', { _comment: '', entries: [] });
+  const beforeP = predictions.entries.length;
+  predictions.entries = predictions.entries.filter((e) => !SUPERSEDED_SLUGS.includes(e.article_slug));
+  if (predictions.entries.length !== beforeP) await writeJSON('data/predictions.json', predictions);
+}
 
 const ASSIGNMENTS: { writer: WriterId; pitch: Pitch }[] = [
   {
@@ -80,6 +117,7 @@ async function generateOne({ writer, pitch }: { writer: WriterId; pitch: Pitch }
 }
 
 async function main() {
+  await removeSupersededArticles();
   for (const assignment of ASSIGNMENTS) {
     await generateOne(assignment);
   }
