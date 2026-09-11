@@ -118,9 +118,17 @@ async function generateOne({ writer, pitch }: { writer: WriterId; pitch: Pitch }
 
 async function main() {
   await removeSupersededArticles();
+  let failures = 0;
   for (const assignment of ASSIGNMENTS) {
-    await generateOne(assignment);
+    try {
+      await generateOne(assignment);
+    } catch (err) {
+      failures++;
+      console.error(`${assignment.writer}/${assignment.pitch.format} failed:`, err);
+      console.error('Continuing with remaining assignments rather than losing already-committed work.');
+    }
   }
+  if (failures > 0) process.exitCode = 1;
 }
 
 main().catch((err) => {

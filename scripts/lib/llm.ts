@@ -103,10 +103,23 @@ export async function callClaude(userMessage: string, opts: CallOptions): Promis
   return response.text ?? '';
 }
 
+// Markdown-heavy body text (numbered lists, bold labels) sometimes comes
+// back with backslash escapes that are valid markdown but not valid JSON —
+// "1\. Team Name", "\_stat\_" — which throws "Bad escaped character" on
+// JSON.parse. JSON only allows \" \\ \/ \b \f \n \r \t \uXXXX; drop the
+// backslash on anything else rather than fail the whole call over it.
+function repairInvalidEscapes(s: string): string {
+  return s.replace(/\\(.)/g, (match, ch) => ('"\\/bfnrtu'.includes(ch) ? match : ch));
+}
+
 // Pitch/critic calls expect strict JSON back. Strips markdown code fences if
 // the model wraps the JSON anyway, and throws on unparseable output so the
 // caller can count it as a pitch-step failure.
 export function parseJSON<T>(raw: string): T {
   const cleaned = raw.trim().replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
-  return JSON.parse(cleaned) as T;
+  try {
+    return JSON.parse(cleaned) as T;
+  } catch {
+    return JSON.parse(repairInvalidEscapes(cleaned)) as T;
+  }
 }
