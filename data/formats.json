@@ -308,6 +308,13 @@
       "description": "A roster that does not bleed trade equity is a corpse waiting for a shovel, and anyone treating a Week 1 lineup like a family heirloom deserves the dirt.",
       "season_window": "in_season",
       "league_wide": true
+    },
+    {
+      "key": "expected_value_audit",
+      "display_name": "Expected Value Audit",
+      "description": "Treating a zero-point differential after one week of scheduling noise as a meaningful indicator of talent ignores the foundational mechanics of probability.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }

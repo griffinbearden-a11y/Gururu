@@ -363,6 +363,15 @@
       "subject_teams": [],
       "thesis": "The league's first full week of real games is underway, and the schedule already has a few matchups that will define how seriously to take the early standings.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-12T00:25:43.084Z",
+      "slug": "2026-09-12-zero-sum-fallacy-why-preseason-projections-are-merely-varian",
+      "format": "expected_value_audit",
+      "subject_teams": [],
+      "thesis": "Treating a zero-point differential after one week of scheduling noise as a meaningful indicator of talent ignores the foundational mechanics of probability.",
+      "is_backfill": false
     }
   ]
 }

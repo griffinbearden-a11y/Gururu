@@ -1060,6 +1060,16 @@
       "reason_code": "season_window",
       "reason_detail": "\"howlin_preseason_pick\" runs in preseason, but it's currently in_season.",
       "spiked_at": "2026-09-11T00:17:56.463Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Quantifying the Cost of Lopsided Asset Swaps in Rebuilding Franchises",
+      "thesis": "Accepting grade F market valuations in multi-team trades creates a deficit in expected championship equity that cannot be reconciled by short-term roster adjustments.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-12T00:25:30.439Z"
     }
   ]
 }

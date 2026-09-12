@@ -279,6 +279,15 @@
       "resolution_date": "2026-09-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-12-zero-sum-fallacy-why-preseason-projections-are-merely-varian",
+      "claim": "Macon Muskrats' Week 1 scoring output will regress toward league-average expected value as sample size increases.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-10-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
