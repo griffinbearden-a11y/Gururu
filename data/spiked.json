@@ -1070,6 +1070,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-12T00:25:30.439Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Checking in on the Buckhead Beavers' Foundation",
+      "thesis": "While the rest of the league chases immediate points, the Beavers are quietly collecting the kind of young draft capital that makes a long-term rebuild defensible.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 7 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-13T00:05:10.827Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Minick Family Ledger: Week 1 Transactions",
+      "thesis": "The quiet operational rhythm between Dirty Magic and the African Anteaters continues to shape league transactions without requiring public fanfare.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
+      "spiked_at": "2026-09-13T00:05:10.828Z"
     }
   ]
 }
