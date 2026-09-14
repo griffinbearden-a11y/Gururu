@@ -297,6 +297,24 @@
       "resolution_date": "2026-11-30",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-09-14-the-road-goes-through-the-only-three-men-who-want-it",
+      "claim": "Dirty Magic will finish the regular season at the top of the standings regardless of early variance.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-09-14-the-road-goes-through-the-only-three-men-who-want-it",
+      "claim": "Winterfell Whitewalkers and SHMEATtheBOY will secure top-three playoff seeds based on their foundational roster construction.",
+      "subject": "Winterfell Whitewalkers",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

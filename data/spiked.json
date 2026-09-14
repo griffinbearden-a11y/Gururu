@@ -1090,6 +1090,16 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
       "spiked_at": "2026-09-13T00:05:10.828Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Stop Whining About the Commissioner and Start Winning a Game",
+      "thesis": "WillMinick runs this league with an iron fist, and every manager crying about platform migration history or waiver processing is just deflecting from their own failure to build a winner.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-09-14T00:18:21.358Z"
     }
   ]
 }

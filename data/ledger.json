@@ -381,6 +381,19 @@
       "subject_teams": [],
       "thesis": "A look across the league's initial waiver and free-agent activity reveals which managers are spending their FAAB with a plan and which are reacting to preseason ghosts.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-09-14T00:18:33.833Z",
+      "slug": "2026-09-14-the-road-goes-through-the-only-three-men-who-want-it",
+      "format": "title_path",
+      "subject_teams": [
+        2,
+        3,
+        10
+      ],
+      "thesis": "Mapping the exact path to the title requires ignoring every pretender in this league and focusing solely on SHMEATtheBOY, Dirty Magic, and the Winterfell Whitewalkers.",
+      "is_backfill": false
     }
   ]
 }
