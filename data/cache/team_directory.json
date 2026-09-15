@@ -6,10 +6,10 @@
       "owner_username": "Rickyshanks229",
       "team_name": "Topeka Cosbies",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 139.05,
+      "points_against": 153.45,
       "division": 2
     },
     {
@@ -17,11 +17,11 @@
       "owner_id": "1264636925298360320",
       "owner_username": "WillMinick",
       "team_name": "Dirty Magic",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 157.4,
+      "points_against": 152.9,
       "division": 1
     },
     {
@@ -29,11 +29,11 @@
       "owner_id": "1276242317644161026",
       "owner_username": "bryceclenney",
       "team_name": "Winterfell Whitewalkers",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 161.6,
+      "points_against": 127,
       "division": 1
     },
     {
@@ -42,10 +42,10 @@
       "owner_username": "GriffinBear",
       "team_name": "Macon Muskrats",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 152.9,
+      "points_against": 157.4,
       "division": 1
     },
     {
@@ -53,11 +53,11 @@
       "owner_id": "1276266474679336960",
       "owner_username": "RileyParker",
       "team_name": "Vic Blends",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 192.7,
+      "points_against": 114.2,
       "division": 1
     },
     {
@@ -66,10 +66,10 @@
       "owner_username": "RossMinick1",
       "team_name": "African Anteaters",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 139.25,
+      "points_against": 168.85,
       "division": 2
     },
     {
@@ -78,10 +78,10 @@
       "owner_username": "banks2002",
       "team_name": "Buckhead Beavers",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 109.9,
+      "points_against": 144,
       "division": 2
     },
     {
@@ -90,10 +90,10 @@
       "owner_username": "beau1shirah",
       "team_name": "The Herbert Effect",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 127,
+      "points_against": 161.6,
       "division": 1
     },
     {
@@ -101,11 +101,11 @@
       "owner_id": "1004975760962097152",
       "owner_username": "Joshtcochran",
       "team_name": "JUICE 🧃",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 168.85,
+      "points_against": 139.25,
       "division": 2
     },
     {
@@ -113,11 +113,11 @@
       "owner_id": "1265430655982907392",
       "owner_username": "evansplowden",
       "team_name": "Shlomo Teittleman",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 153.45,
+      "points_against": 139.05,
       "division": 2
     },
     {
@@ -125,11 +125,11 @@
       "owner_id": "1276322679443439616",
       "owner_username": "loganmorris28",
       "team_name": "loganmorris28",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 144,
+      "points_against": 109.9,
       "division": 2
     },
     {
@@ -138,10 +138,10 @@
       "owner_username": "AthensAssholes",
       "team_name": "AthensAssholes",
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 0,
-      "points_against": 0,
+      "points_for": 114.2,
+      "points_against": 192.7,
       "division": 1
     }
   ]
