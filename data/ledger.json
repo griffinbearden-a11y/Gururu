@@ -394,6 +394,29 @@
       ],
       "thesis": "Mapping the exact path to the title requires ignoring every pretender in this league and focusing solely on SHMEATtheBOY, Dirty Magic, and the Winterfell Whitewalkers.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-15T00:45:00.728Z",
+      "slug": "2026-09-15-schedule-variance-and-the-illusion-of-competence-after-one-w",
+      "format": "schedule_swap",
+      "subject_teams": [
+        5,
+        12
+      ],
+      "thesis": "Vic Blends defeated AthensAssholes 192.7 to 113.4 while Winterfell Whitewalkers scored 161.6 against The Herbert Effect's 127, but substituting alternative schedules reveals that these opening margins reflect random assignment rather than structural superiority.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-15T00:45:25.217Z",
+      "slug": "2026-09-15-juices-quiet-foundation-inside-the-rebuild-nobody-else-wants",
+      "format": "rebuild_tracker",
+      "subject_teams": [
+        9
+      ],
+      "thesis": "Josh Cochran's disciplined accumulation of young draft capital and patient roster construction is laying down the exact blueprint for a sustainable turnaround that the rest of the league is ignoring.",
+      "is_backfill": false
     }
   ]
 }

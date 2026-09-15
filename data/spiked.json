@@ -1100,6 +1100,46 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
       "spiked_at": "2026-09-14T00:18:21.358Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Quantifying the Cost of Preseason Running Back Acquisition",
+      "thesis": "Trading future draft capital for veteran running backs ahead of Week 1 creates a structural deficit that mathematical models show is rarely recovered through in-season variance.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-15T00:44:44.734Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Mapping the All-Play Records Across a Twelve-Team Sample",
+      "thesis": "Calculating an all-play record after a single week demonstrates that every manager currently possesses an expected value tied entirely to scheduling variance rather than durable execution.",
+      "format": "all_play_record",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"all_play_record\" within their last 5 articles.",
+      "spiked_at": "2026-09-15T00:44:44.735Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Unpacking the Minick Family Ledger: Anteaters and Dirty Magic Trade History",
+      "thesis": "The recurring transaction flow between Will and Ross Minick isn't just about family ties, but a continuous internal market that shapes both ends of the standings.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
+      "spiked_at": "2026-09-15T00:45:08.460Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Taxi Squad Stash Check: Who is Actually Waiting in the Wings?",
+      "thesis": "A deep dive into the developmental rosters reveals which managers are hoarding genuine future contributors and which rooms are just wasting slot space on preseason ghosts.",
+      "format": "taxi_squad_report",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-15T00:45:08.461Z"
     }
   ]
 }
