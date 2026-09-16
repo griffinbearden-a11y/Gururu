@@ -1140,6 +1140,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-15T00:45:08.461Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic and Vic Blends Are Playing Chess While the Rest Are Eating Dirt",
+      "thesis": "The recent trade market activity shows WillMinick and Riley Parker are the only ones building actual winners while the rest of the league shuffles deck chairs.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-16T00:35:13.343Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "SHMEATtheBOY Is Standing on the Edge of Glory",
+      "thesis": "SHMEATtheBOY has shaken off the mid-tier stench and built a machine that is marching straight to a title.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 10 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-16T00:35:13.345Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Winterfell Whitewalkers Window Is Wide Open",
+      "thesis": "Bryce Clenney has constructed a roster with a three-year contention window that no one in this league can stop.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-16T00:35:13.346Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Stop Complaining About the Commissioner",
+      "thesis": "Every single manager whining about WillMinick's administration is just crying because they cannot manage a roster or win a game.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-09-16T00:35:13.347Z"
     }
   ]
 }
