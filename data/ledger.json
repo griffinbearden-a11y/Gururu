@@ -426,6 +426,24 @@
       "subject_teams": [],
       "thesis": "Marcus Vail's endless calculation of expected values and all-play records proves he has never watched a man want a football game in his life.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-17T00:43:18.194Z",
+      "slug": "2026-09-17-points-left-on-bench",
+      "format": "points_left_on_bench",
+      "subject_teams": [],
+      "thesis": "Accounting for optimal versus actual lineup points across the league after one week of play demonstrates that human error remains the single largest variance generator in fantasy football.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-17T00:44:00.292Z",
+      "slug": "2026-09-17-a-few-small-corrections-on-the-state-of-things-after-week-on",
+      "format": "corrections",
+      "subject_teams": [],
+      "thesis": "While the machinery of waivers and free agency hums along under the commissioner's steady hand, the lingering memory of our old Fleaflicker home reminds us that records are only as trustworthy as the people keeping them.",
+      "is_backfill": false
     }
   ]
 }

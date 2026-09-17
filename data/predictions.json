@@ -324,6 +324,33 @@
       "resolution_date": "2026-11-01",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-17-points-left-on-bench",
+      "claim": "Vic Blends will experience regression toward the league median in weekly scoring output over the subsequent month.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-10-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-17-points-left-on-bench",
+      "claim": "Buckhead Beavers' weekly scoring average will trend upward from its Week 1 baseline as sample size increases.",
+      "subject": "Buckhead Beavers",
+      "resolution_date": "2026-10-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-17-a-few-small-corrections-on-the-state-of-things-after-week-on",
+      "claim": "AthensAssholes will stabilize their depth rather than tearing down the roster.",
+      "subject": "AthensAssholes",
+      "resolution_date": "2026-10-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

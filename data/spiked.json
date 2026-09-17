@@ -1180,6 +1180,46 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
       "spiked_at": "2026-09-16T00:35:13.347Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "On the Architecture of Quiet Rooms and the People Who Build Them",
+      "thesis": "When a roster is torn down to its studs, the silence that follows is not a sign of abandonment, but the sound of someone measuring twice before they put a single nail back in the wall.",
+      "format": "quiet_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-17T00:43:25.349Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Bloodline Ledger: What the Minick Cousins Are Doing in the Dark",
+      "thesis": "Every transaction between Will and Ross Minick carries the quiet weight of family history, operating as a closed-loop economy that the rest of the league watches with a mixture of suspicion and resignation.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-17T00:43:25.350Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "When the Crown Sits Heavy: Life After the Trophy",
+      "thesis": "The hardest part of winning a championship in this league is not defending it, but figuring out how to look at an ordinary Tuesday morning when the music has stopped.",
+      "format": "anniversary_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-17T00:43:25.352Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Middle Kingdom: Why SHMEATtheBOY Will Always Be Right Where He Is",
+      "thesis": "There is a distinct, understated art to being perpetually mid, a middle-class stability that protects a franchise from the terror of the basement while denying it the lightning strike of the top.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 10 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-17T00:43:25.353Z"
     }
   ]
 }
