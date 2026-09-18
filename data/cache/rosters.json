@@ -70,7 +70,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 61,
-      "waiver_position": 11,
+      "waiver_position": 10,
       "wins": 0
     },
     "starters": [
@@ -117,6 +117,7 @@
       "12489",
       "12526",
       "13293",
+      "13417",
       "3451",
       "6813",
       "7526",
@@ -128,7 +129,8 @@
       "SF"
     ],
     "reserve": [
-      "13293"
+      "13293",
+      "13417"
     ],
     "roster_id": 2,
     "settings": {
@@ -142,8 +144,8 @@
       "ppts_decimal": 90,
       "ties": 0,
       "total_moves": 0,
-      "waiver_budget_used": 0,
-      "waiver_position": 1,
+      "waiver_budget_used": 150,
+      "waiver_position": 12,
       "wins": 1
     },
     "starters": [
@@ -174,40 +176,39 @@
     "metadata": {
       "p_nick_10236": "Joe Morgan",
       "p_nick_11624": "X",
-      "p_nick_11632": "The Night King",
+      "p_nick_11632": "Dat Nigga Leek",
       "p_nick_12512": "Ray Rice III",
       "p_nick_12518": "The Onion Knight",
-      "p_nick_12519": "Prince of Dorne",
+      "p_nick_12519": "The Rogue Prince",
       "p_nick_12522": "C Boogie",
       "p_nick_12527": "The Hound",
       "p_nick_12530": "The Imp",
-      "p_nick_13287": "The Rogue Prince",
-      "p_nick_13330": "Podrick fucking Payne",
+      "p_nick_13287": "J Love",
+      "p_nick_13330": "Joe Morgan",
       "p_nick_4018": "Ray Rice Jr.",
       "p_nick_5927": "Scary",
-      "p_nick_6770": "King in the North",
-      "p_nick_6804": "The Blackfish",
+      "p_nick_6770": "King of the North",
+      "p_nick_6804": "Pookie",
       "p_nick_6819": "The Vet",
       "p_nick_7525": "Slim Reaper",
-      "p_nick_8146": "Sea Snake",
-      "p_nick_8259": "Littlefinger",
+      "p_nick_8146": "Dime Bag",
+      "p_nick_8259": "Evans Plowden",
       "p_nick_9221": "The Mountain",
       "p_nick_9997": "Joystick",
-      "p_nick_NE": "The Wall",
       "record": "W",
       "streak": "1W"
     },
     "owner_id": "1276242317644161026",
     "player_map": null,
     "players": [
-      "11618",
       "11632",
+      "12474",
       "12518",
       "12519",
       "12527",
-      "12530",
       "13285",
       "13287",
+      "13301",
       "13330",
       "13337",
       "13346",
@@ -232,7 +233,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 3,
+      "waiver_position": 2,
       "wins": 1
     },
     "starters": [
@@ -306,7 +307,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 2,
+      "waiver_position": 1,
       "wins": 0
     },
     "starters": [
@@ -376,7 +377,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 6,
+      "waiver_position": 5,
       "wins": 1
     },
     "starters": [
@@ -436,7 +437,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 9,
+      "waiver_position": 8,
       "wins": 0
     },
     "starters": [
@@ -498,7 +499,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 4,
+      "waiver_position": 3,
       "wins": 0
     },
     "starters": [
@@ -563,7 +564,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 5,
+      "waiver_position": 4,
       "wins": 0
     },
     "starters": [
@@ -623,7 +624,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 7,
+      "waiver_position": 6,
       "wins": 1
     },
     "starters": [
@@ -696,7 +697,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 80,
-      "waiver_position": 10,
+      "waiver_position": 9,
       "wins": 1
     },
     "starters": [
@@ -760,7 +761,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 8,
+      "waiver_position": 7,
       "wins": 1
     },
     "starters": [
@@ -823,7 +824,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 35,
-      "waiver_position": 12,
+      "waiver_position": 11,
       "wins": 0
     },
     "starters": [
