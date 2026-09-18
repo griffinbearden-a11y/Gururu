@@ -1220,6 +1220,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 10 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-17T00:43:25.353Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Three-Man Table",
+      "thesis": "SHMEATtheBOY, Dirty Magic, and the Winterfell Whitewalkers are the only franchises in this league playing football while the other nine men play house.",
+      "format": "three_man_table",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-18T00:32:19.435Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Trading Away Your Soul",
+      "thesis": "Hoarding rookie draft capital like JUICE is nothing more than an admission that you are terrified of putting a real lineup on the field.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-18T00:32:19.436Z"
     }
   ]
 }
