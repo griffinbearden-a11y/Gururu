@@ -1240,6 +1240,16 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-18T00:32:19.436Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Value Extraction Analysis on Recent Lopsided Transactions",
+      "thesis": "Recent trades graded as heavily lopsided reflect a fundamental misunderstanding of market value among specific managers who consistently trade future equity for temporary positional upgrades.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 5 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-19T00:26:51.882Z"
     }
   ]
 }

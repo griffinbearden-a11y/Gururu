@@ -453,6 +453,15 @@
       "subject_teams": [],
       "thesis": "Marcus Vail spends his whole life calculating expected values because he has never felt the cold sweat of a trade deadline in his bones.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-19T00:27:08.545Z",
+      "slug": "2026-09-19-the-asymmetry-of-regret-quantifying-the-permanence-of-draft",
+      "format": "asset_depreciation_model",
+      "subject_teams": [],
+      "thesis": "Rookie draft mistakes in the first two rounds permanently alter a franchise's win probability curve while late-round hits are almost entirely swallowed by regression to the mean.",
+      "is_backfill": false
     }
   ]
 }

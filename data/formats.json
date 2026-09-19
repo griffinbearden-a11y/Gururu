@@ -315,6 +315,13 @@
       "description": "Treating a zero-point differential after one week of scheduling noise as a meaningful indicator of talent ignores the foundational mechanics of probability.",
       "season_window": "in_season",
       "league_wide": true
+    },
+    {
+      "key": "asset_depreciation_model",
+      "display_name": "Asset Depreciation Model",
+      "description": "Rookie draft mistakes in the first two rounds permanently alter a franchise's win probability curve while late-round hits are almost entirely swallowed by regression to the mean.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }

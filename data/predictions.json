@@ -351,6 +351,15 @@
       "resolution_date": "2026-10-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-19-the-asymmetry-of-regret-quantifying-the-permanence-of-draft",
+      "claim": "Over 80 percent of first-round rookie selections in this draft class will fail to return positive relative value above replacement within twenty-four months.",
+      "subject": "2026 Rookie Class First Round",
+      "resolution_date": "2028-09-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
