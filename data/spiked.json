@@ -1250,6 +1250,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 5 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-19T00:26:51.882Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Building in the Dark: Josh Cochran's Patient Blueprint in JUICE",
+      "thesis": "Josh Cochran's disciplined accumulation of young draft capital and patient roster construction is laying down the exact blueprint for a sustainable turnaround that the rest of the league is ignoring.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-09-20T00:11:56.221Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "First Impressions: Sorting Out the League's Rookie Draft Hits and Misses",
+      "thesis": "Some rooms drafted for immediate need while others swung for the fences, and the early returns on picks like Jeremiyah Love and Carnell Tate are already starting to show their colors.",
+      "format": "rookie_draft_grades",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rookie_draft_grades\" within their last 5 articles.",
+      "spiked_at": "2026-09-20T00:11:56.222Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Note on Platform Memory and Administrative Care",
+      "thesis": "While the commissioner's office handles the weekly waiver wire with steady hands, remembering our migration from Fleaflicker reminds us why meticulous record-keeping is the backbone of this league.",
+      "format": "corrections",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
+      "spiked_at": "2026-09-20T00:11:56.224Z"
     }
   ]
 }
