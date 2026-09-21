@@ -471,6 +471,17 @@
       "subject_teams": [],
       "thesis": "While the headline-chasers burn FAAB on preseason ghosts, a quiet group of managers is using waivers to patch real depth holes.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-09-21T00:20:39.121Z",
+      "slug": "2026-09-21-josh-cochran-is-collecting-rookie-picks-like-theyre-scrap-me",
+      "format": "rookie_pick_market",
+      "subject_teams": [
+        9
+      ],
+      "thesis": "Holding the first rookie pick is an admission of moral bankruptcy, and JUICE's roster is a monument to a manager who would rather draft teenagers than win a football game.",
+      "is_backfill": false
     }
   ]
 }

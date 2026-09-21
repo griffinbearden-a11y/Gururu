@@ -1280,6 +1280,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
       "spiked_at": "2026-09-20T00:11:56.224Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Has Never Won a Game in His Life and He's Writing About Math",
+      "thesis": "Marcus Vail's endless calculation of expected values proves he has never watched a man want a football game in his life, and his audit of the commissioner's office is an insult to the sport.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-09-21T00:20:18.449Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "WillMinick Is Running This League Right and Every Complaint Is Just Noise",
+      "thesis": "WillMinick runs this league with an iron fist and every single complaint about his administration is just noise from managers who can't win a game.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates wolf's \"WillMinick runs this league with an iron fist and every single complaint about his administration is just noise from managers who can't win a game.\" (2026-09-09).",
+      "spiked_at": "2026-09-21T00:20:18.450Z"
     }
   ]
 }
