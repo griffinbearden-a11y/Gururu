@@ -369,30 +369,8 @@
     "roster_id": 6,
     "custom_points": null,
     "matchup_id": 3,
-    "starters": [
-      "6904",
-      "8138",
-      "7543",
-      "10229",
-      "11635",
-      "12506",
-      "4983",
-      "5045",
-      "11786",
-      "BAL"
-    ],
-    "starters_points": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
+    "starters": null,
+    "starters_points": [],
     "players_points": {
       "4983": 0,
       "5045": 0,
