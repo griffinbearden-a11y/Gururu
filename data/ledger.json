@@ -482,6 +482,26 @@
       ],
       "thesis": "Holding the first rookie pick is an admission of moral bankruptcy, and JUICE's roster is a monument to a manager who would rather draft teenagers than win a football game.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-22T00:58:13.578Z",
+      "slug": "2026-09-22-playoff-probability-matrix-after-one-week-of-scheduling-nois",
+      "format": "playoff_odds",
+      "subject_teams": [],
+      "thesis": "Computing exact postseason probabilities after a single week of variance illustrates how quickly managers overreact to random outcomes.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-22T00:58:37.875Z",
+      "slug": "2026-09-22-a-quiet-afternoon-in-macon-the-muskrats-slow-build-after-the",
+      "format": "manager_profile",
+      "subject_teams": [
+        4
+      ],
+      "thesis": "GriffinBear's Macon Muskrats are navigating the strange quiet that follows a championship season without losing the foundational discipline that got them there.",
+      "is_backfill": false
     }
   ]
 }

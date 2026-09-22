@@ -1300,6 +1300,26 @@
       "reason_code": "duplicate_thesis",
       "reason_detail": "Substantially duplicates wolf's \"WillMinick runs this league with an iron fist and every single complaint about his administration is just noise from managers who can't win a game.\" (2026-09-09).",
       "spiked_at": "2026-09-21T00:20:18.450Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Checking the Vault: Inside JUICE's Rebuild Blueprint",
+      "thesis": "Josh Cochran's patient collection of young rookie draft capital like Parker Washington and Zachariah Branch is proving that bottoming out can actually look like a real plan if you give it time.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-09-22T00:58:20.612Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Looking Across the Table: Dirty Magic Meets Vic Blends in Week 2",
+      "thesis": "Will Minick's steady contenders face off against RileyParker's high-scoring Vic Blends squad in a matchup that will test whether early points or structural depth dictate the middle of September.",
+      "format": "matchup_preview",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"matchup_preview\" within their last 5 articles.",
+      "spiked_at": "2026-09-22T00:58:20.613Z"
     }
   ]
 }

@@ -378,6 +378,33 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-22-playoff-probability-matrix-after-one-week-of-scheduling-nois",
+      "claim": "Vic Blends will experience regression toward the mean in scoring following their anomalous 192.7-point Week 1 output.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-10-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-22-playoff-probability-matrix-after-one-week-of-scheduling-nois",
+      "claim": "Buckhead Beavers will finish outside the playoff cutline due to persistent structural asset deficits.",
+      "subject": "Buckhead Beavers",
+      "resolution_date": "2026-12-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-09-22-a-quiet-afternoon-in-macon-the-muskrats-slow-build-after-the",
+      "claim": "The Macon Muskrats will recover from their 0-1 start and secure a playoff spot.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-01",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
