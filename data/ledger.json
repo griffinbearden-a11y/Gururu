@@ -502,6 +502,29 @@
       ],
       "thesis": "GriffinBear's Macon Muskrats are navigating the strange quiet that follows a championship season without losing the foundational discipline that got them there.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-09-23T00:46:46.175Z",
+      "slug": "2026-09-23-contender-check-dirty-magic-aint-flinching",
+      "format": "contender_check",
+      "subject_teams": [
+        2
+      ],
+      "thesis": "WillMinick's squad is backing up every single word of my preseason anointing with cold, hard points.",
+      "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-23T00:47:10.092Z",
+      "slug": "2026-09-23-trade-1407822753356128256-and-the-illusion-of-asset-consolid",
+      "format": "contention_window",
+      "subject_teams": [
+        3,
+        8
+      ],
+      "thesis": "The recent exchange between Winterfell Whitewalkers and The Irrelevants demonstrates how managers misvalue age curves by trading premium receiving assets for declining production under the guise of roster balance.",
+      "is_backfill": false
     }
   ]
 }

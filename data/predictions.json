@@ -405,6 +405,24 @@
       "resolution_date": "2026-12-01",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-09-23-contender-check-dirty-magic-aint-flinching",
+      "claim": "Dirty Magic will defeat Vic Blends in Week 3 to move to 3-0.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-09-28",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-23-trade-1407822753356128256-and-the-illusion-of-asset-consolid",
+      "claim": "The Winterfell Whitewalkers' acquisition of Mike Evans and Jordan Addison will result in a net loss of roster value by the conclusion of the 2026 season due to age curve depreciation.",
+      "subject": "Winterfell Whitewalkers",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
