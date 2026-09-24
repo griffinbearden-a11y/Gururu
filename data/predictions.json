@@ -423,6 +423,15 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-24-age-curves-and-the-fallacy-of-roster-longevity",
+      "claim": "Winterfell Whitewalkers' roster will experience a net negative value adjustment on their recently acquired veteran assets by the conclusion of the 2026 season due to age-curve depreciation.",
+      "subject": "Winterfell Whitewalkers",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

@@ -525,6 +525,24 @@
       ],
       "thesis": "The recent exchange between Winterfell Whitewalkers and The Irrelevants demonstrates how managers misvalue age curves by trading premium receiving assets for declining production under the guise of roster balance.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-24T00:38:45.803Z",
+      "slug": "2026-09-24-age-curves-and-the-fallacy-of-roster-longevity",
+      "format": "age_curve_audit",
+      "subject_teams": [],
+      "thesis": "Evaluating the age profile of league rosters against positional depreciation curves demonstrates that several managers are heavily over-invested in declining assets.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-24T00:39:07.758Z",
+      "slug": "2026-09-24-the-ledger-and-the-line",
+      "format": "anniversary_piece",
+      "subject_teams": [],
+      "thesis": "A gentle look back at how we keep our history straight, from the old days on Fleaflicker to the quiet hum of Sleeper's transaction logs, and why the record always matters more than the recap.",
+      "is_backfill": false
     }
   ]
 }
