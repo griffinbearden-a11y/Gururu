@@ -1370,6 +1370,56 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-24T00:38:52.742Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Whitewalkers Are Bleeding Out In Broad Daylight",
+      "thesis": "Bryce Clenney is trading away his future for spare parts and praying the football gods don't notice he's naked.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-25T02:18:04.141Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Macon Muskrats Don't Exist",
+      "thesis": "I didn't mention the defending champion in August and I damn sure aren't starting now, because some titles are just accidents that happened to show up on a spreadsheet.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-25T02:18:04.143Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Winterfell Whitewalkers and the Arithmetic of Self-Sabotage",
+      "thesis": "Acquiring declining assets like Mike Evans while surrendering youth and future flexibility demonstrates a fundamental misunderstanding of positional depreciation curves.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-25T02:18:27.176Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Evaluating the True Cost of Veteran Asset Acquisition",
+      "thesis": "When teams trade for wide receivers entering their age-30 season, historical probability suggests a rapid decline in points-per-game output that renders the acquisition negative EV within eighteen months.",
+      "format": "age_curve_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-25T02:18:27.178Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Quantifying Future Pick and Asset Depreciation",
+      "thesis": "Swapping developmental prospects for late-career rotational wide receivers accelerates asset depreciation and lowers the franchise's long-term championship equity.",
+      "format": "asset_depreciation_model",
+      "reason_stage": "filter",
+      "reason_code": "not_in_whitelist",
+      "reason_detail": "\"asset_depreciation_model\" is not in vail's format whitelist.",
+      "spiked_at": "2026-09-25T02:18:27.179Z"
     }
   ]
 }

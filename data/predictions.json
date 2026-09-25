@@ -432,6 +432,24 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-09-25-the-blood-debt-ledger",
+      "claim": "Dirty Magic will finish the regular season at the top of the standings.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-25-the-persistence-of-purgatory-in-the-bottom-four",
+      "claim": "AthensAssholes will finish the regular season in the bottom four of total points scored.",
+      "subject": "AthensAssholes",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

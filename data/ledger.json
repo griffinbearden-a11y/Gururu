@@ -543,6 +543,26 @@
       "subject_teams": [],
       "thesis": "A gentle look back at how we keep our history straight, from the old days on Fleaflicker to the quiet hum of Sleeper's transaction logs, and why the record always matters more than the recap.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-09-25T02:18:20.685Z",
+      "slug": "2026-09-25-the-blood-debt-ledger",
+      "format": "blood_debt_ledger",
+      "subject_teams": [],
+      "thesis": "Every trade in this league is a transaction of fear, and Marcus Vail is the ghost who counts the pennies while the men bleed.",
+      "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-25T02:18:45.456Z",
+      "slug": "2026-09-25-the-persistence-of-purgatory-in-the-bottom-four",
+      "format": "purgatory_piece",
+      "subject_teams": [
+        12
+      ],
+      "thesis": "Teams like AthensAssholes cycle through unproductive player exchanges without committing to a full structural rebuild, ensuring perpetual mediocrity.",
+      "is_backfill": false
     }
   ]
 }

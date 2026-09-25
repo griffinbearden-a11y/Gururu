@@ -322,6 +322,13 @@
       "description": "Rookie draft mistakes in the first two rounds permanently alter a franchise's win probability curve while late-round hits are almost entirely swallowed by regression to the mean.",
       "season_window": "in_season",
       "league_wide": true
+    },
+    {
+      "key": "blood_debt_ledger",
+      "display_name": "Blood Debt Ledger",
+      "description": "Every trade in this league is a transaction of fear, and Marcus Vail is the ghost who counts the pennies while the men bleed.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }
