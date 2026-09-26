@@ -1420,6 +1420,26 @@
       "reason_code": "not_in_whitelist",
       "reason_detail": "\"asset_depreciation_model\" is not in vail's format whitelist.",
       "spiked_at": "2026-09-25T02:18:27.179Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Net Asset Deficit of Perpetual Re-Indexing",
+      "thesis": "Trading away core receivers for redundant depth pieces across multiple transactions systematically erodes roster equity faster than any single draft bust.",
+      "format": "asset_depreciation_model",
+      "reason_stage": "filter",
+      "reason_code": "not_in_whitelist",
+      "reason_detail": "\"asset_depreciation_model\" is not in vail's format whitelist.",
+      "spiked_at": "2026-09-26T02:23:10.943Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Post-Championship Performance Decay Curves",
+      "thesis": "The historical drop-off in win-loss differential following a title season is a predictable regression rather than an indictment of managerial competence.",
+      "format": "purgatory_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-26T02:23:10.944Z"
     }
   ]
 }

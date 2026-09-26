@@ -450,6 +450,15 @@
       "resolution_date": "2026-12-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-09-26-evaluating-the-variance-profile-of-2-0-records",
+      "claim": "loganmorris28 will experience a regression toward the mean in win-loss record as points-for catches up to schedule reality",
+      "subject": "loganmorris28",
+      "resolution_date": "2026-10-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

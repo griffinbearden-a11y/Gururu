@@ -563,6 +563,19 @@
       ],
       "thesis": "Teams like AthensAssholes cycle through unproductive player exchanges without committing to a full structural rebuild, ensuring perpetual mediocrity.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-09-26T02:23:33.464Z",
+      "slug": "2026-09-26-evaluating-the-variance-profile-of-2-0-records",
+      "format": "luck_index",
+      "subject_teams": [
+        2,
+        5,
+        11
+      ],
+      "thesis": "Teams currently sitting at two wins without outscoring the league median by a significant threshold are simply beneficiaries of schedule generation mechanics.",
+      "is_backfill": false
     }
   ]
 }
