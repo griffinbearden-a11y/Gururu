@@ -1440,6 +1440,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-26T02:23:10.944Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Quiet accumulation in the back half: Tracking the foundation Josh Cochran is laying for JUICE",
+      "thesis": "Josh Cochran's patient collection of young draft capital and foundational depth pieces continues to build a sustainable, long-term roster that avoids the trap of false contention.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-09-27T00:44:52.360Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family business on the wire: The Minick cousins and the ongoing rhythm of Dirty Magic and the African Anteaters",
+      "thesis": "The quiet, steady web of transactions between Will and Ross Minick represents a unique familial dynamic that shapes the trade landscape of this league whether anyone wants to admit it or not.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-27T00:44:52.362Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Untangling the recent winter of exchanges: Grading the latest trade activity",
+      "thesis": "Recent deals like the exchange between the Winterfell Whitewalkers and AthensAssholes highlight how desperate roster needs can occasionally override sound market value.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-27T00:44:52.364Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Checking the records and the ledger: A quiet note on transaction logs and commissioner oversight",
+      "thesis": "While the machinery of the league hums along smoothly under Will Minick's watch, keeping a gentle eye on how rulings and waivers are processed ensures our history stays as clean as our current standings.",
+      "format": "corrections",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
+      "spiked_at": "2026-09-27T00:44:52.366Z"
     }
   ]
 }

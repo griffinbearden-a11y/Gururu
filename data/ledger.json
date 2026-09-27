@@ -576,6 +576,15 @@
       ],
       "thesis": "Teams currently sitting at two wins without outscoring the league median by a significant threshold are simply beneficiaries of schedule generation mechanics.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-27T00:45:29.712Z",
+      "slug": "2026-09-27-finding-quiet-utility-a-look-at-recent-waiver-additions",
+      "format": "waiver_winners",
+      "subject_teams": [],
+      "thesis": "The first wave of waiver wire activity reveals which managers are quietly patching real roster depth and who is simply burning precious budget on fleeting names.",
+      "is_backfill": false
     }
   ]
 }
