@@ -3,16 +3,6 @@
     {
       "script": "ingest-sleeper",
       "status": "success",
-      "at": "2026-09-10T12:18:56.779Z"
-    },
-    {
-      "script": "assignment-desk",
-      "status": "success",
-      "at": "2026-09-10T12:18:57.468Z"
-    },
-    {
-      "script": "ingest-sleeper",
-      "status": "success",
       "at": "2026-09-10T13:11:55.938Z"
     },
     {
@@ -2500,6 +2490,17 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-09-28T18:54:20.338Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-09-28T19:23:14.804Z"
+    },
+    {
+      "script": "howlin-minute",
+      "status": "failure",
+      "detail": "{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
+      "at": "2026-09-28T19:23:30.039Z"
     }
   ]
 }
