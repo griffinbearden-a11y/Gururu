@@ -1480,6 +1480,46 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"corrections\" within their last 5 articles.",
       "spiked_at": "2026-09-27T00:44:52.366Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Is Counting Pennies While Men Build Dynasties",
+      "thesis": "Marcus Vail's endless calculation of expected values and all-play records proves he has never watched a man want a football game in his life.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-09-28T00:57:55.698Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic Is Backing Up Every Single Word I Wrote",
+      "thesis": "WillMinick's squad is backing up every single word of my preseason anointing with cold, hard points while the rest of the league watches from the porch.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-09-28T00:57:55.699Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Only Road to Glory Goes Through the Anointed Three",
+      "thesis": "Mapping the exact path to the title requires ignoring every pretender in this league and focusing solely on SHMEATtheBOY, Dirty Magic, and the Winterfell Whitewalkers.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-28T00:57:55.701Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Drafting Teenagers Is Not a Roster Strategy, Josh",
+      "thesis": "Holding the first rookie pick is an admission of moral bankruptcy, and JUICE's roster is a monument to a manager who would rather draft teenagers than win a football game.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates wolf's \"Holding the first rookie pick is an admission of moral bankruptcy, and JUICE's roster is a monument to a manager who would rather draft teenagers than win a football game.\" (2026-09-21).",
+      "spiked_at": "2026-09-28T00:57:55.709Z"
     }
   ]
 }
