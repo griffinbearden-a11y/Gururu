@@ -1520,6 +1520,16 @@
       "reason_code": "duplicate_thesis",
       "reason_detail": "Substantially duplicates wolf's \"Holding the first rookie pick is an admission of moral bankruptcy, and JUICE's roster is a monument to a manager who would rather draft teenagers than win a football game.\" (2026-09-21).",
       "spiked_at": "2026-09-28T00:57:55.709Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt and the Mortgage of Contention Windows",
+      "thesis": "Franchises trading away future draft capital without corresponding spikes in weekly scoring expectation are accelerating their own arrival at structural insolvency.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-29T00:43:26.821Z"
     }
   ]
 }
