@@ -1530,6 +1530,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-29T00:43:26.821Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Family Ledger: Will and Ross Minick and the Long Game of Cousin Trades",
+      "thesis": "The regular exchange of assets between Will and Ross Minick represents less a coordinated effort and more a quiet family tradition of roster maintenance that deserves a careful look.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-29T02:06:54.606Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Sorting the Wire: Who Is Actually Fixing Their Depth",
+      "thesis": "The recent flurry of free agent activity across the league shows a clear split between managers making sensible depth additions and those simply chasing ghosts.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-09-29T02:06:54.608Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Looking at the Numbers: AthensAssholes and Winterfell After the Big Deal",
+      "thesis": "The recent trade sending Mike Evans out and bringing Quentin Johnston and Omar Cooper to Winterfell Whitewalkers deserves a calm evaluation of what both managers were trying to achieve.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-29T02:06:54.609Z"
     }
   ]
 }

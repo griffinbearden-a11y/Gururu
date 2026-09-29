@@ -603,6 +603,17 @@
       "subject_teams": [],
       "thesis": "League managers consistently overpay for replaceable running back depth while failing to capitalize on true positional scarcity at elite wide receiver slots.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-09-29T02:07:09.612Z",
+      "slug": "2026-09-29-building-in-the-quiet-a-return-check-on-josh-cochrans-rebuil",
+      "format": "rebuild_tracker",
+      "subject_teams": [
+        9
+      ],
+      "thesis": "Josh Cochran's measured accumulation of draft capital and young talent continues to provide a textbook example of how a 1-1 roster can look toward tomorrow without panicking today.",
+      "is_backfill": false
     }
   ]
 }
