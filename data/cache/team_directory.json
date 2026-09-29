@@ -5,11 +5,11 @@
       "owner_id": "1276237496287498240",
       "owner_username": "Rickyshanks229",
       "team_name": "Topeka Cosbies",
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "ties": 0,
-      "points_for": 241.9,
-      "points_against": 253.35,
+      "points_for": 380.8,
+      "points_against": 362.2,
       "division": 2
     },
     {
@@ -18,10 +18,10 @@
       "owner_username": "WillMinick",
       "team_name": "Dirty Magic",
       "wins": 2,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 355.45,
-      "points_against": 273.65,
+      "points_for": 467.7,
+      "points_against": 454.9,
       "division": 1
     },
     {
@@ -30,10 +30,10 @@
       "owner_username": "bryceclenney",
       "team_name": "Winterfell Whitewalkers",
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 288.35,
-      "points_against": 336,
+      "points_for": 388.35,
+      "points_against": 487.9,
       "division": 1
     },
     {
@@ -42,10 +42,10 @@
       "owner_username": "GriffinBear",
       "team_name": "Macon Muskrats",
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 361.9,
-      "points_against": 284.15,
+      "points_for": 502.95,
+      "points_against": 432.45,
       "division": 1
     },
     {
@@ -53,11 +53,11 @@
       "owner_id": "1276266474679336960",
       "owner_username": "RileyParker",
       "team_name": "Vic Blends",
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
       "ties": 0,
-      "points_for": 344,
-      "points_against": 235.9,
+      "points_for": 525.25,
+      "points_against": 348.15,
       "division": 1
     },
     {
@@ -65,11 +65,11 @@
       "owner_id": "1058143369743925248",
       "owner_username": "RossMinick1",
       "team_name": "African Anteaters",
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
       "ties": 0,
-      "points_for": 239.15,
-      "points_against": 271.7,
+      "points_for": 367.2,
+      "points_against": 386.3,
       "division": 2
     },
     {
@@ -78,10 +78,10 @@
       "owner_username": "banks2002",
       "team_name": "Buckhead Beavers",
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 209.9,
-      "points_against": 229.35,
+      "points_for": 320.55,
+      "points_against": 382.4,
       "division": 2
     },
     {
@@ -89,11 +89,11 @@
       "owner_id": "1276276639809949696",
       "owner_username": "beau1shirah",
       "team_name": "The Irrelevants",
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
       "ties": 0,
-      "points_for": 248.7,
-      "points_against": 312.9,
+      "points_for": 397,
+      "points_against": 453.95,
       "division": 1
     },
     {
@@ -102,10 +102,10 @@
       "owner_username": "Joshtcochran",
       "team_name": "JUICE 🧃",
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "points_for": 254.2,
-      "points_against": 239.25,
+      "points_for": 363.05,
+      "points_against": 378.15,
       "division": 2
     },
     {
@@ -113,11 +113,11 @@
       "owner_id": "1265430655982907392",
       "owner_username": "evansplowden",
       "team_name": "Shlomo Teittleman",
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "ties": 0,
-      "points_for": 253.75,
-      "points_against": 252.6,
+      "points_for": 406.8,
+      "points_against": 363.25,
       "division": 2
     },
     {
@@ -126,10 +126,10 @@
       "owner_username": "loganmorris28",
       "team_name": "loganmorris28",
       "wins": 2,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
-      "points_for": 257.55,
-      "points_against": 210.2,
+      "points_for": 372.15,
+      "points_against": 338.25,
       "division": 2
     },
     {
@@ -137,11 +137,11 @@
       "owner_id": "1276600626364571648",
       "owner_username": "AthensAssholes",
       "team_name": "AthensAssholes",
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
       "ties": 0,
-      "points_for": 234.95,
-      "points_against": 390.75,
+      "points_for": 386.85,
+      "points_against": 490.75,
       "division": 1
     }
   ]
