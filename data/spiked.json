@@ -1560,6 +1560,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-29T02:06:54.609Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail's Fantasy Spreadsheets Are Just a Coward's Way of Avoiding a Fight",
+      "thesis": "Marcus Vail hides behind expected values and calculators because he has never once looked a man in the eye and wanted a football game more than him.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-09-30T02:48:52.962Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic Is Backing Every Word I Wrote in August",
+      "thesis": "WillMinick's squad is putting up the kind of cold, hard points that prove preseason anointing is an exact science.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-09-30T02:48:52.963Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Road Through October Goes Right Through the Men Who Want It",
+      "thesis": "A true title path is paved with intestinal fortitude, not the pathetic accumulation of future draft picks that coward managers hoard.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-09-30T02:48:52.965Z"
     }
   ]
 }
