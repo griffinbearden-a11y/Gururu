@@ -486,6 +486,24 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-01-zero-recorded-audit-citations",
+      "claim": "The commissioner ledger will continue to record zero explicit audit citations through the midpoint of the 2026 season.",
+      "subject": "Commissioner Office",
+      "resolution_date": "2026-11-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-01-a-long-look-at-the-middle-of-october",
+      "claim": "Dirty Magic will finish the regular season inside the top four playoff spots.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

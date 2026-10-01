@@ -329,6 +329,13 @@
       "description": "Every trade in this league is a transaction of fear, and Marcus Vail is the ghost who counts the pennies while the men bleed.",
       "season_window": "in_season",
       "league_wide": true
+    },
+    {
+      "key": "historical_postscript",
+      "display_name": "Historical Postscript",
+      "description": "Looking back across our migration from Fleaflicker to Sleeper reminds us that the unwritten history of our rosters matters just as much as the numbers currently blinking on our screens.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }

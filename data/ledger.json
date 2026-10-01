@@ -626,6 +626,24 @@
       ],
       "thesis": "Bryce Clenney handed AthensAssholes a masterclass in how to panic-trade away premier value for absolute garbage.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-01T01:23:50.444Z",
+      "slug": "2026-10-01-zero-recorded-audit-citations",
+      "format": "commissioner_audit",
+      "subject_teams": [],
+      "thesis": "The commissioner ledger contains zero explicit audit citations across four weeks of transaction logs, a statistical anomaly in a league governed by dynamic waiver and trade execution.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-01T01:24:33.825Z",
+      "slug": "2026-10-01-a-long-look-at-the-middle-of-october",
+      "format": "historical_postscript",
+      "subject_teams": [],
+      "thesis": "Looking back across our migration from Fleaflicker to Sleeper reminds us that the unwritten history of our rosters matters just as much as the numbers currently blinking on our screens.",
+      "is_backfill": false
     }
   ]
 }

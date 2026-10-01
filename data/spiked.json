@@ -1590,6 +1590,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-09-30T02:48:52.965Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Quantifying Future Draft Capital Liabilities",
+      "thesis": "Evaluating traded future draft capital against current roster age curves proves that several franchises are mortgaging structural stability for marginal weekly point gains.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-01T01:22:53.918Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Long Game in the Quiet Corners: A Check-In on JUICE",
+      "thesis": "Josh Cochran's measured approach to roster construction demonstrates that enduring patience is often the most difficult and rewarding strategy in a dynasty league.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-01T01:23:57.077Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Business Across the Wire: The Minick Cousins at Week Four",
+      "thesis": "The transactional relationship between Will and Ross Minick illustrates how shared histories inevitably shape league-wide trade flows.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-01T01:23:57.079Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Gentle Word on the Office of the Commissioner",
+      "thesis": "While the machinery of our league runs smoothly under Will Minick's watch, we must occasionally remind ourselves that vigilance is simply another form of care.",
+      "format": "correction",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-01T01:23:57.080Z"
     }
   ]
 }
