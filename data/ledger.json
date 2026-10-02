@@ -644,6 +644,27 @@
       "subject_teams": [],
       "thesis": "Looking back across our migration from Fleaflicker to Sleeper reminds us that the unwritten history of our rosters matters just as much as the numbers currently blinking on our screens.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-10-02T01:44:42.706Z",
+      "slug": "2026-10-02-the-blood-price-of-patrick-mahomes",
+      "format": "trade_autopsy",
+      "subject_teams": [
+        2,
+        11
+      ],
+      "thesis": "WillMinick just acquired Patrick Mahomes from loganmorris28 in the trade highway robbery of the century, proving that greatness only gravitates toward the men who refuse to beg for it.",
+      "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-02T01:45:07.226Z",
+      "slug": "2026-10-02-positional-scarcity-realities-at-the-superflex-quarterback-s",
+      "format": "positional_scarcity",
+      "subject_teams": [],
+      "thesis": "League managers consistently undervalue the market scarcity of tier-one quarterbacks in dynasty formats, allowing opportunistic contenders to acquire elite point production at a discount.",
+      "is_backfill": false
     }
   ]
 }

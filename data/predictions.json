@@ -504,6 +504,24 @@
       "resolution_date": "2026-12-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-02-the-blood-price-of-patrick-mahomes",
+      "claim": "Dirty Magic will use Patrick Mahomes to lock down a top playoff seed and validate the 2026 preseason anointing.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-20",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-02-positional-scarcity-realities-at-the-superflex-quarterback-s",
+      "claim": "Dirty Magic's acquisition of Patrick Mahomes will secure a measurable long-term win-probability advantage over the assets sent to loganmorris28.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

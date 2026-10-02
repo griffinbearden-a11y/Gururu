@@ -1630,6 +1630,86 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-01T01:23:57.080Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic is the Hammer of God",
+      "thesis": "WillMinick's squad is backing up every single word of my preseason anointing with cold, hard points while the rest of you make excuses.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates wolf's \"WillMinick's squad is backing up every single word of my preseason anointing with cold, hard points.\" (2026-09-23).",
+      "spiked_at": "2026-10-02T01:44:27.189Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail is Counting Pennies While Rome Burns",
+      "thesis": "Marcus Vail spends his whole life calculating expected values because he has never felt the cold sweat of a trade deadline in his bones.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates wolf's \"Marcus Vail spends his whole life calculating expected values because he has never felt the cold sweat of a trade deadline in his bones.\" (2026-09-18).",
+      "spiked_at": "2026-10-02T01:44:27.191Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Bryce Clenney Handed AthensAssholes a Masterclass in Panic",
+      "thesis": "Winterfell Whitewalkers traded away premier value for absolute garbage in a deal with AthensAssholes that smells entirely of cowardice and bad lighting.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-02T01:44:27.194Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Keep the Commissioner's Name Out of Your Mouth",
+      "thesis": "Anyone questioning the commissioner's office is just a whining loser trying to deflect from their own roster's pathetic lack of intestinal fortitude.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates wolf's \"Anyone questioning the commissioner's office is just a whining loser trying to deflect from their own roster's pathetic lack of intestinal fortitude.\" (2026-09-28).",
+      "spiked_at": "2026-10-02T01:44:27.196Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt Accrual in Contending Franchises",
+      "thesis": "Trading foundational assets like Patrick Mahomes without matching draft capital return accelerates the structural collapse of a contention window once the remaining roster ages out of peak production curves.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-02T01:44:49.348Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Contention Window Miscalculations on the Transaction Wire",
+      "thesis": "Managers routinely miscalculate the duration of their contention windows by trading away young quarterbacks and high-upside assets for immediate production that fails to outpace positional depreciation.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-02T01:44:49.352Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Rebuild Trajectories and the Cost of Premature Liquidation",
+      "thesis": "Offloading elite quarterbacks under the guise of a rebuild frequently extends a franchise's stay in the basement by failing to secure sufficient market value across the total package.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 11 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-02T01:44:49.353Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Age Curve Audits of Transacted Quarterback Assets",
+      "thesis": "Evaluating incoming player age profiles against expected career arc depreciation curves demonstrates that acquiring established veterans often compresses a team's championship window rather than expanding it.",
+      "format": "age_curve_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-02T01:44:49.355Z"
     }
   ]
 }
