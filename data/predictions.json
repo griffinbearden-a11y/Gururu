@@ -522,6 +522,24 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-03-the-illusions-of-the-undefeated",
+      "claim": "Vic Blends will experience a regression toward league-average scoring efficiency as schedule variance neutralizes over the season.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-11-30",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-03-the-illusions-of-the-undefeated",
+      "claim": "Macon Muskrats will see their win-loss record positively correct to align with their high cumulative point total.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-11-30",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

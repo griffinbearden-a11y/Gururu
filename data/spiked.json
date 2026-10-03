@@ -1710,6 +1710,16 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-02T01:44:49.355Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Arithmetic of Asset Liquidation",
+      "thesis": "Trading a twenty-five-year-old quarterback for a collection of depreciating assets and late-stage capital is an exercise in value destruction rather than strategic positioning.",
+      "format": "asset_liquidation_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-03T02:43:32.849Z"
     }
   ]
 }

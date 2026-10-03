@@ -665,6 +665,17 @@
       "subject_teams": [],
       "thesis": "League managers consistently undervalue the market scarcity of tier-one quarterbacks in dynasty formats, allowing opportunistic contenders to acquire elite point production at a discount.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-03T02:43:50.771Z",
+      "slug": "2026-10-03-the-illusions-of-the-undefeated",
+      "format": "luck_index",
+      "subject_teams": [
+        5
+      ],
+      "thesis": "Vic Blends sits at three wins and five hundred twenty-five points through three weeks despite underlying efficiency metrics that suggest regression is mathematically guaranteed.",
+      "is_backfill": false
     }
   ]
 }
