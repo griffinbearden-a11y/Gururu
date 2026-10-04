@@ -1720,6 +1720,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-03T02:43:32.849Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Long Game in South Georgia: Checking In on the JUICE Rebuild",
+      "thesis": "Josh Cochran's patient accumulation of young wide receiver talent and draft capital continues to provide a blueprint for how a 1-2 roster can build toward tomorrow without panicking today.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-10-04T01:44:40.466Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Business and Border Disputes: The Minick Cousins Trade Log",
+      "thesis": "Every transaction between Will Minick's Dirty Magic and Ross Minick's African Anteaters tells a quiet story about family pride, divisional positioning, and the unique friction of sharing a last name in a dynasty league.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-04T01:44:40.468Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Revisiting the Rookie Board: How the Spring Draft Classes Are Grading Out on Sunday",
+      "thesis": "A look back at the early draft capital spent by teams like the Winterfell Whitewalkers and the Macon Muskrats shows that draft-night aspirations and autumn snap counts are two entirely different languages.",
+      "format": "rookie_draft_grades",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-04T01:44:40.469Z"
     }
   ]
 }

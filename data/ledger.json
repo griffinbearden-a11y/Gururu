@@ -676,6 +676,15 @@
       ],
       "thesis": "Vic Blends sits at three wins and five hundred twenty-five points through three weeks despite underlying efficiency metrics that suggest regression is mathematically guaranteed.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-04T01:44:56.739Z",
+      "slug": "2026-10-04-under-the-garage-roof-a-first-look-at-the-taxi-squads",
+      "format": "taxi_squad_report",
+      "subject_teams": [],
+      "thesis": "Examining how managers across the league are utilizing their taxi slots reveals which franchises are truly planning for three years down the line and which are simply treating the practice squad as an overflow parking lot.",
+      "is_backfill": false
     }
   ]
 }
