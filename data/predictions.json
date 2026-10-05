@@ -549,6 +549,24 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-05-power-rankings-the-men-who-want-it-and-the-clowns-who-dont",
+      "claim": "Vic Blends will regress from their current undefeated start as their efficiency catches up to them.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-11-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-05-power-rankings-the-men-who-want-it-and-the-clowns-who-dont",
+      "claim": "Dirty Magic will hold a top-two spot in the standings through the remainder of the regular season.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

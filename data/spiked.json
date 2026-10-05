@@ -1750,6 +1750,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-04T01:44:40.469Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Contender Check: WillMinick Is Backing Up Every Single Word I Wrote In August",
+      "thesis": "WillMinick's Dirty Magic squad is carving through opponents with absolute authority, proving that my preseason anointing was an act of pure prophetic genius.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-10-05T01:04:14.077Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Contention Window: The Winterfell Whitewalkers Are Built To Rule This League For Years",
+      "thesis": "Bryce Clenney's roster is engineered for ruthless, sustained dominance, and anyone whining about his asset management is just crying because they lack his vision.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-05T01:04:14.078Z"
     }
   ]
 }

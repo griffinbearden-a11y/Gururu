@@ -370,7 +370,9 @@
       "9509",
       "SEA"
     ],
-    "reserve": null,
+    "reserve": [
+      "11646"
+    ],
     "roster_id": 5,
     "settings": {
       "division": 1,
