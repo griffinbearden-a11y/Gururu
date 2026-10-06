@@ -1770,6 +1770,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-05T01:04:14.078Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Business: The Minick Cousins Trade Ledger",
+      "thesis": "Will Minick and Ross Minick continue a long-standing family tradition of swapping assets that tells us as much about their dynamic as it does about their depth charts.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-06T01:36:18.699Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Rebuild Tracker: Checking In on Josh Cochran's JUICE",
+      "thesis": "Josh Cochran's patient accumulation of young pieces and draft capital remains the most disciplined long-term project in a league otherwise obsessed with next Sunday.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-10-06T01:36:18.701Z"
     }
   ]
 }

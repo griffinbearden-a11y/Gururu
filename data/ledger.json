@@ -694,6 +694,24 @@
       "subject_teams": [],
       "thesis": "Through four weeks of actual football, only Dirty Magic, SHMEATtheBOY, and the Winterfell Whitewalkers have shown the intestinal fortitude to carry this league, while the rest of you just tread water in your own mediocrity.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-06T01:36:13.088Z",
+      "slug": "2026-10-06-all-play-records-reveal-which-two-win-teams-are-actually-com",
+      "format": "all_play_record",
+      "subject_teams": [],
+      "thesis": "Calculating an all-play record across four weeks strips away the noise of schedule generation and exposes which franchises are genuinely outperforming their baseline efficiency.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-06T01:36:33.465Z",
+      "slug": "2026-10-06-opening-the-mailbag-answering-the-leagues-quietest-questions",
+      "format": "mailbag",
+      "subject_teams": [],
+      "thesis": "Taking a moment to address what managers are whispering about behind the scenes, from taxi squad rules to the long-term shape of our rosters.",
+      "is_backfill": false
     }
   ]
 }

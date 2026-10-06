@@ -567,6 +567,33 @@
       "resolution_date": "2026-12-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-06-all-play-records-reveal-which-two-win-teams-are-actually-com",
+      "claim": "Vic Blends will finish the regular season inside the top two of the all-play standings.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-06-all-play-records-reveal-which-two-win-teams-are-actually-com",
+      "claim": "Macon Muskrats will regress positively in the conventional standings to match their all-play dominance.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-11-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-06-opening-the-mailbag-answering-the-leagues-quietest-questions",
+      "claim": "JUICE will secure a playoff spot by the end of the 2027 season as accumulated draft capital matures",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2027-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
