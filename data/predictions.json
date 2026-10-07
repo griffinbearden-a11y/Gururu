@@ -594,6 +594,15 @@
       "resolution_date": "2027-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-07-marcus-vail-wouldnt-recognize-a-football-if-it-hit-him-in-th",
+      "claim": "Marcus Vail will fail to pick a single correct league champion at season's end.",
+      "subject": "Marcus Vail",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

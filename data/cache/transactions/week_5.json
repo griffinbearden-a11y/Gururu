@@ -3,6 +3,56 @@
     "status": "complete",
     "type": "free_agent",
     "metadata": null,
+    "created": 1791336972905,
+    "settings": null,
+    "leg": 5,
+    "draft_picks": [],
+    "creator": "1276242317644161026",
+    "transaction_id": "1413373340592123904",
+    "adds": {
+      "6083": 3
+    },
+    "consenter_ids": [
+      3
+    ],
+    "drops": {
+      "13264": 3
+    },
+    "roster_ids": [
+      3
+    ],
+    "status_updated": 1791336972905,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1791332887683,
+    "settings": null,
+    "leg": 5,
+    "draft_picks": [],
+    "creator": "1265430655982907392",
+    "transaction_id": "1413356205929177088",
+    "adds": {
+      "12535": 10
+    },
+    "consenter_ids": [
+      10
+    ],
+    "drops": {
+      "13414": 10
+    },
+    "roster_ids": [
+      10
+    ],
+    "status_updated": 1791332887683,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
     "created": 1791317656958,
     "settings": null,
     "leg": 5,
@@ -12,10 +62,10 @@
     "adds": {
       "CIN": 5
     },
-    "drops": null,
     "consenter_ids": [
       5
     ],
+    "drops": null,
     "roster_ids": [
       5
     ],
@@ -35,10 +85,10 @@
     "adds": {
       "8132": 4
     },
-    "drops": null,
     "consenter_ids": [
       4
     ],
+    "drops": null,
     "roster_ids": [
       4
     ],
@@ -58,12 +108,12 @@
     "adds": {
       "8154": 1
     },
-    "drops": {
-      "6828": 1
-    },
     "consenter_ids": [
       1
     ],
+    "drops": {
+      "6828": 1
+    },
     "roster_ids": [
       1
     ],
@@ -83,10 +133,10 @@
     "adds": {
       "11577": 5
     },
-    "drops": null,
     "consenter_ids": [
       5
     ],
+    "drops": null,
     "roster_ids": [
       5
     ],
@@ -106,10 +156,10 @@
     "adds": {
       "13264": 3
     },
-    "drops": null,
     "consenter_ids": [
       3
     ],
+    "drops": null,
     "roster_ids": [
       3
     ],
