@@ -1800,6 +1800,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
       "spiked_at": "2026-10-07T03:07:44.014Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "A Four-Point Shift: Recalibrating the Season Through All-Play Records",
+      "thesis": "Evaluating the league across an all-play format reveals that multiple teams holding three wins are benefiting disproportionately from schedule generation variance rather than genuine performance superiority.",
+      "format": "all_play_record",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"all_play_record\" within their last 5 articles.",
+      "spiked_at": "2026-10-08T00:32:08.100Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Walk Through the Ledger Rooms: What the Old Migration Left Behind in the Margins",
+      "thesis": "The quiet details preserved in our transition from Fleaflicker to Sleeper tell us more about how these twelve rosters actually think than any modern win-loss column ever could.",
+      "format": "historical_postscript",
+      "reason_stage": "filter",
+      "reason_code": "not_in_whitelist",
+      "reason_detail": "\"historical_postscript\" is not in doyle's format whitelist.",
+      "spiked_at": "2026-10-08T00:33:10.381Z"
     }
   ]
 }

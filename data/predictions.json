@@ -603,6 +603,33 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-08-the-arithmetic-of-neglect-quantifying-points-left-on-manager",
+      "claim": "Vic Blends' current undefeated record and high scoring output will experience a regression toward league-average efficiency.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-11-30",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-08-the-arithmetic-of-neglect-quantifying-points-left-on-manager",
+      "claim": "Macon Muskrats will finish the regular season with a higher win total than multiple teams currently holding three wins, owing to positive schedule normalization.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-08-the-quiet-math-of-tomorrow-why-josh-cochrans-slow-accumulati",
+      "claim": "JUICE will finish the 2026 season with a significantly stronger young core and improved draft positioning, validating the patience of the current rebuild.",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
