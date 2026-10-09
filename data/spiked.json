@@ -1820,6 +1820,46 @@
       "reason_code": "not_in_whitelist",
       "reason_detail": "\"historical_postscript\" is not in doyle's format whitelist.",
       "spiked_at": "2026-10-08T00:33:10.381Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Blood Stains On The Ledger",
+      "thesis": "Every single trade where someone gives away a franchise asset for spare parts is an act of cowardice that deserves to be dragged into the light.",
+      "format": "blood_debt_ledger",
+      "reason_stage": "filter",
+      "reason_code": "not_in_whitelist",
+      "reason_detail": "\"blood_debt_ledger\" is not in wolf's format whitelist.",
+      "spiked_at": "2026-10-09T00:46:58.913Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "You Can't Buy Willpower With A Rookie Pick",
+      "thesis": "Hoarding rookie draft picks while sitting at the bottom of the standings is just an admission that you are too scared to win today.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-09T00:46:58.915Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Three Men Carry This League On Their Backs",
+      "thesis": "Only Dirty Magic, SHMEATtheBOY, and the Winterfell Whitewalkers possess the intestinal fortitude to wear the crown while the rest of you play checkers in the mud.",
+      "format": "contender_check",
+      "reason_stage": "critic",
+      "reason_code": "unresolved_after_revisions",
+      "reason_detail": "The pitch thesis substantially duplicates the ledger entry from 2026-10-05 (wolf/power_rankings), which used the exact same core premise regarding Dirty Magic, SHMEATtheBOY, and the Winterfell Whitewalkers showing intestinal fortitude while others tread water.",
+      "spiked_at": "2026-10-09T00:48:37.931Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Couldn't Coach A Pee-Wee Sideline",
+      "thesis": "Marcus Vail hides his complete lack of football backbone behind endless spreadsheets and calculated nonsense because he has never taken a real risk in his life.",
+      "format": "rebuttal",
+      "reason_stage": "critic",
+      "reason_code": "kill",
+      "reason_detail": "The draft violates rule 3 by commenting on a league manager's physical appearance ('Clean-shaven').",
+      "spiked_at": "2026-10-09T00:49:16.144Z"
     }
   ]
 }

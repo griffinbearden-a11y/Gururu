@@ -630,6 +630,15 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-09-the-commissioner-holds-the-line-while-you-whine",
+      "claim": "Dirty Magic will finish the regular season at the top of the standings.",
+      "subject": "Dirty Magic (WillMinick)",
+      "resolution_date": "2026-12-20",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
