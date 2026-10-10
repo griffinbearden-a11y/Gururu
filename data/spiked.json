@@ -1860,6 +1860,16 @@
       "reason_code": "kill",
       "reason_detail": "The draft violates rule 3 by commenting on a league manager's physical appearance ('Clean-shaven').",
       "spiked_at": "2026-10-09T00:49:16.144Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Correlation Coefficient of Unforced Error",
+      "thesis": "Trade execution efficiency across the league correlates more strongly with immediate asset depreciation than with any plausible team-need metric, as demonstrated by the recent transactions of Winterfell Whitewalkers and Dirty Magic.",
+      "format": "asset_decay_matrix",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-10T03:09:01.574Z"
     }
   ]
 }

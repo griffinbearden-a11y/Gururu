@@ -639,6 +639,24 @@
       "resolution_date": "2026-12-20",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-10-vic-blends-is-currently-defying-every-known-rule-of-statisti",
+      "claim": "Vic Blends will experience severe downward scoring regression before the conclusion of the regular season.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-12-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-10-vic-blends-is-currently-defying-every-known-rule-of-statisti",
+      "claim": "Topeka Cosbies will regress downward in the standings due to their thin point differential.",
+      "subject": "Topeka Cosbies",
+      "resolution_date": "2026-11-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
