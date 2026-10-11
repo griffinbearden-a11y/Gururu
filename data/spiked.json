@@ -1870,6 +1870,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-10T03:09:01.574Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Long Game in District 9: Checking Back In on Josh Cochran's Blueprint",
+      "thesis": "While the rest of the league scrambles for short-term fixes, Josh Cochran's measured accumulation of draft capital and youthful upside continues to show what a patient rebuild looks like in practice.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-10-11T01:05:41.235Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Blood Is Thicker Than Waiver Claims: The Minick Family Ledger",
+      "thesis": "Every transaction between Will and Ross Minick carries a unique undercurrent of family dynamics that shapes the trade market far more than simple roster math ever could.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-11T01:05:41.237Z"
     }
   ]
 }
