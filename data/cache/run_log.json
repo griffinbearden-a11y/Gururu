@@ -1,16 +1,6 @@
 {
   "entries": [
     {
-      "script": "mailchimp-welcome",
-      "status": "success",
-      "at": "2026-09-19T11:00:14.280Z"
-    },
-    {
-      "script": "ingest-sleeper",
-      "status": "success",
-      "at": "2026-09-19T11:59:02.433Z"
-    },
-    {
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-09-19T11:59:03.051Z"
@@ -2502,6 +2492,16 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-10-11T01:54:45.576Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-10-11T03:16:48.147Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-10-11T03:16:48.855Z"
     }
   ]
 }
