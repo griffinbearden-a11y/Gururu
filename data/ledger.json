@@ -772,6 +772,17 @@
       "subject_teams": [],
       "thesis": "The latest wave of free-agent additions and waiver claims reveals who is methodically patching depth holes and who might be reacting too quickly to a single Sunday.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-10-12T01:27:22.649Z",
+      "slug": "2026-10-12-the-winterfell-whitewalkers-window-is-wide-open-despite-the",
+      "format": "contention_window",
+      "subject_teams": [
+        3
+      ],
+      "thesis": "Bryce Clenney's roster construction has the exact backbone required to contend for years, and a slow start is just noise for men who want it.",
+      "is_backfill": false
     }
   ]
 }

@@ -1890,6 +1890,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-11T01:05:41.237Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic is Paying for Greatness While Logan Morris Grovels",
+      "thesis": "WillMinick acquired Patrick Mahomes because greatness gravitates toward men who make moves, while loganmorris28 gave away the farm for a song.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
+      "spiked_at": "2026-10-12T01:27:08.195Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Wouldn't Know a Contender If It Ran Over His Spreadsheet",
+      "thesis": "Marcus Vail spends his whole life hiding behind calculators because he's terrified of actual football evaluation.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-10-12T01:27:08.197Z"
     }
   ]
 }
