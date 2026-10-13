@@ -3,6 +3,106 @@
     "status": "complete",
     "type": "free_agent",
     "metadata": null,
+    "created": 1791893373699,
+    "settings": null,
+    "leg": 6,
+    "draft_picks": [],
+    "creator": "1265430655982907392",
+    "transaction_id": "1415707054668001280",
+    "adds": {
+      "2020": 10
+    },
+    "drops": {
+      "11539": 10
+    },
+    "consenter_ids": [
+      10
+    ],
+    "roster_ids": [
+      10
+    ],
+    "status_updated": 1791893373699,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1791893314646,
+    "settings": null,
+    "leg": 6,
+    "draft_picks": [],
+    "creator": "1265430655982907392",
+    "transaction_id": "1415706806977605632",
+    "adds": {
+      "KC": 10
+    },
+    "drops": {
+      "CLE": 10
+    },
+    "consenter_ids": [
+      10
+    ],
+    "roster_ids": [
+      10
+    ],
+    "status_updated": 1791893314646,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1791893294802,
+    "settings": null,
+    "leg": 6,
+    "draft_picks": [],
+    "creator": "1265430655982907392",
+    "transaction_id": "1415706723745816576",
+    "adds": {
+      "12542": 10
+    },
+    "drops": {
+      "JAX": 10
+    },
+    "consenter_ids": [
+      10
+    ],
+    "roster_ids": [
+      10
+    ],
+    "status_updated": 1791893294802,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1791893167362,
+    "settings": null,
+    "leg": 6,
+    "draft_picks": [],
+    "creator": "1260721394304425984",
+    "transaction_id": "1415706189227884544",
+    "adds": {
+      "7600": 4
+    },
+    "drops": {
+      "13296": 4
+    },
+    "consenter_ids": [
+      4
+    ],
+    "roster_ids": [
+      4
+    ],
+    "status_updated": 1791893167362,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
     "created": 1791887629121,
     "settings": null,
     "leg": 6,
@@ -12,10 +112,10 @@
     "adds": {
       "IND": 9
     },
+    "drops": null,
     "consenter_ids": [
       9
     ],
-    "drops": null,
     "roster_ids": [
       9
     ],
