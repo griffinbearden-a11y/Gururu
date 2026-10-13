@@ -1910,6 +1910,76 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
       "spiked_at": "2026-10-12T01:27:08.197Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Vic Blends and the Math of Undeserved Perfection",
+      "thesis": "Vic Blends sits at four and zero with seven hundred twenty-six point seven points for and four hundred ninety-four point five points against, a variance outlier that must experience severe downward correction.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"luck_index\" within their last 5 articles.",
+      "spiked_at": "2026-10-13T03:05:37.145Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Commissioner Ledger Contains Zero Explicit Citations Across Five Weeks",
+      "thesis": "The commissioner ledger contains zero explicit audit citations across five weeks of transaction logs, a statistical anomaly in a league governed by dynamic waiver and trade execution.",
+      "format": "commissioner_audit",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"The commissioner ledger contains zero explicit audit citations across four weeks of transaction logs, a statistical anomaly in a league governed by dynamic waiver and trade execution.\" (2026-10-01).",
+      "spiked_at": "2026-10-13T03:05:37.148Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Positional Scarcity at Quarterback and the Cost of Indifference",
+      "thesis": "League managers continue to miscalculate the replacement-level baseline for starting quarterbacks, treating tier-one production as fungible despite clear statistical scarcity in multi-starter formats.",
+      "format": "positional_scarcity",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"positional_scarcity\" within their last 5 articles.",
+      "spiked_at": "2026-10-13T03:05:37.150Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt and the Illusion of Short-Term Solvency",
+      "thesis": "Accumulating future draft capital deficits without a proportional increase in weekly point expectation creates a structural debt trap for contending franchises.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-13T03:05:37.152Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A First Look at the Tape on Our Spring Class",
+      "thesis": "Revisiting this year's rookie draft shows that early investments in players like Jeremiyah Love and Carnell Tate are already beginning to shape the bottom tier of our standings in unexpected ways.",
+      "format": "rookie_draft_grades",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-13T03:06:02.399Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Business on the Transaction Wire",
+      "thesis": "The ongoing trade dialogue between the Minick cousins continues to reflect two distinct managerial philosophies under the same roof.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-13T03:06:02.401Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Parsing the Recent Movement on the Trade Board",
+      "thesis": "Recent high-profile swaps involving Logan Morris and the AthensAssholes reveal how aggressive managers are attempting to accelerate their contention timelines.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-13T03:06:02.402Z"
     }
   ]
 }

@@ -783,6 +783,26 @@
       ],
       "thesis": "Bryce Clenney's roster construction has the exact backbone required to contend for years, and a slow start is just noise for men who want it.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-13T03:05:56.594Z",
+      "slug": "2026-10-13-sorting-twelve-rosters-into-four-mathematical-tiers",
+      "format": "tiers",
+      "subject_teams": [],
+      "thesis": "Dividing the league by cumulative point differentials rather than raw win-loss records reveals four distinct tiers of contention that bear little resemblance to the current standings table.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-13T03:06:13.553Z",
+      "slug": "2026-10-13-the-long-game-in-josh-cochrans-locker-room",
+      "format": "manager_profile",
+      "subject_teams": [
+        9
+      ],
+      "thesis": "JUICE's patient accumulation of young pass-catchers and mid-round capital is the kind of deliberate rebuild that often goes unappreciated until the wins start arriving all at once.",
+      "is_backfill": false
     }
   ]
 }

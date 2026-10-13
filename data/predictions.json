@@ -675,6 +675,33 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-13-sorting-twelve-rosters-into-four-mathematical-tiers",
+      "claim": "Vic Blends will experience a significant downward regression in weekly scoring before the end of the regular season.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-13-sorting-twelve-rosters-into-four-mathematical-tiers",
+      "claim": "Macon Muskrats will finish with a higher total point differential than multiple teams currently holding winning records.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-13-the-long-game-in-josh-cochrans-locker-room",
+      "claim": "JUICE will maintain its draft-capital accumulation strategy through the remainder of the 2026 season rather than making a panic trade for veteran short-term help.",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2026-11-30",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
