@@ -1,11 +1,6 @@
 {
   "entries": [
     {
-      "script": "ingest-sleeper",
-      "status": "success",
-      "at": "2026-09-21T21:20:12.739Z"
-    },
-    {
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-09-21T21:20:13.126Z"
@@ -2502,6 +2497,11 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-10-14T14:08:41.262Z"
+    },
+    {
+      "script": "ingest-nflverse",
+      "status": "success",
+      "at": "2026-10-14T14:47:21.989Z"
     }
   ]
 }
