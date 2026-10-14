@@ -2030,6 +2030,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
       "spiked_at": "2026-10-14T00:00:32.365Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Couldn't Spot a Contender If It Bit Him on the Spreadsheet",
+      "thesis": "Marcus Vail is spending his entire life hiding behind numbers because he's terrified of the visceral reality of a real football roster.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-10-14T01:17:49.428Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Road to Glory Runs Through Winterfell and Nowhere Else",
+      "thesis": "Bryce Clenney's Winterfell Whitewalkers have the exact blueprint required to navigate this league and hoist the trophy in December.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-14T01:17:49.431Z"
     }
   ]
 }
