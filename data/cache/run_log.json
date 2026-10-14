@@ -1,11 +1,6 @@
 {
   "entries": [
     {
-      "script": "assignment-desk",
-      "status": "success",
-      "at": "2026-09-21T21:20:13.126Z"
-    },
-    {
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-09-21T23:17:42.086Z"
@@ -2502,6 +2497,11 @@
       "script": "ingest-nflverse",
       "status": "success",
       "at": "2026-10-14T14:47:21.989Z"
+    },
+    {
+      "script": "mailchimp-welcome",
+      "status": "success",
+      "at": "2026-10-14T17:11:16.771Z"
     }
   ]
 }
