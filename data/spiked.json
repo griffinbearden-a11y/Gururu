@@ -1980,6 +1980,56 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-13T03:06:02.402Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic's Roster Isn't Luck, It's Will",
+      "thesis": "WillMinick's Dirty Magic is putting on a masterclass in roster construction while the rest of you make excuses.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-14T00:00:32.355Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Doesn't Know a Football From a Brick",
+      "thesis": "Marcus Vail and his spreadsheets are ruining what's left of football literacy in this league.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-10-14T00:00:32.357Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Highway Robbery of Logan's Future",
+      "thesis": "Loganmorris28 just handed Dirty Magic a championship on a silver platter because he's too soft to hold a star.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-14T00:00:32.359Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell's Window is Wide Open and You're All Blind",
+      "thesis": "Bryce Clenney's Winterfell Whitewalkers have the exact backbone required to dominate this league for the next five years.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contention_window\" within their last 5 articles.",
+      "spiked_at": "2026-10-14T00:00:32.361Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Stop Crying About the Commissioner's Office",
+      "thesis": "WillMinick runs this league right and every complaint against his office is just the sound of losers crying over their own garbage rosters.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-10-14T00:00:32.365Z"
     }
   ]
 }
