@@ -3,16 +3,6 @@
     {
       "script": "assignment-desk",
       "status": "success",
-      "at": "2026-09-22T22:20:55.037Z"
-    },
-    {
-      "script": "ingest-sleeper",
-      "status": "success",
-      "at": "2026-09-22T23:22:08.565Z"
-    },
-    {
-      "script": "assignment-desk",
-      "status": "success",
       "at": "2026-09-22T23:22:09.314Z"
     },
     {
@@ -2502,6 +2492,16 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-10-15T15:01:45.032Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-10-15T16:31:00.661Z"
+    },
+    {
+      "script": "howlin-minute",
+      "status": "success",
+      "at": "2026-10-15T16:31:38.831Z"
     }
   ]
 }
