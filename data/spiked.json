@@ -2050,6 +2050,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-14T01:17:49.431Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Quiet Walk Through the Basement Where Nobody Leaves Empty-Handed",
+      "thesis": "Examining the architectural differences between perennial bottom-dwellers like the Buckhead Beavers and Vic Blends reveals that even the most desolate rosters are slowly assembling the puzzle pieces of tomorrow, if you are patient enough to look past the win-loss columns.",
+      "format": "basement_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 5 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-15T00:40:35.815Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "When the Cousins Trade, the Ledger Remembers",
+      "thesis": "Every transaction between Will Minick and Ross Minick carries the quiet weight of family history, regardless of whether the spreadsheet says the trade was even or not.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-15T00:40:35.819Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "JUICE Keeps Planting Seeds While the Rest of Us Rush to Harvest",
+      "thesis": "Josh Cochran's quiet persistence with the JUICE rebuild is beginning to yield tangible returns in young depth and draft capital, proving that steady hands often outlast loud strategies.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-15T00:40:35.828Z"
     }
   ]
 }

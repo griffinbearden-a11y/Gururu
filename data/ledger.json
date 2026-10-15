@@ -815,6 +815,27 @@
       ],
       "thesis": "Loganmorris28 fleeced Dirty Magic in a trade that proves some men simply do not possess the stomach for high-stakes dynasty poker.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-15T00:40:29.744Z",
+      "slug": "2026-10-15-quantifying-future-draft-capital-liabilities-across-franchis",
+      "format": "future_pick_debt",
+      "subject_teams": [],
+      "thesis": "Auditing the distribution of traded-away future rookie picks exposes several franchises operating with unsustainable debt structures that will severely constrain their roster flexibility by 2027.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-15T00:40:53.805Z",
+      "slug": "2026-10-15-the-long-tail-of-the-championship-banner",
+      "format": "anniversary_piece",
+      "subject_teams": [
+        1,
+        12
+      ],
+      "thesis": "Winning a title leaves a specific kind of silence in its wake, and watching how past champions like the Topeka Cosbies and AthensAssholes navigate their early-round rookie selections tells us more about the human side of dynasty than any power ranking ever could.",
+      "is_backfill": false
     }
   ]
 }

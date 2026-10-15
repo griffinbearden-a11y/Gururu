@@ -711,6 +711,24 @@
       "resolution_date": "2026-12-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-15-quantifying-future-draft-capital-liabilities-across-franchis",
+      "claim": "Winterfell Whitewalkers will face severe roster constraints by the 2027 rookie draft due to accumulated trade deficits.",
+      "subject": "Winterfell Whitewalkers",
+      "resolution_date": "2027-09-01",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-15-the-long-tail-of-the-championship-banner",
+      "claim": "Both Topeka Cosbies and AthensAssholes will finish the 2026 regular season with winning records.",
+      "subject": "Topeka Cosbies and AthensAssholes",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
