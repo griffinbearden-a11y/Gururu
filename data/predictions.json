@@ -729,6 +729,15 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-16-the-blood-ledger",
+      "claim": "Dirty Magic and Winterfell Whitewalkers will finish at the top of the standings despite calculator noise.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

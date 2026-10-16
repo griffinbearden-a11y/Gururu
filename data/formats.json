@@ -343,6 +343,13 @@
       "description": "WillMinick just acquired Patrick Mahomes from loganmorris28 in the trade highway robbery of the century, proving that greatness only gravitates toward the men who refuse to beg for it.",
       "season_window": "in_season",
       "league_wide": false
+    },
+    {
+      "key": "the_blood_ledger",
+      "display_name": "The Blood Ledger",
+      "description": "Every single trade in this league that didn't involve blood, sweat, and a total surrender of future dignity is a paper-shuffling fraud designed by cowards.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }

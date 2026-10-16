@@ -2080,6 +2080,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-15T00:40:35.828Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Crown Stays Where I Put It",
+      "thesis": "Dirty Magic, SHMEATtheBOY, and the Winterfell Whitewalkers are the only franchises carrying the heartbeat of this league while the rest of you crawl around in the dirt.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-16T02:03:17.733Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The First Pick Is a Confession",
+      "thesis": "Holding the top rookie pick isn't an asset or a long-term plan, it's a neon sign advertising that you broke your own franchise and gave up before kickoff.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-16T02:03:17.734Z"
     }
   ]
 }
