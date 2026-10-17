@@ -350,6 +350,13 @@
       "description": "Every single trade in this league that didn't involve blood, sweat, and a total surrender of future dignity is a paper-shuffling fraud designed by cowards.",
       "season_window": "in_season",
       "league_wide": true
+    },
+    {
+      "key": "decile_spread",
+      "display_name": "Decile Spread",
+      "description": "Comparing the top ten percent of weekly positional scoring distributions to the bottom ten percent reveals that our win-loss standings are eighty-two percent variance and eighteen percent management.",
+      "season_window": "in_season",
+      "league_wide": true
     }
   ]
 }

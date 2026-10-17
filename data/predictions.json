@@ -738,6 +738,24 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-17-the-decile-spread",
+      "claim": "loganmorris28's win-loss record will regress toward their lower scoring efficiency before the end of the regular season.",
+      "subject": "loganmorris28",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-17-the-decile-spread",
+      "claim": "Macon Muskrats will experience positive regression given their top-tier points-for accumulation.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

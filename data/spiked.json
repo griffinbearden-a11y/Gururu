@@ -2100,6 +2100,26 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-16T02:03:17.734Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt: The 2027 Liability Ledger",
+      "thesis": "Auditing the distribution of traded-away future rookie picks exposes several franchises operating with unsustainable debt structures that will severely constrain their roster flexibility by next season.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Auditing the distribution of traded-away future rookie picks exposes several franchises operating with unsustainable debt structures that will severely constrain their roster flexibility by 2027.\" (2026-10-15).",
+      "spiked_at": "2026-10-17T00:37:42.798Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Points Left on Bench: The Cost of Managerial Inefficiency",
+      "thesis": "Managerial optimization errors across the opening six weeks have cost franchises a cumulative total of points that fundamentally alters our understanding of several close matchups.",
+      "format": "points_left_on_bench",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Managerial optimization errors across the opening month have cost franchises a cumulative total of points that fundamentally alters our understanding of several close matchups.\" (2026-10-08).",
+      "spiked_at": "2026-10-17T00:37:42.800Z"
     }
   ]
 }

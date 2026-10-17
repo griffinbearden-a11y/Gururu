@@ -845,6 +845,15 @@
       "subject_teams": [],
       "thesis": "Every single trade in this league that didn't involve blood, sweat, and a total surrender of future dignity is a paper-shuffling fraud designed by cowards.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-17T00:37:57.837Z",
+      "slug": "2026-10-17-the-decile-spread",
+      "format": "decile_spread",
+      "subject_teams": [],
+      "thesis": "Comparing the top ten percent of weekly positional scoring distributions to the bottom ten percent reveals that our win-loss standings are eighty-two percent variance and eighteen percent management.",
+      "is_backfill": false
     }
   ]
 }
