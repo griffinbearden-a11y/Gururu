@@ -854,6 +854,17 @@
       "subject_teams": [],
       "thesis": "Comparing the top ten percent of weekly positional scoring distributions to the bottom ten percent reveals that our win-loss standings are eighty-two percent variance and eighteen percent management.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-18T00:07:36.635Z",
+      "slug": "2026-10-18-quietly-stashing-the-future-a-look-inside-the-winterfell-whi",
+      "format": "taxi_squad_report",
+      "subject_teams": [
+        3
+      ],
+      "thesis": "Bryce Clenney's recent flurry of free-agent activity and rookie selections like Jeremiyah Love and Denzel Boston reveal a franchise meticulously building a second wave of depth beneath the active roster.",
+      "is_backfill": false
     }
   ]
 }

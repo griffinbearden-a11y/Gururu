@@ -2120,6 +2120,26 @@
       "reason_code": "duplicate_thesis",
       "reason_detail": "Substantially duplicates vail's \"Managerial optimization errors across the opening month have cost franchises a cumulative total of points that fundamentally alters our understanding of several close matchups.\" (2026-10-08).",
       "spiked_at": "2026-10-17T00:37:42.800Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Business on the Margins: The Minick Cousins and the Art of the Long Game",
+      "thesis": "While Will Minick pilots Dirty Magic toward the upper tier of the standings, Ross Minick's African Anteaters are quietly accumulating the kind of foundational pieces that suggest a longer, quieter strategy is at play.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-18T00:07:23.379Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "When the Crown Sits Heavy: Tracing the Rookie Class of Past Champions",
+      "thesis": "Navigating the aftermath of a championship season requires a specific kind of restraint, and watching how franchise cornerstones like the Topeka Cosbies and AthensAssholes deploy their early draft picks tells us as much about human patience as it does about football.",
+      "format": "rookie_draft_grades",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-18T00:07:23.380Z"
     }
   ]
 }
