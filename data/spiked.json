@@ -2140,6 +2140,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-18T00:07:23.380Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Is Auditing A Game He Is Too Terrified To Play",
+      "thesis": "Marcus Vail wouldn't know a football player if he tripped over one, spending his entire life hiding behind spreadsheets because he's terrified of a real game.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-10-19T00:17:54.059Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Contender Check: Winterfell Whitewalkers Are Built For Blood",
+      "thesis": "Bryce Clenney's roster has the exact backbone required to contend for years, and anyone looking at his record instead of his spine is a blind fool.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-19T00:17:54.060Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Title Path: Dirty Magic's Road To The Crown",
+      "thesis": "WillMinick has the roster, the discipline, and the iron will required to take this entire league by the throat from wire to wire.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-19T00:17:54.062Z"
     }
   ]
 }
