@@ -75,7 +75,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 297,
-      "waiver_position": 12,
+      "waiver_position": 10,
       "wins": 4
     },
     "starters": [
@@ -149,7 +149,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 702,
-      "waiver_position": 9,
+      "waiver_position": 8,
       "wins": 4
     },
     "starters": [
@@ -244,7 +244,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 101,
-      "waiver_position": 8,
+      "waiver_position": 7,
       "wins": 3
     },
     "starters": [
@@ -286,13 +286,13 @@
       "11620",
       "11638",
       "12507",
-      "13264",
       "13286",
-      "13305",
       "13311",
+      "1479",
+      "3257",
       "4866",
       "4984",
-      "7042",
+      "6083",
       "7525",
       "7600",
       "8132",
@@ -319,8 +319,8 @@
       "ppts_decimal": 40,
       "ties": 0,
       "total_moves": 0,
-      "waiver_budget_used": 300,
-      "waiver_position": 7,
+      "waiver_budget_used": 523,
+      "waiver_position": 11,
       "wins": 2
     },
     "starters": [
@@ -332,7 +332,7 @@
       "7600",
       "7525",
       "8132",
-      "7042",
+      "0",
       "HOU"
     ],
     "taxi": null
@@ -361,6 +361,7 @@
     "player_map": null,
     "players": [
       "10232",
+      "11439",
       "11581",
       "11604",
       "11646",
@@ -369,7 +370,6 @@
       "3294",
       "5001",
       "5849",
-      "650",
       "8121",
       "8142",
       "8144",
@@ -395,7 +395,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 11,
+      "waiver_position": 12,
       "wins": 4
     },
     "starters": [
@@ -407,7 +407,7 @@
       "11604",
       "10232",
       "11646",
-      "650",
+      "0",
       "SEA"
     ],
     "taxi": null
@@ -662,7 +662,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 0,
-      "waiver_position": 10,
+      "waiver_position": 9,
       "wins": 2
     },
     "starters": [
