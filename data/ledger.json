@@ -874,6 +874,27 @@
       "subject_teams": [],
       "thesis": "Hoarding rookie draft picks is just a coward's way of delaying the moment everyone finds out you don't know how to build a roster.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-20T01:08:07.711Z",
+      "slug": "2026-10-20-commissioner-audit-examining-transaction-processing-and-rost",
+      "format": "commissioner_audit",
+      "subject_teams": [],
+      "thesis": "A systematic review of the Commissioner Ledger reveals specific procedural patterns in transaction processing that warrant precise documentation rather than emotional speculation.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-20T01:08:27.805Z",
+      "slug": "2026-10-20-family-business-on-the-margins-the-minick-cousins-at-week-6",
+      "format": "rivalry_file",
+      "subject_teams": [
+        2,
+        6
+      ],
+      "thesis": "While Will Minick quietly guides Dirty Magic toward the upper tier of the standings, Ross Minick's African Anteaters are searching for a foothold, making every interaction between the two branches of the family tree a study in contrasting dynasty trajectories.",
+      "is_backfill": false
     }
   ]
 }

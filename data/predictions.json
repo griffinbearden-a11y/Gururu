@@ -774,6 +774,33 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-20-commissioner-audit-examining-transaction-processing-and-rost",
+      "claim": "Winterfell Whitewalkers' October 16-19 free-agent additions will combine for fewer than thirty cumulative fantasy points over the next three weeks.",
+      "subject": "Winterfell Whitewalkers",
+      "resolution_date": "2026-11-10",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-20-family-business-on-the-margins-the-minick-cousins-at-week-6",
+      "claim": "Dirty Magic will finish the regular season in the upper tier of the standings.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-20-family-business-on-the-margins-the-minick-cousins-at-week-6",
+      "claim": "African Anteaters will remain in a rebuilding stance as they look toward future draft capital.",
+      "subject": "African Anteaters",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

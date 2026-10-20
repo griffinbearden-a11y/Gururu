@@ -2170,6 +2170,56 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-19T00:17:54.062Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Luck Index: Sorting Variance From Valuation Through Six Weeks of Play",
+      "thesis": "Vic Blends sits at 4-1-0 with 879.7 points for against 672.5 points against, representing a positional variance outlier that requires immediate regression analysis rather than praise.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"luck_index\" within their last 5 articles.",
+      "spiked_at": "2026-10-20T01:07:54.411Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "All-Play Record: Evaluating True Team Efficiency Across Six Weeks",
+      "thesis": "Calculating an all-play record across the first six weeks strips away the noise of schedule generation and exposes which franchises are genuinely outperforming their baseline efficiency.",
+      "format": "all_play_record",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Calculating an all-play record across four weeks strips away the noise of schedule generation and exposes which franchises are genuinely outperforming their baseline efficiency.\" (2026-10-06).",
+      "spiked_at": "2026-10-20T01:07:54.413Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Points Left on Bench: Managerial Optimization Errors in Week 6",
+      "thesis": "Managerial optimization errors across the opening six weeks have cost franchises a cumulative total of points that fundamentally alters our understanding of several close matchups.",
+      "format": "points_left_on_bench",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"points_left_on_bench\" within their last 5 articles.",
+      "spiked_at": "2026-10-20T01:07:54.415Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt: Auditing Traded Draft Capital Liabilities for 2027",
+      "thesis": "Auditing the distribution of traded-away future rookie picks exposes several franchises operating with unsustainable debt structures that will severely constrain their roster flexibility by 2027.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"future_pick_debt\" within their last 5 articles.",
+      "spiked_at": "2026-10-20T01:07:54.418Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Quiet Foundations: Checking Back In on Josh Cochran's Rebuild",
+      "thesis": "JUICE's patient accumulation of young assets like Parker Washington and Zachariah Branch shows that a 2-3 record is merely a way station for a roster being built with tomorrow entirely in mind.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
+      "spiked_at": "2026-10-20T01:08:13.837Z"
     }
   ]
 }
