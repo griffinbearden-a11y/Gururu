@@ -801,6 +801,24 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-21-marcus-vail-doesnt-know-what-a-forward-pass-is",
+      "claim": "Dirty Magic, SHMEATtheBOY, and Winterfell Whitewalkers will dominate the rest of the season.",
+      "subject": "SHMEATtheBOY, Dirty Magic, Winterfell Whitewalkers",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-21-contention-windows-after-the-macon-vic-exchange",
+      "claim": "Vic Blends will experience positive regression in points against, bringing their defensive metrics closer to the league median by the conclusion of the regular season.",
+      "subject": "Vic Blends",
+      "resolution_date": "2026-12-20",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

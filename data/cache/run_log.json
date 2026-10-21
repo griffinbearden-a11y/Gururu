@@ -1,17 +1,6 @@
 {
   "entries": [
     {
-      "script": "howlin-minute",
-      "status": "failure",
-      "detail": "{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
-      "at": "2026-09-28T19:23:30.039Z"
-    },
-    {
-      "script": "mailchimp-welcome",
-      "status": "success",
-      "at": "2026-09-28T22:01:52.290Z"
-    },
-    {
       "script": "ingest-sleeper",
       "status": "success",
       "at": "2026-09-28T22:11:12.187Z"
@@ -2501,6 +2490,16 @@
       "script": "mailchimp-welcome",
       "status": "success",
       "at": "2026-10-20T23:53:21.181Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-10-21T00:44:13.070Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-10-21T00:45:13.016Z"
     }
   ]
 }

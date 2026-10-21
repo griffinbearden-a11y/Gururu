@@ -2220,6 +2220,86 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"rebuild_tracker\" within their last 5 articles.",
       "spiked_at": "2026-10-20T01:08:13.837Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Winterfell Whitewalkers Are Built for Blood, Not Comfort",
+      "thesis": "Bryce Clenney's Winterfell Whitewalkers possess the kind of cold-blooded roster construction that leaves soft managers crying in their soup.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-21T00:44:17.629Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Mapping the Road Through the Fire for Dirty Magic",
+      "thesis": "WillMinick has forged a legitimate titan in Dirty Magic, and the path to the 2026 throne runs directly through his front door.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-21T00:44:17.631Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "WillMinick Stands Guard While the Cowards Whine",
+      "thesis": "WillMinick runs this league with an iron fist and a clean docket, and every complaint against his office is just the sound of losers crying over their own roster construction.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-10-21T00:44:17.633Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Contention Windows After the Winterfell-Anteaters Transaction",
+      "thesis": "Evaluating the remaining age curves on the Winterfell Whitewalkers and African Anteaters rosters reveals that neither asset exchange alters the underlying probability distribution of their respective contention windows.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-21T00:44:54.956Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt Following the Winterfell-Anteaters Exchange",
+      "thesis": "A comprehensive audit of traded draft capital demonstrates that transactions involving elite producers like Jahmyr Gibbs and Jordan Love frequently obscure long-term pick deficits that will constrain roster flexibility by 2027.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-21T00:44:54.958Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Purgatory Dynamics in the Wake of Recent Trades",
+      "thesis": "Teams trading proven positional producers for younger assets often mischaracterize lateral movement as a structural rebuild, remaining indefinitely trapped in the middle deciles of the league's point-differential distribution.",
+      "format": "purgatory_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-21T00:44:54.960Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Age Curve Audit of the Winterfell and Anteaters Rosters",
+      "thesis": "Mapping the age distribution of incoming assets against positional production curves demonstrates that player acquisition must be evaluated through probabilistic aging models rather than emotional reactions to single transactions.",
+      "format": "age_curve_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-21T00:44:54.962Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Schedule Swap Implications for Winterfell and the African Anteaters",
+      "thesis": "Recalculating team records across alternative schedules reveals that the recent trade activity between Winterfell and the African Anteaters is a reaction to high-variance weekly outcomes rather than underlying scoring deficiencies.",
+      "format": "schedule_swap",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-21T00:44:54.964Z"
     }
   ]
 }

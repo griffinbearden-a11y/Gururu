@@ -895,6 +895,27 @@
       ],
       "thesis": "While Will Minick quietly guides Dirty Magic toward the upper tier of the standings, Ross Minick's African Anteaters are searching for a foothold, making every interaction between the two branches of the family tree a study in contrasting dynasty trajectories.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-10-21T00:44:49.093Z",
+      "slug": "2026-10-21-marcus-vail-doesnt-know-what-a-forward-pass-is",
+      "format": "rebuttal",
+      "subject_teams": [],
+      "thesis": "Marcus Vail spends his days hiding behind pathetic spreadsheets because he has never watched a snap of real football in his life.",
+      "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-21T00:45:10.695Z",
+      "slug": "2026-10-21-contention-windows-after-the-macon-vic-exchange",
+      "format": "contention_window",
+      "subject_teams": [
+        4,
+        5
+      ],
+      "thesis": "Evaluating the remaining structural integrity of the Macon Muskrats and Vic Blends rosters reveals how short-term asset accumulation accelerates or delays a franchise's actual championship window.",
+      "is_backfill": false
     }
   ]
 }
