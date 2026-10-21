@@ -125,6 +125,34 @@
     "waiver_budget": []
   },
   {
+    "status": "failed",
+    "type": "waiver",
+    "metadata": {
+      "notes": "Unfortunately, your roster will have too many players after this transaction."
+    },
+    "created": 1792520139694,
+    "settings": {
+      "seq": 0,
+      "waiver_bid": 50
+    },
+    "leg": 7,
+    "draft_picks": [],
+    "creator": "1276242317644161026",
+    "transaction_id": "1418335901787918336",
+    "adds": {
+      "1479": 3
+    },
+    "consenter_ids": [
+      3
+    ],
+    "drops": null,
+    "roster_ids": [
+      3
+    ],
+    "status_updated": 1792602622902,
+    "waiver_budget": []
+  },
+  {
     "status": "complete",
     "type": "free_agent",
     "metadata": null,
