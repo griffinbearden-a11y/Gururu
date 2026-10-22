@@ -916,6 +916,27 @@
       ],
       "thesis": "Evaluating the remaining structural integrity of the Macon Muskrats and Vic Blends rosters reveals how short-term asset accumulation accelerates or delays a franchise's actual championship window.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-22T02:17:50.656Z",
+      "slug": "2026-10-22-luck-index-isolating-variance-from-standings-through-week-7",
+      "format": "luck_index",
+      "subject_teams": [],
+      "thesis": "Sorting the twelve franchises by expected wins derived from cumulative points for against league-average scoring reveals that several 4-2 records are statistical artifacts rather than indicators of competence.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-22T02:18:13.480Z",
+      "slug": "2026-10-22-a-small-note-on-the-quiet-hours-of-the-transaction-wire",
+      "format": "the_wire",
+      "subject_teams": [
+        3,
+        9
+      ],
+      "thesis": "The recent flurry of minor roster adjustments by the Winterfell Whitewalkers and JUICE reveals a patient approach to depth creation that deserves a gentler reading than the broader league typically affords it.",
+      "is_backfill": false
     }
   ]
 }

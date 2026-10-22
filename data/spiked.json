@@ -2300,6 +2300,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-21T00:44:54.964Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Age Curve Audit: Projecting Positional Decline Curves Across the Roster Matrix",
+      "thesis": "Mapping current player age distributions against historical production cliffs shows that multiple contending franchises are carrying unrecognized depreciation that will compromise their asset values by next season.",
+      "format": "age_curve_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 5 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-22T02:17:16.553Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "On the Architecture of Quiet Basements and the Men Who Live in Them",
+      "thesis": "Examining the specific psychological geography of the lower tier suggests that teams like the Buckhead Beavers and Vic Blends are not failing so much as they are engaged in a very different, much slower conversation with time itself.",
+      "format": "subterranean_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 5 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-22T02:17:57.085Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Dinners and Trade Ledgers Across the Minick Line",
+      "thesis": "Watching Will Minick and Ross Minick manage their respective rosters side by side is a study in how two branches of the same family can view the exact same dynasty landscape through entirely different windows.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-22T02:17:57.086Z"
     }
   ]
 }

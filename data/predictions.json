@@ -819,6 +819,33 @@
       "resolution_date": "2026-12-20",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-22-luck-index-isolating-variance-from-standings-through-week-7",
+      "claim": "loganmorris28 will experience downward regression in the win-loss column due to low offensive scoring relative to top standings placement.",
+      "subject": "loganmorris28",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-22-luck-index-isolating-variance-from-standings-through-week-7",
+      "claim": "Macon Muskrats will experience positive regression in win-loss outcomes given their top-three cumulative point total.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-22-a-small-note-on-the-quiet-hours-of-the-transaction-wire",
+      "claim": "JUICE will maintain a patient, youth-focused roster construction while using veteran additions to stabilize their weekly floor through the remainder of the 2026 season.",
+      "subject": "JUICE 🧃",
+      "resolution_date": "2026-12-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
