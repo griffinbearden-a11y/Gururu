@@ -2330,6 +2330,76 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-22T02:17:57.086Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Pulpit of the Proven",
+      "thesis": "Every single manager whining about their spot in the standings today is just crying because they lack the raw, unadulterated will to seize a title by the throat the way SHMEATtheBOY, Dirty Magic, and the Winterfell Whitewalkers are doing right now.",
+      "format": "howlin_preseason_pick",
+      "reason_stage": "filter",
+      "reason_code": "season_window",
+      "reason_detail": "\"howlin_preseason_pick\" runs in preseason, but it's currently in_season.",
+      "spiked_at": "2026-10-23T02:23:01.956Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "A Toast to the Ghost Who Made You",
+      "thesis": "You can pretend you built the Macon Muskrats out of sheer genius, Griffin, but everyone in this league knows I put the crown on your head before you even knew how to wear it.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-23T02:23:01.959Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Punting is Stealing from the Men Who Showed Up",
+      "thesis": "Stashing rookie picks and hoarding draft capital like a frightened squirrel is an absolute admission of defeat and an insult to every competitor in this league.",
+      "format": "hot_take",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-23T02:23:01.962Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Contention Windows After the Winterfell-Anteaters Transaction",
+      "thesis": "Evaluating the structural integrity of the Winterfell Whitewalkers and African Anteaters rosters reveals how short-term asset accumulation accelerates or delays a franchise's actual championship window.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-23T02:23:38.144Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Future Pick Debt Following Recent Roster Consolidation",
+      "thesis": "Auditing the distribution of traded-away future rookie picks exposes several franchises operating with unsustainable debt structures that will severely constrain their roster flexibility by 2027.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-23T02:23:38.146Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Luck Index Adjustments After Week 7 Variance",
+      "thesis": "Sorting the twelve franchises by expected wins derived from cumulative points for against league-average scoring reveals that several records are statistical artifacts rather than indicators of competence.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Sorting the twelve franchises by expected wins derived from cumulative points for against league-average scoring reveals that several 4-2 records are statistical artifacts rather than indicators of competence.\" (2026-10-22).",
+      "spiked_at": "2026-10-23T02:23:38.150Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Purgatory Dynamics in Mid-Tier Franchise Management",
+      "thesis": "Franchises that trade premium starters without committing to a full structural rebuild inevitably trap themselves in a permanent middle tier defined by neither high draft capital nor playoff equity.",
+      "format": "purgatory_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-23T02:23:38.158Z"
     }
   ]
 }

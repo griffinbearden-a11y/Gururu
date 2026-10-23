@@ -846,6 +846,15 @@
       "resolution_date": "2026-12-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-23-positional-scarcity-realignment-in-the-wake-of-major-trades",
+      "claim": "Teams paying acquisition premiums for positional concentration will underperform in expected wins compared to diversified asset structures.",
+      "subject": "league-wide trade market",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

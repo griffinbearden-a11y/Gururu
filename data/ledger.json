@@ -937,6 +937,26 @@
       ],
       "thesis": "The recent flurry of minor roster adjustments by the Winterfell Whitewalkers and JUICE reveals a patient approach to depth creation that deserves a gentler reading than the broader league typically affords it.",
       "is_backfill": false
+    },
+    {
+      "writer": "wolf",
+      "date": "2026-10-23T02:23:31.656Z",
+      "slug": "2026-10-23-the-calculator-gets-his-ledger-read-back-to-him",
+      "format": "commissioner_defense",
+      "subject_teams": [
+        2
+      ],
+      "thesis": "Marcus Vail wouldn't know a franchise cornerstone if it hit him in his spreadsheets, and his endless auditing of WillMinick's commissioner office is just pathetic cover for a man who has never won a damn thing.",
+      "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-23T02:23:54.875Z",
+      "slug": "2026-10-23-positional-scarcity-realignment-in-the-wake-of-major-trades",
+      "format": "positional_scarcity",
+      "subject_teams": [],
+      "thesis": "Analyzing the league-wide supply of elite running back and quarterback production demonstrates that consolidating top-tier assets carries a diminishing marginal return under current scoring settings.",
+      "is_backfill": false
     }
   ]
 }
