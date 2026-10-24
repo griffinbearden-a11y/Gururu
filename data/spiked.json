@@ -2400,6 +2400,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-23T02:23:38.158Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Asymmetry of Unforced Concessions",
+      "thesis": "Quantifying the net value lost across the five documented trades involving Winterfell Whitewalkers demonstrates that asset depreciation through voluntary undervaluation accounts for more of their deficit than any weekly scoring variance.",
+      "format": "trade_surplus_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-24T00:52:19.909Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Expected Wins vs. Actual Standing Discrepancies",
+      "thesis": "Sorting the twelve franchises by expected wins derived from cumulative points for against league-average opponents reveals that several 4-2 records are statistical artifacts rather than indicators of competence.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Sorting the twelve franchises by expected wins derived from cumulative points for against league-average scoring reveals that several 4-2 records are statistical artifacts rather than indicators of competence.\" (2026-10-22).",
+      "spiked_at": "2026-10-24T00:52:19.911Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Evaluating the Reproducibility of the 2025 Championship Core",
+      "thesis": "Analyzing the roster construction and age curves of the Macon Muskrats reveals no underlying structural advantages that would support a repeat championship performance under probabilistic modeling.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-24T00:52:19.912Z"
     }
   ]
 }

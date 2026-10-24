@@ -283,6 +283,7 @@
     "players": [
       "10859",
       "11610",
+      "11625",
       "11638",
       "11646",
       "12507",
@@ -295,7 +296,6 @@
       "6083",
       "7525",
       "8132",
-      "8161",
       "9224",
       "9488",
       "9753",
@@ -317,8 +317,8 @@
       "ppts_decimal": 40,
       "ties": 0,
       "total_moves": 0,
-      "waiver_budget_used": 523,
-      "waiver_position": 11,
+      "waiver_budget_used": 551,
+      "waiver_position": 12,
       "wins": 2
     },
     "starters": [
@@ -395,7 +395,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 180,
-      "waiver_position": 12,
+      "waiver_position": 11,
       "wins": 4
     },
     "starters": [

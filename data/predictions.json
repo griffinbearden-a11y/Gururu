@@ -855,6 +855,15 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-24-the-correlation-between-title-proximity-and-capital-depletio",
+      "claim": "AthensAssholes will finish the 2026 regular season outside the top six playoff positions due to cumulative capital depletion and negative point differential.",
+      "subject": "AthensAssholes",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

@@ -957,6 +957,18 @@
       "subject_teams": [],
       "thesis": "Analyzing the league-wide supply of elite running back and quarterback production demonstrates that consolidating top-tier assets carries a diminishing marginal return under current scoring settings.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-24T00:52:34.982Z",
+      "slug": "2026-10-24-the-correlation-between-title-proximity-and-capital-depletio",
+      "format": "future_pick_debt",
+      "subject_teams": [
+        1,
+        12
+      ],
+      "thesis": "Tracking the draft pick inventory of 2024 champion AthensAssholes and 2023 champion Topeka Cosbies confirms that early title windows systematically require the liquidation of future draft capital.",
+      "is_backfill": false
     }
   ]
 }
