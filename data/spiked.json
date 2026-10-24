@@ -2430,6 +2430,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-24T00:52:19.912Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "A Quiet Exchange of Assets in the North",
+      "thesis": "The recent acquisition of Jordan Addison by the Winterfell Whitewalkers from the AthensAssholes represents a measured attempt to stabilize a fluctuating wide receiver corps without sacrificing long-term flexibility.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-24T02:20:45.785Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Long Shadow of a Championship Season",
+      "thesis": "Watching how the AthensAssholes continue to reconfigure their roster after their 2024 title run shows how past champions must continually trade peak production for future optionality.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-24T02:20:45.786Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Balancing the Ledger in the Middle Ranks",
+      "thesis": "Bryce Clenney's steady stream of transactions, from waiver wire additions to the latest trade for Jordan Addison, reflects an active manager trying to stitch together a coherent contender out of a 3-3 start.",
+      "format": "manager_profile",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-24T02:20:45.788Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Parsing the Cost of Rebuilding Windows",
+      "thesis": "Evaluating the trade market dynamics between the Winterfell Whitewalkers and the AthensAssholes reveals how different managers weigh present positional needs against the underlying value of roster depth.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-24T02:20:45.790Z"
     }
   ]
 }

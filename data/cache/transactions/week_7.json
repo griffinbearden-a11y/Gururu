@@ -70,6 +70,45 @@
   },
   {
     "status": "complete",
+    "type": "trade",
+    "metadata": {
+      "poll_id": "1419473747257155584",
+      "veto_msg_id": "1419473747315847168"
+    },
+    "created": 1792775613688,
+    "settings": null,
+    "leg": 7,
+    "draft_picks": [
+      {
+        "round": 4,
+        "season": "2028",
+        "league_id": null,
+        "roster_id": 12,
+        "owner_id": 3,
+        "previous_owner_id": 12
+      }
+    ],
+    "creator": "1276242317644161026",
+    "transaction_id": "1419407437378691072",
+    "adds": {
+      "9756": 12
+    },
+    "drops": {
+      "9756": 3
+    },
+    "consenter_ids": [
+      3,
+      12
+    ],
+    "roster_ids": [
+      3,
+      12
+    ],
+    "status_updated": 1792807851263,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
     "type": "waiver",
     "metadata": {
       "notes": "Your waiver claim was processed successfully!"

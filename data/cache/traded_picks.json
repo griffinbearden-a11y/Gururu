@@ -362,5 +362,12 @@
     "roster_id": 12,
     "owner_id": 1,
     "previous_owner_id": 2
+  },
+  {
+    "round": 4,
+    "season": "2028",
+    "roster_id": 12,
+    "owner_id": 3,
+    "previous_owner_id": 12
   }
 ]
