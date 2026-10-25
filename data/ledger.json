@@ -978,6 +978,17 @@
       "subject_teams": [],
       "thesis": "The quiet transaction wire movement involving Jordan Addison and a handful of depth additions shows that the league's lower and middle tiers are still actively shaping their autumn outlooks.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-25T00:24:48.287Z",
+      "slug": "2026-10-25-unbeaten-foundations-assessing-logan-morriss-ascent-to-the-t",
+      "format": "breakout_profile",
+      "subject_teams": [
+        11
+      ],
+      "thesis": "Logan Morris's current run atop the standings is built on sustainable roster depth and smart asset allocation rather than mere statistical variance.",
+      "is_backfill": false
     }
   ]
 }

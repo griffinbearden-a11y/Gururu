@@ -2470,6 +2470,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-24T02:20:45.790Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Quietly Setting the Foundation: A Look at JUICE's Ongoing Rebuild",
+      "thesis": "Josh Cochran's measured accumulation of young pass-catchers and draft capital reflects a deliberate, long-term blueprint that deserves patience rather than the league's usual knee-jerk mockery.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-25T00:24:35.537Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Family Business: The Diverging Paths of Will and Ross Minick",
+      "thesis": "While Dirty Magic comfortably holds a top-two spot in the standings, the African Anteaters' early struggles turn every interaction between the Minick cousins into a study in contrasting franchise trajectories.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
+      "spiked_at": "2026-10-25T00:24:35.539Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Looking Back at the Class of '26: Early Rookie Draft Re-Grades",
+      "thesis": "Revisiting the spring selections of high-profile rookies like Jeremiyah Love and Carnell Tate reveals that early-season usage often validates a manager's draft-day philosophy long before the stat lines catch up.",
+      "format": "rookie_draft_grades",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-25T00:24:35.542Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Weekly Wire: Depth Additions Across the Middle Tier",
+      "thesis": "Recent transaction activity from franchises like the Winterfell Whitewalkers and The Irrelevants demonstrates that quiet, incremental roster churn is often more telling than blockbuster trades.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-10-25T00:24:35.545Z"
     }
   ]
 }
