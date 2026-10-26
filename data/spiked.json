@@ -2510,6 +2510,36 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
       "spiked_at": "2026-10-25T00:24:35.545Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Contender Check: Winterfell Whitewalkers Are Built for the Long Haul",
+      "thesis": "Bryce Clenney's squad isn't just winning games; they are constructing an absolute fortress of depth that makes every other roster in this league look like kindling.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-26T00:30:27.730Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Trade Grade: Another Paper-Shuffling Fraud on the Wire",
+      "thesis": "This latest transaction is nothing more than a nervous manager rearranging deck chairs on a sinking ship because he doesn't have the spine to build a real winner.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"trade_grade\" within their last 5 articles.",
+      "spiked_at": "2026-10-26T00:30:27.731Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Title Path: Dirty Magic Is Walking Straight to the Crown",
+      "thesis": "WillMinick has engineered a roster with zero structural weaknesses, and the rest of the league is simply playing for second place while the commissioner lines up his throne.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-26T00:30:27.742Z"
     }
   ]
 }

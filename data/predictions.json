@@ -882,6 +882,24 @@
       "resolution_date": "2026-12-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-26-power-rankings-the-pretenders-have-had-their-run",
+      "claim": "Winterfell Whitewalkers will prove their 3-3 record does not reflect their true contending status as winter approaches.",
+      "subject": "Winterfell Whitewalkers",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-26-power-rankings-the-pretenders-have-had-their-run",
+      "claim": "Macon Muskrats will fail to recover from their 2-4 start despite being the defending champion.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
