@@ -998,6 +998,26 @@
       "subject_teams": [],
       "thesis": "The standings are a temporary shelter for frauds, and it is time to strip away the noise to see which three rosters actually possess the stomach to take this league.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-27T01:33:28.803Z",
+      "slug": "2026-10-27-all-play-records-demonstrate-that-standings-are-merely-varia",
+      "format": "all_play_record",
+      "subject_teams": [],
+      "thesis": "Converting every franchise's weekly schedule into an all-play format reveals that multiple 4-2 records are statistical artifacts of scheduling luck rather than indicators of roster superiority.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-27T01:34:03.057Z",
+      "slug": "2026-10-27-looking-at-how-rileyparker-keeps-vic-blends-competitive-with",
+      "format": "manager_profile",
+      "subject_teams": [
+        5
+      ],
+      "thesis": "Vic Blends' 4-2 start is built on sensible roster management and finding productive margins rather than reckless asset spending.",
+      "is_backfill": false
     }
   ]
 }

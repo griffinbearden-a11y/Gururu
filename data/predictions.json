@@ -900,6 +900,33 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-27-all-play-records-demonstrate-that-standings-are-merely-varia",
+      "claim": "loganmorris28 will experience regression toward the mean in win-loss record as cumulative scoring catches up with schedule luck.",
+      "subject": "loganmorris28",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-27-all-play-records-demonstrate-that-standings-are-merely-varia",
+      "claim": "Macon Muskrats will finish with a higher win total than their current two-win pace suggests due to positive scoring regression.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-27-looking-at-how-rileyparker-keeps-vic-blends-competitive-with",
+      "claim": "Vic Blends will finish the 2026 regular season with a winning record above .500.",
+      "subject": "Vic Blends",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

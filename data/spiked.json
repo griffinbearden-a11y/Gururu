@@ -2540,6 +2540,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-26T00:30:27.742Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Checking in on the foundation Josh Cochran is quietly pouring in the bottom half of the standings",
+      "thesis": "Josh Cochran's early rookie selections like Parker Washington and Zachariah Branch show a manager patiently building sustainable depth rather than chasing hollow short-term wins.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-27T01:33:38.092Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Mapping the family tree through the transaction wire and the standings",
+      "thesis": "Will Minick's competitive positioning and Ross Minick's foundational struggles offer a quiet window into how two branches of the same family approach dynasty management differently.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"rivalry_file\" within their last 5 articles.",
+      "spiked_at": "2026-10-27T01:33:38.094Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Reviewing the waiver wire activity that shaped the autumn landscape across the league",
+      "thesis": "Recent quiet additions like Jordan Addison and various depth pieces show the middle and lower tiers are carefully polishing their rosters for the stretch run.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-10-27T01:33:38.096Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Looking back at the roster construction choices that followed the 2023 championship season",
+      "thesis": "Examining how past champions like Topeka Cosbies navigate their early picks reveals the steady human effort required to sustain a franchise after the confetti clears.",
+      "format": "anniversary_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-27T01:33:38.098Z"
     }
   ]
 }
