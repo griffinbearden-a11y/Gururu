@@ -2580,6 +2580,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 1 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-27T01:33:38.098Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "WillMinick Is Running This League Right While Marcus Vail Cries About Spreadsheets",
+      "thesis": "Every single whine about the commissioner's office comes from spineless frauds who couldn't manage a waiver wire if their lives depended on it.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-10-28T00:07:58.175Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Stop Hiding Behind Future Picks and Play to Win",
+      "thesis": "Hoarding rookie draft picks is nothing more than a coward's way of delaying the moment everyone finds out you don't know how to build a roster.",
+      "format": "rookie_pick_market",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rookie_pick_market\" within their last 5 articles.",
+      "spiked_at": "2026-10-28T00:07:58.177Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic's Path to the 2026 Crown Runs Through Pure Will",
+      "thesis": "WillMinick has built a 5-2 juggernaut that leaves zero doubt about who is taking home the hardware this winter.",
+      "format": "title_path",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 2 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-28T00:07:58.180Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Marcus Vail Has Never Watched a Snap of Football in His Life",
+      "thesis": "Marcus Vail's endless auditing of expected wins and all-play records is pathetic cover for a man who has never won a damn thing.",
+      "format": "rebuttal",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
+      "spiked_at": "2026-10-28T00:07:58.181Z"
     }
   ]
 }
