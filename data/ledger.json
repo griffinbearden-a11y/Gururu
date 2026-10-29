@@ -1029,6 +1029,28 @@
       ],
       "thesis": "The Winterfell Whitewalkers' rookie-led foundation is the only thing keeping them afloat while the rest of their roster bleeds points.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-10-29T01:53:58.984Z",
+      "slug": "2026-10-29-a-ten-team-logjam-does-not-equal-parity",
+      "format": "tiers",
+      "subject_teams": [],
+      "thesis": "The compression of four-win and five-win records through seven weeks is an artifact of schedule distribution rather than competitive balance.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-10-29T01:54:21.714Z",
+      "slug": "2026-10-29-the-transaction-ledger-and-the-shape-of-an-october-afternoon",
+      "format": "the_wire",
+      "subject_teams": [
+        12,
+        9,
+        6
+      ],
+      "thesis": "A slow-moving examination of recent waiver activity shows that the lower tier is quietly preparing for next year with a patience that deserves our respect.",
+      "is_backfill": false
     }
   ]
 }

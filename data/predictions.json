@@ -936,6 +936,33 @@
       "resolution_date": "2026-12-21",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-29-a-ten-team-logjam-does-not-equal-parity",
+      "claim": "Macon Muskrats will experience positive regression in win-loss record due to high points for relative to their current 2-5 standing.",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-20",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-10-29-a-ten-team-logjam-does-not-equal-parity",
+      "claim": "loganmorris28 will experience negative regression in win-loss record due to low offensive point generation relative to their 5-2 standing.",
+      "subject": "loganmorris28",
+      "resolution_date": "2026-12-20",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-10-29-the-transaction-ledger-and-the-shape-of-an-october-afternoon",
+      "claim": "JUICE and the African Anteaters will finish the season prioritizing young depth acquisition over immediate veteran rentals.",
+      "subject": "JUICE & African Anteaters",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

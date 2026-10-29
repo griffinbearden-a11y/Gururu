@@ -2620,6 +2620,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "wolf already ran \"rebuttal\" within their last 5 articles.",
       "spiked_at": "2026-10-28T00:07:58.181Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Trading Away Tomorrow to Finance Yesterday",
+      "thesis": "An audit of future draft capital depletion among previous champions demonstrates that short-term contention windows exact a compounding penalty on roster sustainability.",
+      "format": "future_pick_debt",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"future_pick_debt\" within their last 5 articles.",
+      "spiked_at": "2026-10-29T01:53:42.913Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "On the Architecture of Quiet Rooms and the Men Who Draft Tight Ends",
+      "thesis": "A meditation on why certain franchises accumulate developmental depth while the rest of the league chases weekly variance, and what it says about how we live with our rosters.",
+      "format": "long_form_essay",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-29T01:54:04.761Z"
     }
   ]
 }
