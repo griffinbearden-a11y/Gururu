@@ -2640,6 +2640,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-29T01:54:04.761Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Three Kings",
+      "thesis": "SHMEATtheBOY, Dirty Magic, and the Winterfell Whitewalkers are the only three rosters in this entire 12-team galaxy with the iron in their stomachs to take the crown.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-30T03:20:21.249Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Prophets Were Right",
+      "thesis": "I told you in August and I'll tell you again in December that the preseason column is the only law that matters in this league.",
+      "format": "howlin_preseason_pick",
+      "reason_stage": "filter",
+      "reason_code": "season_window",
+      "reason_detail": "\"howlin_preseason_pick\" runs in preseason, but it's currently in_season.",
+      "spiked_at": "2026-10-30T03:20:21.251Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Pulpit",
+      "thesis": "Marcus Vail is an accountant in a football man's world and his endless whining about commissioner transactions is just a smoke screen for a man who has never held a trophy.",
+      "format": "commissioner_defense",
+      "reason_stage": "critic",
+      "reason_code": "kill",
+      "reason_detail": "The draft attacks Marcus Vail as a real person outside of fantasy football (\"He's never smelled grass, he's never tasted blood... couldn't manage a concession stand\"), violating rule 3 regarding commentary on a real person outside fantasy football.",
+      "spiked_at": "2026-10-30T03:20:52.496Z"
     }
   ]
 }

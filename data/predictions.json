@@ -963,6 +963,15 @@
       "resolution_date": "2026-12-31",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "wolf",
+      "article_slug": "2026-10-30-the-silent-treatment",
+      "claim": "Macon Muskrats will finish the season out of the championship picture",
+      "subject": "Macon Muskrats",
+      "resolution_date": "2026-12-31",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }
