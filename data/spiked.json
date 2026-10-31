@@ -2670,6 +2670,26 @@
       "reason_code": "kill",
       "reason_detail": "The draft attacks Marcus Vail as a real person outside of fantasy football (\"He's never smelled grass, he's never tasted blood... couldn't manage a concession stand\"), violating rule 3 regarding commentary on a real person outside fantasy football.",
       "spiked_at": "2026-10-30T03:20:52.496Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "The Asymmetry of One-Sided Trade Value Deficits Across Five Documented Lopsided Transactions",
+      "thesis": "Reviewing five recent lopsided trades reveals that the receiving managers systematically extracted surplus value without any proportional compensation in roster utility.",
+      "format": "trade_audit",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-31T01:41:47.594Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Evaluating the Longitudinal Decline Trajectories of Past Champions Following Title Acquisition",
+      "thesis": "The post-championship rosters of the 2023 and 2024 title-holders demonstrate that early success systematically requires liquidating future draft capital into terminal decline.",
+      "format": "contention_window",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-10-31T01:41:47.596Z"
     }
   ]
 }
