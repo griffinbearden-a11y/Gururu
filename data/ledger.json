@@ -1071,6 +1071,15 @@
       "subject_teams": [],
       "thesis": "Wolf continues to claim a three-year prediction streak despite 2023 and 2024 source columns remaining entirely absent from historical league documentation.",
       "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-11-01T01:19:05.193Z",
+      "slug": "2026-11-01-sorting-the-wire-who-is-actually-spending-their-faab-wisely",
+      "format": "faab_audit",
+      "subject_teams": [],
+      "thesis": "A league-wide look at waiver wire restraint and aggression reveals which managers are finding productive margins and who is burning budget on early-season noise.",
+      "is_backfill": false
     }
   ]
 }

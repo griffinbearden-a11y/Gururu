@@ -2690,6 +2690,46 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-10-31T01:41:47.596Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "The Family Ledger: Where the Minick Cousins Stand After Eight Weeks",
+      "thesis": "A look at how family ties and contrasting fortunes have shaped the season for Will Minick's Dirty Magic and Ross Minick's African Anteaters.",
+      "format": "rivalry_file",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 6 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-11-01T01:18:45.180Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Building in the Dark: A Look at JUICE's Rebuild Blueprint",
+      "thesis": "Josh Cochran's patient accumulation of young talent and future capital is starting to show the intentionality that distinguishes a true rebuild from a stagnant roster.",
+      "format": "rebuild_tracker",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 9 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-11-01T01:18:45.182Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Looking Back at the Board: Revisiting the Top of the 2026 Rookie Draft",
+      "thesis": "Checking in on how early investments like Jeremiyah Love and Carnell Tate are integrating into their new dynasties now that autumn game tape is accumulating.",
+      "format": "rookie_draft_grades",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 3 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-11-01T01:18:45.185Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Quiet Footwork: The Latest Additions on the Transaction Wire",
+      "thesis": "Examining the small, unglamorous waiver claims and free agent depth moves that typically go unnoticed while everyone else stares at the top of the standings.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-11-01T01:18:45.187Z"
     }
   ]
 }
