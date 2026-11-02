@@ -2730,6 +2730,26 @@
       "reason_code": "format_reuse",
       "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
       "spiked_at": "2026-11-01T01:18:45.187Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "WillMinick Runs This League Right and Marcus Vail Can Go Back to His Calculators",
+      "thesis": "WillMinick's stewardship of Dirty Magic and the commissioner's office is the only thing keeping this league upright while accountants like Marcus Vail nitpick every transaction.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-11-02T03:08:57.277Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "The Winterfell Whitewalkers Trade Sheet Is a Masterclass in Giving Away the Farm",
+      "thesis": "Winterfell Whitewalkers keeps handing away premium assets in lopsided deals while pretending they're building a dynasty.",
+      "format": "trade_grade",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-11-02T03:08:57.279Z"
     }
   ]
 }
