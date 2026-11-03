@@ -228,7 +228,10 @@
       "96",
       "KC"
     ],
-    "reserve": null,
+    "reserve": [
+      "13287",
+      "13320"
+    ],
     "roster_id": 3,
     "settings": {
       "division": 1,
