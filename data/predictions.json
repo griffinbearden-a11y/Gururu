@@ -990,6 +990,33 @@
       "resolution_date": "2027-01-15",
       "outcome": "pending",
       "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-11-03-points-left-on-bench-the-cost-of-lineup-inefficiency",
+      "claim": "African Anteaters will finish the season with the lowest total points for in the league.",
+      "subject": "African Anteaters",
+      "resolution_date": "2026-12-28",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "vail",
+      "article_slug": "2026-11-03-points-left-on-bench-the-cost-of-lineup-inefficiency",
+      "claim": "Dirty Magic will retain a top-two cumulative scoring position through the conclusion of the regular season.",
+      "subject": "Dirty Magic",
+      "resolution_date": "2026-12-28",
+      "outcome": "pending",
+      "verified": true
+    },
+    {
+      "writer": "doyle",
+      "article_slug": "2026-11-03-a-quiet-look-at-the-minick-family-line",
+      "claim": "Dirty Magic will finish the regular season inside the top four playoff seeds while African Anteaters secures a top-three rookie draft selection.",
+      "subject": "Dirty Magic and African Anteaters",
+      "resolution_date": "2027-01-15",
+      "outcome": "pending",
+      "verified": true
     }
   ]
 }

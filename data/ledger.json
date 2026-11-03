@@ -1089,6 +1089,27 @@
       "subject_teams": [],
       "thesis": "Half this league is hoarding future draft picks like terrified squirrels because they don't have the stomach to win today.",
       "is_backfill": false
+    },
+    {
+      "writer": "vail",
+      "date": "2026-11-03T03:32:52.034Z",
+      "slug": "2026-11-03-points-left-on-bench-the-cost-of-lineup-inefficiency",
+      "format": "points_left_on_bench",
+      "subject_teams": [],
+      "thesis": "Quantifying optimal versus actual weekly scoring across the league demonstrates that managerial self-sabotage accounts for more lost contests than positional deficits.",
+      "is_backfill": false
+    },
+    {
+      "writer": "doyle",
+      "date": "2026-11-03T03:33:10.664Z",
+      "slug": "2026-11-03-a-quiet-look-at-the-minick-family-line",
+      "format": "rivalry_file",
+      "subject_teams": [
+        2,
+        6
+      ],
+      "thesis": "The ongoing transactional relationship between Will Minick's Dirty Magic and Ross Minick's African Anteaters reflects a familiar family dynamic of high-stakes roster tinkering that deserves a careful, unhurried examination rather than immediate suspicion.",
+      "is_backfill": false
     }
   ]
 }

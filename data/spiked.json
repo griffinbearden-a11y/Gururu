@@ -2750,6 +2750,56 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 12 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-11-02T03:08:57.279Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Luck Index: The Statistical Fiction of the Five-Win Tier",
+      "thesis": "Sorting the twelve franchises by expected wins derived from cumulative points reveals that several 5-2 records are artifacts of schedule variance rather than indicators of competitive superiority.",
+      "format": "luck_index",
+      "reason_stage": "filter",
+      "reason_code": "duplicate_thesis",
+      "reason_detail": "Substantially duplicates vail's \"Sorting the twelve franchises by expected wins derived from cumulative points for against league-average scoring reveals that several 4-2 records are statistical artifacts rather than indicators of competence.\" (2026-10-22).",
+      "spiked_at": "2026-11-03T03:32:26.802Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "All-Play Record: Re-running the 2026 Schedule Across All Eleven Opponents",
+      "thesis": "Converting every franchise's weekly schedule into an all-play format demonstrates how severely standard head-to-head pairings have distorted the true competitive hierarchy of the league.",
+      "format": "all_play_record",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "vail already ran \"all_play_record\" within their last 5 articles.",
+      "spiked_at": "2026-11-03T03:32:26.805Z"
+    },
+    {
+      "writer": "vail",
+      "headline": "Schedule Swap: The Counterfactual Records of the Lower Half",
+      "thesis": "Substituting the schedules of the Macon Muskrats and the AthensAssholes into the records of the upper tier proves that current standings are primarily functions of schedule assignment rather than talent distribution.",
+      "format": "schedule_swap",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-11-03T03:32:26.811Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Parsing the Recent Movement on the Wire",
+      "thesis": "The modest stream of depth additions across the league—from Kyler Murray's arrival in Logan Morris's backfield to minor backend shuffling—shows a quiet attention to detail that often separates the contenders from the pack.",
+      "format": "the_wire",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "doyle already ran \"the_wire\" within their last 5 articles.",
+      "spiked_at": "2026-11-03T03:32:57.959Z"
+    },
+    {
+      "writer": "doyle",
+      "headline": "Reflecting on Last Season's Unfinished Business",
+      "thesis": "The journey of the Macon Muskrats from last year's championship summit to their current rebuilding posture serves as a quiet reminder of how quickly a title window can close in a competitive dynasty league.",
+      "format": "anniversary_piece",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-11-03T03:32:57.962Z"
     }
   ]
 }
