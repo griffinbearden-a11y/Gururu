@@ -1,16 +1,6 @@
 {
   "entries": [
     {
-      "script": "ingest-nflverse",
-      "status": "success",
-      "at": "2026-10-14T14:47:21.989Z"
-    },
-    {
-      "script": "mailchimp-welcome",
-      "status": "success",
-      "at": "2026-10-14T17:11:16.771Z"
-    },
-    {
       "script": "ingest-sleeper",
       "status": "success",
       "at": "2026-10-14T18:04:43.256Z"
@@ -2500,6 +2490,16 @@
       "script": "assignment-desk",
       "status": "success",
       "at": "2026-11-04T10:06:26.255Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-11-04T12:21:09.320Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-11-04T12:21:10.014Z"
     }
   ]
 }
