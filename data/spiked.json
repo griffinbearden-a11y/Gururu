@@ -2800,6 +2800,36 @@
       "reason_code": "team_cooldown",
       "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
       "spiked_at": "2026-11-03T03:32:57.962Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Dirty Magic Is Running This League and Vail Is Crying About It",
+      "thesis": "WillMinick runs the commissioner's office with an iron fist, and every little audit from the back row is just sour grapes from men who can't build a contender.",
+      "format": "commissioner_defense",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"commissioner_defense\" within their last 5 articles.",
+      "spiked_at": "2026-11-04T00:58:18.671Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "Winterfell Is Bleeding Points But The Foundation Still Holds",
+      "thesis": "The Winterfell Whitewalkers might be stubbing their toes in the box scores, but their rookie-infused roster is the only thing standing between this league and absolute mediocrity.",
+      "format": "contender_check",
+      "reason_stage": "filter",
+      "reason_code": "format_reuse",
+      "reason_detail": "wolf already ran \"contender_check\" within their last 5 articles.",
+      "spiked_at": "2026-11-04T00:58:18.674Z"
+    },
+    {
+      "writer": "wolf",
+      "headline": "GriffinBear, You Built a Shack on Mud and Called It a Dynasty",
+      "thesis": "The Macon Muskrats crawled back into a 2-6 hole because winning a single title doesn't mean a damn thing if you don't have the stomach to sustain it.",
+      "format": "open_letter",
+      "reason_stage": "filter",
+      "reason_code": "team_cooldown",
+      "reason_detail": "Roster 4 was a primary subject within the last 5 days (league-wide, across all writers).",
+      "spiked_at": "2026-11-04T00:58:18.677Z"
     }
   ]
 }
