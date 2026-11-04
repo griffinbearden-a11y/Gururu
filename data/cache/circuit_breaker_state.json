@@ -1,5 +1,5 @@
 {
-  "paused": false,
+  "paused": true,
   "daily_publish_counts": {
     "2026-08-12": 3,
     "2026-08-16": 1,
@@ -76,7 +76,7 @@
     "2026-11-02": 1,
     "2026-11-03": 2
   },
-  "consecutive_pitch_failures": 2,
+  "consecutive_pitch_failures": 3,
   "reacted_transaction_ids": [
     "1388729102453735424",
     "1388660428262883328",
@@ -97,5 +97,7 @@
     "1418349427407552512",
     "1418042687289901056",
     "1419407437378691072"
-  ]
+  ],
+  "paused_reason": "3 consecutive pitch-step failures",
+  "paused_at": "2026-11-04T02:29:56.188Z"
 }
