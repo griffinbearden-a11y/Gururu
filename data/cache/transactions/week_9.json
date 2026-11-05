@@ -3,6 +3,100 @@
     "status": "complete",
     "type": "free_agent",
     "metadata": null,
+    "created": 1793870069753,
+    "settings": null,
+    "leg": 9,
+    "draft_picks": [],
+    "creator": "1276242317644161026",
+    "transaction_id": "1423997918834126848",
+    "adds": {
+      "5854": 3
+    },
+    "consenter_ids": [
+      3
+    ],
+    "drops": {
+      "96": 3
+    },
+    "roster_ids": [
+      3
+    ],
+    "status_updated": 1793870069753,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1793870042574,
+    "settings": null,
+    "leg": 9,
+    "draft_picks": [],
+    "creator": "1276242317644161026",
+    "transaction_id": "1423997804837158912",
+    "adds": {
+      "1373": 3
+    },
+    "consenter_ids": [
+      3
+    ],
+    "drops": null,
+    "roster_ids": [
+      3
+    ],
+    "status_updated": 1793870042574,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1793869802664,
+    "settings": null,
+    "leg": 9,
+    "draft_picks": [],
+    "creator": "1276242317644161026",
+    "transaction_id": "1423996798577528832",
+    "adds": {
+      "8161": 3
+    },
+    "consenter_ids": [
+      3
+    ],
+    "drops": null,
+    "roster_ids": [
+      3
+    ],
+    "status_updated": 1793869802664,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1793850827567,
+    "settings": null,
+    "leg": 9,
+    "draft_picks": [],
+    "creator": "1276276639809949696",
+    "transaction_id": "1423917211252256768",
+    "adds": null,
+    "consenter_ids": [
+      8
+    ],
+    "drops": {
+      "7600": 8
+    },
+    "roster_ids": [
+      8
+    ],
+    "status_updated": 1793850827567,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
     "created": 1793841394331,
     "settings": null,
     "leg": 9,
