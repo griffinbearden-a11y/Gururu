@@ -3,16 +3,6 @@
     {
       "script": "assignment-desk",
       "status": "success",
-      "at": "2026-10-15T12:44:46.256Z"
-    },
-    {
-      "script": "ingest-sleeper",
-      "status": "success",
-      "at": "2026-10-15T13:46:06.467Z"
-    },
-    {
-      "script": "assignment-desk",
-      "status": "success",
       "at": "2026-10-15T13:46:07.166Z"
     },
     {
@@ -2500,6 +2490,16 @@
       "script": "howlin-minute",
       "status": "success",
       "at": "2026-11-05T19:39:27.253Z"
+    },
+    {
+      "script": "ingest-sleeper",
+      "status": "success",
+      "at": "2026-11-05T20:45:02.750Z"
+    },
+    {
+      "script": "assignment-desk",
+      "status": "success",
+      "at": "2026-11-05T20:45:03.472Z"
     }
   ]
 }
