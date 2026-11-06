@@ -3,6 +3,29 @@
     "status": "complete",
     "type": "free_agent",
     "metadata": null,
+    "created": 1793923241070,
+    "settings": null,
+    "leg": 9,
+    "draft_picks": [],
+    "creator": "1004975760962097152",
+    "transaction_id": "1424220935497523200",
+    "adds": {
+      "NO": 9
+    },
+    "consenter_ids": [
+      9
+    ],
+    "drops": null,
+    "roster_ids": [
+      9
+    ],
+    "status_updated": 1793923241070,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
     "created": 1793906218970,
     "settings": null,
     "leg": 9,
@@ -97,6 +120,36 @@
   },
   {
     "status": "complete",
+    "type": "waiver",
+    "metadata": {
+      "notes": "Your waiver claim was processed successfully!"
+    },
+    "created": 1793851127585,
+    "settings": {
+      "seq": 1,
+      "waiver_bid": 0
+    },
+    "leg": 9,
+    "draft_picks": [],
+    "creator": "1276276639809949696",
+    "transaction_id": "1423918469618905088",
+    "adds": {
+      "13285": 8
+    },
+    "consenter_ids": [
+      8
+    ],
+    "drops": {
+      "6797": 8
+    },
+    "roster_ids": [
+      8
+    ],
+    "status_updated": 1793924430864,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
     "type": "free_agent",
     "metadata": null,
     "created": 1793850827567,
@@ -116,6 +169,34 @@
       8
     ],
     "status_updated": 1793850827567,
+    "waiver_budget": []
+  },
+  {
+    "status": "failed",
+    "type": "waiver",
+    "metadata": {
+      "notes": "Unfortunately, your roster will have too many players after this transaction."
+    },
+    "created": 1793844413452,
+    "settings": {
+      "seq": 0,
+      "waiver_bid": 50
+    },
+    "leg": 9,
+    "draft_picks": [],
+    "creator": "1276242317644161026",
+    "transaction_id": "1423890308508164096",
+    "adds": {
+      "13285": 3
+    },
+    "consenter_ids": [
+      3
+    ],
+    "drops": null,
+    "roster_ids": [
+      3
+    ],
+    "status_updated": 1793924430864,
     "waiver_budget": []
   },
   {

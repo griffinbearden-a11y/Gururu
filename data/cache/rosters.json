@@ -247,7 +247,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 496,
-      "waiver_position": 11,
+      "waiver_position": 10,
       "wins": 5
     },
     "starters": [
@@ -562,13 +562,13 @@
       "12185",
       "12481",
       "12487",
+      "13285",
       "13298",
       "2449",
       "4137",
       "421",
       "5967",
       "6130",
-      "6797",
       "6819",
       "7002",
       "8131",
@@ -595,7 +595,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 400,
-      "waiver_position": 10,
+      "waiver_position": 12,
       "wins": 3
     },
     "starters": [
@@ -640,6 +640,7 @@
       "8155",
       "8167",
       "9487",
+      "NO",
       "PIT"
     ],
     "reserve": [
@@ -672,7 +673,7 @@
       "5947",
       "7567",
       "7042",
-      "PIT"
+      "NO"
     ],
     "taxi": null
   },
@@ -740,7 +741,7 @@
       "8112",
       "6801",
       "9484",
-      "5872",
+      "9500",
       "12517",
       "12961",
       "JAX"
@@ -797,7 +798,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 600,
-      "waiver_position": 12,
+      "waiver_position": 11,
       "wins": 5
     },
     "starters": [
