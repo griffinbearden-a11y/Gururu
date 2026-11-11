@@ -51,6 +51,51 @@
   },
   {
     "status": "complete",
+    "type": "trade",
+    "metadata": {
+      "poll_id": "1426030962348658688",
+      "veto_msg_id": "1426030962432577536"
+    },
+    "created": 1794352794383,
+    "settings": {
+      "is_counter": 1
+    },
+    "leg": 10,
+    "draft_picks": [
+      {
+        "round": 3,
+        "season": "2027",
+        "league_id": null,
+        "roster_id": 5,
+        "owner_id": 9,
+        "previous_owner_id": 5
+      }
+    ],
+    "creator": "1004975760962097152",
+    "transaction_id": "1426022612676378624",
+    "adds": {
+      "8167": 5,
+      "10232": 9,
+      "11620": 9
+    },
+    "consenter_ids": [
+      5,
+      9
+    ],
+    "drops": {
+      "8167": 9,
+      "10232": 5,
+      "11620": 5
+    },
+    "roster_ids": [
+      5,
+      9
+    ],
+    "status_updated": 1794364634352,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
     "type": "free_agent",
     "metadata": null,
     "created": 1794352573360,
