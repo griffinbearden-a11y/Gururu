@@ -482,8 +482,8 @@
     "draft_picks": [
       {
         "round": 4,
-        "season": "2028",
         "league_id": null,
+        "season": "2028",
         "roster_id": 12,
         "owner_id": 3,
         "previous_owner_id": 12
@@ -869,8 +869,8 @@
     "draft_picks": [
       {
         "round": 3,
-        "season": "2027",
         "league_id": null,
+        "season": "2027",
         "roster_id": 1,
         "owner_id": 5,
         "previous_owner_id": 4
