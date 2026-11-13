@@ -333,8 +333,8 @@
     "draft_picks": [
       {
         "round": 4,
-        "season": "2027",
         "league_id": null,
+        "season": "2027",
         "roster_id": 2,
         "owner_id": 11,
         "previous_owner_id": 2
