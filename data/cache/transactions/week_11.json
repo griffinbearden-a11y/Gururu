@@ -3,6 +3,105 @@
     "status": "complete",
     "type": "free_agent",
     "metadata": null,
+    "created": 1794967898353,
+    "settings": null,
+    "leg": 11,
+    "draft_picks": [],
+    "creator": "1058143369743925248",
+    "transaction_id": "1428602545722396672",
+    "adds": {
+      "3257": 6
+    },
+    "consenter_ids": [
+      6
+    ],
+    "drops": null,
+    "roster_ids": [
+      6
+    ],
+    "status_updated": 1794967898353,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
+    "created": 1794967874319,
+    "settings": null,
+    "leg": 11,
+    "draft_picks": [],
+    "creator": "1276237496287498240",
+    "transaction_id": "1428602444916477952",
+    "adds": null,
+    "consenter_ids": [
+      1
+    ],
+    "drops": {
+      "3271": 1
+    },
+    "roster_ids": [
+      1
+    ],
+    "status_updated": 1794967874319,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "trade",
+    "metadata": {
+      "poll_id": "1428597077482418176",
+      "veto_msg_id": "1428597077591482368"
+    },
+    "created": 1794966579911,
+    "settings": {
+      "is_counter": 1
+    },
+    "leg": 11,
+    "draft_picks": [
+      {
+        "round": 1,
+        "league_id": null,
+        "season": "2027",
+        "roster_id": 10,
+        "owner_id": 1,
+        "previous_owner_id": 10
+      },
+      {
+        "round": 1,
+        "league_id": null,
+        "season": "2028",
+        "roster_id": 10,
+        "owner_id": 1,
+        "previous_owner_id": 10
+      }
+    ],
+    "creator": "1276237496287498240",
+    "transaction_id": "1428597015775809536",
+    "adds": {
+      "6786": 10,
+      "8112": 1,
+      "12517": 1
+    },
+    "consenter_ids": [
+      1,
+      10
+    ],
+    "drops": {
+      "6786": 1,
+      "8112": 10,
+      "12517": 10
+    },
+    "roster_ids": [
+      1,
+      10
+    ],
+    "status_updated": 1794966817425,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
     "created": 1794966216857,
     "settings": null,
     "leg": 11,
