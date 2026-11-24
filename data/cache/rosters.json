@@ -76,7 +76,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 343,
-      "waiver_position": 6,
+      "waiver_position": 5,
       "wins": 4
     },
     "starters": [
@@ -125,6 +125,7 @@
       "12526",
       "13293",
       "13305",
+      "1373",
       "3451",
       "3634",
       "4037",
@@ -135,7 +136,7 @@
       "8130",
       "8151",
       "9487",
-      "CHI"
+      "WAS"
     ],
     "reserve": [
       "11564",
@@ -167,7 +168,7 @@
       "12526",
       "9487",
       "3451",
-      "CHI"
+      "WAS"
     ],
     "taxi": null
   },
@@ -202,9 +203,10 @@
       "p_nick_6819": "The Vet",
       "p_nick_7525": "Slim Reaper",
       "p_nick_8138": "Jimbo",
-      "p_nick_8146": "Dime Bag",
+      "p_nick_8146": "Baby Snake",
       "p_nick_8259": "Dicker the Kicker",
       "p_nick_9221": "Best RB in the League",
+      "p_nick_9501": "Mario",
       "p_nick_9997": "Joystick",
       "record": "WLLLWWWWWLW",
       "streak": "1W"
@@ -230,6 +232,7 @@
       "8146",
       "9501",
       "GB",
+      "NYG",
       "PIT"
     ],
     "reserve": [
@@ -249,7 +252,7 @@
       "ppts_decimal": 60,
       "ties": 0,
       "total_moves": 0,
-      "waiver_budget_used": 803,
+      "waiver_budget_used": 808,
       "waiver_position": 10,
       "wins": 7
     },
@@ -260,10 +263,10 @@
       "11632",
       "8146",
       "12518",
-      "7600",
-      "5995",
+      "13346",
+      "9501",
       "6650",
-      "PIT"
+      "NYG"
     ],
     "taxi": null
   },
@@ -329,12 +332,12 @@
     },
     "starters": [
       "4984",
-      "8155",
-      "9224",
-      "11625",
-      "11646",
-      "10859",
+      "13286",
       "12507",
+      "13276",
+      "13296",
+      "10859",
+      "11625",
       "13294",
       "5119",
       "HOU"
@@ -365,7 +368,6 @@
     "player_map": null,
     "players": [
       "11199",
-      "11579",
       "11604",
       "11783",
       "11792",
@@ -380,6 +382,7 @@
       "8144",
       "8150",
       "8167",
+      "9229",
       "9493",
       "9509",
       "KC",
@@ -403,7 +406,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 180,
-      "waiver_position": 5,
+      "waiver_position": 11,
       "wins": 8
     },
     "starters": [
@@ -470,7 +473,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 80,
-      "waiver_position": 11,
+      "waiver_position": 9,
       "wins": 4
     },
     "starters": [
@@ -603,7 +606,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 500,
-      "waiver_position": 9,
+      "waiver_position": 8,
       "wins": 4
     },
     "starters": [
@@ -723,6 +726,7 @@
       "9484",
       "9500",
       "9502",
+      "CLE",
       "JAX"
     ],
     "reserve": [
@@ -742,7 +746,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 480,
-      "waiver_position": 8,
+      "waiver_position": 7,
       "wins": 8
     },
     "starters": [
@@ -751,11 +755,11 @@
       "3198",
       "6786",
       "6801",
-      "5012",
+      "9484",
       "9500",
       "8134",
       "12961",
-      "JAX"
+      "CLE"
     ],
     "taxi": null
   },
@@ -811,7 +815,7 @@
       "ties": 0,
       "total_moves": 0,
       "waiver_budget_used": 600,
-      "waiver_position": 7,
+      "waiver_position": 6,
       "wins": 7
     },
     "starters": [
@@ -887,7 +891,7 @@
       "5947",
       "4217",
       "13345",
-      "12534",
+      "2216",
       "1945",
       "DEN"
     ],
