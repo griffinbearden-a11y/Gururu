@@ -3,6 +3,29 @@
     "status": "complete",
     "type": "free_agent",
     "metadata": null,
+    "created": 1795645515709,
+    "settings": null,
+    "leg": 12,
+    "draft_picks": [],
+    "creator": "1276600626364571648",
+    "transaction_id": "1431444678909112320",
+    "adds": null,
+    "drops": {
+      "BUF": 12
+    },
+    "consenter_ids": [
+      12
+    ],
+    "roster_ids": [
+      12
+    ],
+    "status_updated": 1795645515709,
+    "waiver_budget": []
+  },
+  {
+    "status": "complete",
+    "type": "free_agent",
+    "metadata": null,
     "created": 1795614250473,
     "settings": null,
     "leg": 12,
@@ -12,10 +35,10 @@
     "adds": {
       "12494": 9
     },
+    "drops": null,
     "consenter_ids": [
       9
     ],
-    "drops": null,
     "roster_ids": [
       9
     ],
@@ -35,10 +58,10 @@
     "adds": {
       "5189": 9
     },
+    "drops": null,
     "consenter_ids": [
       9
     ],
-    "drops": null,
     "roster_ids": [
       9
     ],
@@ -56,12 +79,12 @@
     "creator": "1004975760962097152",
     "transaction_id": "1431312440255074304",
     "adds": null,
-    "consenter_ids": [
-      9
-    ],
     "drops": {
       "10222": 9
     },
+    "consenter_ids": [
+      9
+    ],
     "roster_ids": [
       9
     ],
@@ -81,12 +104,12 @@
     "adds": {
       "13968": 8
     },
-    "consenter_ids": [
-      8
-    ],
     "drops": {
       "9482": 8
     },
+    "consenter_ids": [
+      8
+    ],
     "roster_ids": [
       8
     ],
@@ -106,12 +129,12 @@
     "adds": {
       "11565": 10
     },
-    "consenter_ids": [
-      10
-    ],
     "drops": {
       "5012": 10
     },
+    "consenter_ids": [
+      10
+    ],
     "roster_ids": [
       10
     ],
@@ -131,10 +154,10 @@
     "adds": {
       "CLE": 10
     },
+    "drops": null,
     "consenter_ids": [
       10
     ],
-    "drops": null,
     "roster_ids": [
       10
     ],
@@ -154,12 +177,12 @@
     "adds": {
       "WAS": 2
     },
-    "consenter_ids": [
-      2
-    ],
     "drops": {
       "CHI": 2
     },
+    "consenter_ids": [
+      2
+    ],
     "roster_ids": [
       2
     ],
